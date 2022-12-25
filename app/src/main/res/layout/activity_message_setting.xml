@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <RelativeLayout android:id="@+id/ll_notify" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60" android:layout_marginTop="@dimen/dimen_10">
+        <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/message_get_notify" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Switch android:id="@+id/btn_notify_status" android:padding="@dimen/dimen_10" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:theme="@style/MySwitch"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:gravity="center_vertical" android:background="@color/app_bg_grey" android:padding="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/message_is_open_notify"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60">
+        <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/string_system_message" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Switch android:id="@+id/btn_post_reply" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:theme="@style/MySwitch"/>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_marginLeft="@dimen/dimen_15" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60">
+        <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/string_hudong_message" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Switch android:id="@+id/btn_huitie_reply" android:padding="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:theme="@style/MySwitch"/>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_marginLeft="@dimen/dimen_15" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_60">
+        <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:text="@string/string_notifction_message" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <Switch android:id="@+id/btn_comment_reply" android:padding="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_15" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:theme="@style/MySwitch"/>
+    </RelativeLayout>
+</LinearLayout>

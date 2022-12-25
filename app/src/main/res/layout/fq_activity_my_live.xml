@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <android.support.p002v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <FrameLayout android:id="@+id/fl_content_view" android:background="@color/fq_colorBgPrimary_2" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_nobility_car_bg" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="@style/fq_setting_item_bg_style">
+                    <FrameLayout android:id="@+id/rl_my_nobility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:id="@+id/iv_badge" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="5dp" android:src="@drawable/fq_ic_my_live_default_nobility"/>
+                            <TextView android:textSize="13sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_my_nobility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_nobility_my"/>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="right" android:id="@+id/iv_dot" android:visibility="invisible" android:layout_width="8dp" android:layout_height="8dp" android:src="@drawable/fq_view_pager_red_dot"/>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_my_car" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_marginBottom="5dp" android:src="@drawable/fq_ic_my_live_default_car"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_my_live_my_car"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/rl_live_grade" android:layout_marginTop="10dp" style="@style/fq_setting_item_bg_style">
+                    <TextView android:textSize="15sp" android:textColor="@color/fq_colorTextTitlePrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_my_live_grade" android:drawableLeft="@drawable/fq_ic_my_live_grade" android:drawablePadding="10dp"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/fq_colorTextTitlePrimary_2" android:id="@+id/tv_live_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <include layout="@layout/fq_include_divider_view"/>
+                <RelativeLayout android:id="@+id/rl_auth" style="@style/fq_setting_item_bg_style">
+                    <TextView android:textSize="15sp" android:textColor="@color/fq_colorTextTitlePrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_anchor_identy" android:drawableLeft="@drawable/fq_ic_my_live_auth" android:drawablePadding="10dp"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/fq_colorTextTitlePrimary_2" android:id="@+id/tv_auth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <include layout="@layout/fq_include_divider_view"/>
+                <TextView android:id="@+id/tv_income_record" android:text="@string/fq_my_account" android:drawableLeft="@drawable/fq_ic_my_live_income_record" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                <include layout="@layout/fq_include_divider_view"/>
+                <TextView android:id="@+id/tv_watch_record" android:text="@string/fq_my_live_watch_record" android:drawableLeft="@drawable/fq_ic_my_live_watch" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                <include layout="@layout/fq_include_divider_view"/>
+                <TextView android:id="@+id/tv_my_title" android:text="@string/fq_my_live_my_title" android:drawableLeft="@drawable/fq_achieve_ic_my_live_my_title" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                <View android:layout_width="match_parent" android:layout_height="10dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_my_ticket_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_my_ticket" android:visibility="gone" android:text="@string/fq_lottery_my_ticket" android:drawableLeft="@drawable/fq_ic_my_live_ticket" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tv_awards" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/fq_setting_item_bg_style">
+                        <RelativeLayout android:layout_width="23dp" android:layout_height="23dp" android:layout_marginEnd="10dp">
+                            <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/fq_hd_awards"/>
+                            <ImageView android:id="@+id/iv_awards_red" android:visibility="invisible" android:layout_width="8dp" android:layout_height="8dp" android:src="@drawable/fq_view_pager_red_dot" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="15sp" android:textColor="@color/fq_colorTextTitlePrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_hd_awards_history" android:drawableRight="@drawable/fq_ic_arrow_right_gray"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_my_clan_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_my_clan" android:text="@string/fq_my_clan" android:drawableLeft="@drawable/fq_ic_my_live_family" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <View android:layout_width="match_parent" android:layout_height="10dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_anchor_grade_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_anchor_college" android:text="@string/fq_anchor_college" android:drawableLeft="@drawable/fq_ic_my_live_anchor_college" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <include layout="@layout/fq_include_divider_view"/>
+                    <RelativeLayout android:id="@+id/rl_live_anchor_grade" style="@style/fq_setting_item_bg_style">
+                        <TextView android:textSize="15sp" android:textColor="@color/fq_colorTextTitlePrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_my_live_anchor_grade" android:drawableLeft="@drawable/fq_ic_my_live_anchor_grade" android:drawablePadding="10dp"/>
+                        <TextView android:textSize="13sp" android:textColor="@color/fq_colorTextTitlePrimary_2" android:id="@+id/tv_live_anchor_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <include layout="@layout/fq_include_divider_view"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tv_my_income" android:visibility="invisible" android:text="@string/fq_my_live_my_income" android:drawableLeft="@drawable/fq_ic_my_live_my_income" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_anchor_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/fq_include_divider_view"/>
+                    <TextView android:id="@+id/tv_dedicate" android:text="@string/fq_my_live_dedicate" android:drawableLeft="@drawable/fq_ic_my_live_rankinglist" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <include layout="@layout/fq_include_divider_view"/>
+                    <TextView android:id="@+id/tv_house_setting" android:text="@string/fq_my_live_house_setting" android:drawableLeft="@drawable/fq_ic_my_live_house" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <include layout="@layout/fq_include_divider_view"/>
+                    <TextView android:id="@+id/tv_banned_setting" android:text="@string/fq_my_live_banned_setting" android:drawableLeft="@drawable/fq_ic_my_live_banned" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <include layout="@layout/fq_include_divider_view"/>
+                    <TextView android:id="@+id/tv_live_pre_notice" android:text="@string/fq_my_live_pre_notice" android:drawableLeft="@drawable/fq_ic_my_live_pre_notice" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp" style="@style/fq_setting_item_text_bg_style"/>
+                    <include layout="@layout/fq_include_divider_view"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tv_live_give_awards" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/fq_setting_item_bg_style">
+                        <RelativeLayout android:layout_width="23dp" android:layout_height="23dp" android:layout_marginEnd="10dp">
+                            <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/fq_ic_hd_give_awards"/>
+                            <ImageView android:id="@+id/iv_give_awards_red" android:visibility="invisible" android:layout_width="8dp" android:layout_height="8dp" android:src="@drawable/fq_view_pager_red_dot" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                        <TextView android:textSize="15sp" android:textColor="@color/fq_colorTextTitlePrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_my_live_give_awards" android:drawableRight="@drawable/fq_ic_arrow_right_gray"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/fq_shape_recommend_bg" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/fl_avatar_bg" android:layout_width="64dp" android:layout_height="64dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/fq_ic_placeholder_avatar"/>
+        <ImageView android:id="@+id/iv_live" android:visibility="invisible" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/fq_ic_living_icon_circle" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_nick_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:layout_below="@+id/fl_avatar_bg" android:layout_centerHorizontal="true">
+        <TextView android:textSize="11sp" android:textColor="@color/fq_colorBlack" android:gravity="center_vertical" android:id="@+id/tv_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <ImageView android:id="@+id/iv_gender_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+    </LinearLayout>
+    <TextView android:textSize="11sp" android:textColor="@color/fq_btn_attention_color_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_attention" android:background="@drawable/fq_btn_attention_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minWidth="76dp" android:minHeight="28dp" android:layout_below="@+id/ll_nick_name_bg" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">ເວລາເຄືອຂ່າຍ, ຄລິກທີ່ໃຫມ່</string>
+    <string name="tip_load_failed">ລະຫັດການຢັ້ງຢືນບໍ່ສາມາດໂຫລດໄດ້</string>
+    <string name="tip_loading">ການກວດສອບຄວາມປອດໄພ</string>
+    <string name="tip_no_network">ເຄືອຂ່າຍແມ່ນຜິດປົກກະຕິ. ກະລຸນາກວດສອບເຄືອຂ່າຍແລະລອງອີກຄັ້ງ.</string>
+    <string name="tip_validate_timeout">ຢືນຢັນເວລາຫມົດ, ກະລຸນາປິດແລະກວດສອບເຄືອຂ່າຍ</string>
+</resources>

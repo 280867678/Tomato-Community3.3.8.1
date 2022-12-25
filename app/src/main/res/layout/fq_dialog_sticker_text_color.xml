@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_colorWhite" android:layout_gravity="center_vertical" android:id="@+id/tv_cancel" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/fq_btn_cancel"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:layout_gravity="end|center_vertical" android:id="@+id/tv_done" android:background="@drawable/fq_btn_report_submit_selector" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </FrameLayout>
+    <EditText android:textSize="14sp" android:textColor="#ffc7c7c7" android:textColorHint="#ffc7c7c7" android:gravity="center_vertical" android:id="@+id/et_text" android:background="@null" android:padding="15dp" android:layout_width="match_parent" android:layout_height="0dp" android:hint="@string/fq_sticker_add_input_tips" android:singleLine="true" android:maxLength="20" android:layout_weight="1"/>
+    <include layout="@layout/fq_layout_sticker_text_color"/>
+</LinearLayout>

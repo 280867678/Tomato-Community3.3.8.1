@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/progress_layout" android:layout_width="190dp" android:layout_height="10dp" android:layout_centerInParent="true">
+        <com.gen.p059mh.webapp_extensions.views.RoundCornerImageView android:id="@+id/p_bot_iv" android:layout_width="200dp" android:layout_height="15dp" android:src="@mipmap/loading_hui" android:scaleType="centerCrop"/>
+        <com.gen.p059mh.webapp_extensions.views.RoundCornerImageView android:id="@+id/p_cover_iv" android:layout_width="100dp" android:layout_height="15dp" android:src="@mipmap/loading" android:scaleType="centerCrop"/>
+    </RelativeLayout>
+</RelativeLayout>

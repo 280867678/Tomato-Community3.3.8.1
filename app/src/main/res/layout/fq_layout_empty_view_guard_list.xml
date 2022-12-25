@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="@dimen/view_margin_16" android:layout_marginBottom="@dimen/view_margin_20">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_avatar" android:layout_width="90dp" android:layout_height="90dp" android:src="@drawable/fq_ic_guard_sofa"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_guard_avatar_bg"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/fq_guard_anchor_empty_tips"/>
+</LinearLayout>

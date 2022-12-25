@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <ScrollView android:id="@+id/scrollView" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_14" android:layout_marginTop="@dimen/view_margin_16" android:layout_marginRight="@dimen/margin_14">
+                <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_detail_description"/>
+                <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_add_or_cancel" android:background="@drawable/common_shape_solid_corner30_coloraccent" android:paddingLeft="@dimen/dimen_6" android:paddingTop="@dimen/dimen_3" android:paddingRight="@dimen/dimen_6" android:paddingBottom="@dimen/dimen_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_focus_n_add" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_999ead" android:id="@+id/tv_circle_brief" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_14" android:layout_marginTop="@dimen/view_margin_16" android:layout_marginRight="@dimen/margin_14"/>
+            <RelativeLayout android:id="@+id/rl_last_active_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_14" android:layout_marginTop="@dimen/view_margin_16" android:layout_marginRight="@dimen/margin_14" android:minHeight="@dimen/dimen_24">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_active_lable_hint" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_header_more" android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16" android:src="@drawable/icon_arrow_right_grey" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_header_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_header_more"/>
+            </RelativeLayout>
+            <View android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_15"/>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height" android:layout_marginLeft="@dimen/margin_14" android:layout_marginRight="@dimen/margin_14">
+                <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_detail_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_circle_icon" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height" android:layout_marginLeft="@dimen/margin_14" android:layout_marginRight="@dimen/margin_14">
+                <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_detail_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/text_item_content" android:textColor="@color/text_middle" android:id="@+id/tv_circle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height" android:layout_marginLeft="@dimen/margin_14" android:layout_marginRight="@dimen/margin_14">
+                <TextView android:textSize="@dimen/text_item_title" android:textColor="@color/text_dark" android:id="@+id/tv_circle_category_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_detail_category" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/text_item_content" android:textColor="@color/text_middle" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_circle_category" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:singleLine="true" android:layout_toRightOf="@+id/tv_circle_category_hint" android:layout_centerVertical="true"/>
+                <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

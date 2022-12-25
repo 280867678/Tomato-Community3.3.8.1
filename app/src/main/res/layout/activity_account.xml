@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_account_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" app:leftText="@string/bind_account_id" app:showLine="true" app:showRightImage="false" app:showRightText="true"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_account" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftText="@string/bind_account" app:showLine="true" app:showRightImage="false" app:showRightText="true"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_phone" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftText="@string/bind_phone" app:showLine="true" app:showRightImage="true" app:showRightSubText="true"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_email" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftText="@string/bind_email" app:showLine="true" app:showRightImage="true" app:showRightSubText="true"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_modify_ps" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftText="@string/bind_password" app:showRightImage="true"/>
+</LinearLayout>

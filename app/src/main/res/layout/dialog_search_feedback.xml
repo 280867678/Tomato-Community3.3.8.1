@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/colorPrimary" android:padding="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dimen_10">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_no_serch_more" android:layout_alignParentLeft="true"/>
+        <CheckBox android:id="@+id/checkbox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_selector_check" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20">
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_no_replay" android:layout_alignParentLeft="true"/>
+        <CheckBox android:id="@+id/checkbox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_selector_check" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20">
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_litle_content" android:layout_alignParentLeft="true"/>
+        <CheckBox android:id="@+id/checkbox3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_selector_check" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <EditText android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:gravity="center_vertical" android:id="@+id/et_input" android:background="@drawable/shape_search_feedback" android:paddingLeft="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="@dimen/common_button_height" android:layout_marginTop="@dimen/dimen_20" android:hint="@string/post_write_back"/>
+    <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_submit" android:background="@drawable/common_selector_solid_corner30_coloraccent" android:layout_width="160dp" android:layout_height="@dimen/common_button_height" android:layout_marginTop="@dimen/dimen_20" android:text="@string/post_touch_back"/>
+</LinearLayout>

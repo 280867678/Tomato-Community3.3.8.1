@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toTopOf="0">
+        <android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_xiaobai" android:background="@drawable/spread_h5_bg2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="@dimen/dimen_16" android:text="@string/withdraw_receive_explain_create_xiaobai" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/webView"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+    <ImageView android:id="@+id/iv_back" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_30" android:src="@drawable/icon_back_black" android:scaleType="centerInside" android:layout_alignParentLeft="true" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+</android.support.constraint.ConstraintLayout>

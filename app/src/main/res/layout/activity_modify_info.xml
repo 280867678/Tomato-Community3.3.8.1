@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_nick" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_50" android:layout_marginRight="@dimen/dimen_15">
+        <EditText android:textSize="@dimen/text_content" android:textColor="@color/text_dark" android:id="@+id/et_nick" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/common_button_height" android:hint="@string/my_max_nick" android:singleLine="true" android:maxLength="7"/>
+        <include layout="@layout/merge_divider"/>
+        <TextView android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/modify_nick_tip" android:lineSpacingExtra="@dimen/dimen_5"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_desc" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_15">
+        <EditText android:textSize="@dimen/text_sma" android:textColor="@color/text_dark" android:gravity="start" android:id="@+id/et_desc" android:background="@drawable/common_shape_stroke_corner5_divider" android:padding="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="140dp" android:hint="@string/user_no_signature" android:singleLine="true" android:maxLength="24"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_sma" android:textColor="#ff999ead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10"/>
+            <TextView android:textSize="@dimen/text_sma" android:textColor="#ff999ead" android:gravity="right" android:id="@+id/last_t" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="0/24"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/modify_signature_tip" android:lineSpacingExtra="@dimen/dimen_5"/>
+    </LinearLayout>
+    <TextView android:enabled="false" android:textSize="@dimen/text_item_title" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_confirm" android:background="@drawable/common_selector_solid_corner30_coloraccent" android:layout_width="match_parent" android:layout_height="@dimen/common_button_height" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_15" android:text="@string/bind_next"/>
+</LinearLayout>

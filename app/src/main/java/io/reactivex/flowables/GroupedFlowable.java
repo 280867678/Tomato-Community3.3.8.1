@@ -1,0 +1,10 @@
+package io.reactivex.flowables;
+
+import io.reactivex.Flowable;
+
+/* loaded from: classes4.dex */
+public abstract class GroupedFlowable<K, T> extends Flowable<T> {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public GroupedFlowable(K k) {
+    }
+}

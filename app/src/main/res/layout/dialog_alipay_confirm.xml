@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_middle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recharge_alipay_confirm"/>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10">
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_alipay_name"/>
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:id="@+id/tv_payee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp"/>
+        <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_copy" android:background="@drawable/shape_recharge_alipay_name_copy" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_18" android:layout_marginLeft="@dimen/dimen_12" android:text="@string/common_copy"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_footer_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#0dffffff" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="12sp" android:textColor="#ff666666" android:gravity="center_vertical" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="40dp" android:text="@string/fq_vip_dialog_bottom_tips"/>
+</LinearLayout>

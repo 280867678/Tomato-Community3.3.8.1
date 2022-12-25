@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/sign_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p002v4.widget.NestedScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dimen_80" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sign_image"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_14" android:nestedScrollingEnabled="false"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_24">
+                <RelativeLayout android:id="@+id/relate_no_sign" android:background="@drawable/sign_7" android:layout_width="match_parent" android:layout_height="106dp">
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_FC4C7B" android:id="@+id/text_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_34" android:layout_marginTop="@dimen/dimen_16" android:text="@string/sign_num_day"/>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@+id/image_7" android:layout_width="46dp" android:layout_height="46dp" android:src="@drawable/sign_jingyan"/>
+                        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_FC4C7B" android:id="@+id/text_give" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_toRightOf="@+id/image_7" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <ImageView android:id="@+id/image_signed_7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_signed" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relate_signed_7" android:background="@drawable/relate_signed_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="106dp">
+                    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@+id/text_signed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_text_signed" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@+id/button_sign" android:background="@drawable/common_selector_solid_corner5_color_ffcbcb" android:layout_width="match_parent" android:layout_height="41dp" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_24" android:text="@string/user_sgin"/>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:id="@+id/text_sign_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_24" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_24" android:layout_marginBottom="@dimen/dimen_60" android:lineSpacingExtra="@dimen/dimen_4"/>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+    <ImageView android:id="@+id/image_back" android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30" android:src="@drawable/icon_back_white"/>
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <com.tomatolive.library.p136ui.view.widget.titlebar.BGATitleBar android:id="@+id/tb_prepare_title_bar" style="@style/titleBar_style"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_content_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rl_top_tab_bg" android:background="@color/fq_color_transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/fq_shape_top_tag_gray_selector" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <TextView android:textSize="16sp" android:textColor="@color/fq_text_tag_color_selector" android:id="@+id/tv_charm_top" android:background="@drawable/fq_shape_top_tag_gray_selector" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fq_text_top_charm"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/fq_text_tag_color_selector" android:id="@+id/tv_strength_top" android:background="@drawable/fq_shape_top_tag_gray_selector" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fq_text_top_strength"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/rl_top_tab_bg">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="260dp">
+                        <TextView android:textSize="16sp" android:textColor="@color/fq_text_tag_color_selector" android:gravity="center" android:id="@+id/tv_day_top" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fq_top_day" android:drawablePadding="10dp" android:layout_weight="1"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/fq_text_tag_color_selector" android:gravity="center" android:id="@+id/tv_all_top" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fq_top_week" android:drawablePadding="10dp" android:layout_weight="1"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/fq_text_tag_color_selector" android:gravity="center" android:id="@+id/tv_month_top" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fq_top_month" android:drawablePadding="10dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@+id/v_divider" android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height"/>
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableAutoLoadMore="false" app:srlEnableLoadMore="false">
+                <com.scwang.smartrefresh.layout.header.ClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlAccentColor="#ffbdbdbd" app:srlClassicsSpinnerStyle="2" app:srlDrawableArrowSize="15dp" app:srlDrawableMarginRight="20dp" app:srlDrawableProgressSize="20dp" app:srlEnableLastTime="false" app:srlFinishDuration="500" app:srlPrimaryColor="@color/fq_colorWhite" app:srlTextFailed="@string/fq_srl_header_failed" app:srlTextFinish="@string/fq_srl_header_finish" app:srlTextLoading="@string/fq_srl_header_loading" app:srlTextPulling="@string/fq_srl_header_pulling" app:srlTextRefreshing="@string/fq_srl_header_refreshing" app:srlTextRelease="@string/fq_srl_header_release" app:srlTextSecondary="@string/fq_srl_header_secondary" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="@dimen/fq_smart_refresh_title_size" app:srlTextTimeMarginTop="2dp"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_empty_view" android:background="@color/fq_colorBgPrimary" android:paddingTop="50dp" android:paddingBottom="50dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <TextView android:textSize="16sp" android:textColor="@color/fq_text_gray" android:gravity="center_horizontal" android:id="@+id/tv_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_text_list_empty_waiting" android:drawableTop="@drawable/fq_ic_empty_top" android:drawablePadding="12dp"/>
+                        </LinearLayout>
+                        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/fq_colorWhite" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                    </FrameLayout>
+                    <RelativeLayout android:id="@+id/rl_bottom_top_bg" android:background="@color/fq_colorWhite" android:visibility="gone" android:layout_width="match_parent" android:layout_height="32dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/fq_top_yellow_color" android:id="@+id/tv_bottom_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/view_margin_10" android:text="@string/fq_top_show_all" android:drawableRight="@drawable/fq_ic_arrow_yellow" android:drawablePadding="3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:srlAccentColor="#ffbdbdbd" app:srlDrawableArrowSize="15dp" app:srlPrimaryColor="@color/fq_colorWhite" app:srlTextFailed="@string/fq_srl_footer_failed" app:srlTextFinish="@string/fq_srl_footer_finish" app:srlTextLoading="@string/fq_srl_footer_loading" app:srlTextNothing="@string/fq_srl_footer_nothing" app:srlTextPulling="@string/fq_srl_footer_pulling" app:srlTextRefreshing="@string/fq_srl_footer_refreshing" app:srlTextRelease="@string/fq_srl_footer_release" app:srlTextSizeTitle="@dimen/fq_smart_refresh_title_size"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+        <com.tomatolive.library.p136ui.view.widget.LoadingView android:layout_gravity="center" android:id="@+id/iv_loading" android:layout_width="48dp" android:layout_height="48dp"/>
+    </FrameLayout>
+</LinearLayout>

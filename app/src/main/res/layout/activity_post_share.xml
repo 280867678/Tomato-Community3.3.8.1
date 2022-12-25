@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/liner_screenshot" android:background="@drawable/shape_post_share_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relate_title" android:layout_width="match_parent" android:layout_height="@dimen/dimen_44" android:layout_marginTop="@dimen/dimen_30" android:layout_marginBottom="@dimen/dimen_25">
+        <ImageView android:id="@+id/image_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back_white" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_14"/>
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_detail_menu_share" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <android.support.p002v4.widget.NestedScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16">
+                <ImageView android:id="@+id/image_head_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_25" android:layout_marginBottom="@dimen/dimen_25" android:src="@drawable/post_share_image_bg"/>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/common_shape_solid_corner5_white" android:padding="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_head" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" app:riv_oval="true"/>
+                        <TextView android:textSize="@dimen/text_size_14" android:textStyle="bold" android:textColor="@color/text_dark" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/image_head" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_12"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:ellipsize="end" android:gravity="start|center_vertical" android:id="@+id/text_description" android:layout_width="match_parent" android:layout_height="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_8" android:lines="1"/>
+                    <RelativeLayout android:id="@+id/relate_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="182dp" android:layout_marginTop="@dimen/dimen_8">
+                        <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_video" android:layout_width="match_parent" android:layout_height="match_parent" app:riv_corner_radius="4dp"/>
+                        <ImageView android:layout_width="38dp" android:layout_height="38dp" android:src="@drawable/icon_new_post_play" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/relate_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="190dp" android:layout_marginTop="@dimen/dimen_8">
+                        <ImageView android:id="@+id/iv_single_image" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                        <android.support.p005v7.widget.RecyclerView android:id="@+id/head_gridView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+                        <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:id="@+id/tv_single_image" android:background="@color/black_50" android:paddingLeft="@dimen/dimen_3" android:paddingTop="@dimen/dimen_1" android:paddingRight="@dimen/dimen_4" android:paddingBottom="@dimen/dimen_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_read" android:visibility="gone" android:layout_width="match_parent" android:layout_height="182dp" android:layout_marginTop="@dimen/dimen_8" android:lines="10" android:lineSpacingExtra="@dimen/dimen_2"/>
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_FC4C7B" android:id="@+id/text_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24"/>
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:id="@+id/text_description1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_pic" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:src="@drawable/upgrade_arrow_right_app" app:riv_corner_radius="@dimen/dimen_4"/>
+                            <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/color_FC4C7B" android:id="@+id/text_tomato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="@dimen/dimen_3" android:text="@string/app_name" android:layout_toRightOf="@+id/image_pic"/>
+                            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_FC4C7B" android:id="@+id/text_yao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/image_pic" android:layout_below="@+id/text_tomato" android:layout_marginStart="@dimen/dimen_8"/>
+                        </RelativeLayout>
+                        <ImageView android:id="@+id/image_code" android:layout_width="@dimen/dimen_80" android:layout_height="@dimen/dimen_80" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/text_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/post_share_dec_10"/>
+            <RelativeLayout android:id="@+id/relate_save" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24" android:layout_marginBottom="@dimen/dimen_100" android:layout_marginStart="@dimen/dimen_16" android:layout_marginEnd="@dimen/dimen_16">
+                <Button android:textSize="@dimen/text_size_16" android:textColor="@color/color_FC4C7B" android:id="@+id/button_save" android:background="@drawable/common_shape_solid_corner30_white" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_32" android:text="@string/post_share_save_code" android:layout_centerVertical="true"/>
+                <Button android:textSize="@dimen/text_size_16" android:textColor="@color/color_FC4C7B" android:id="@+id/button_copy" android:background="@drawable/common_shape_solid_corner30_white" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_32" android:text="@string/post_share_copy_url" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>

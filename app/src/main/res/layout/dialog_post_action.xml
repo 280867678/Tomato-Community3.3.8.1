@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_first_menu" android:background="#d6ffffff" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_focus" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_focus_member"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_collect" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_collect"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_shield" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_shield"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_report" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_report"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/text_manage" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_manage"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_shield_menu" android:background="#d6ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_shield_user" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_shield_user"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_shield_detail" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_shield_detail"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_manage_menu" android:background="#d6ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_down_post" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_down_post"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_down_no_publish_post" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_down_bo_publish"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_down_black" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_down_balck"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ff007aff" android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/common_cancel"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

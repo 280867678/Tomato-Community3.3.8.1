@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="106dp" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_10">
+    <RelativeLayout android:id="@+id/relate_no_sign" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sign_no_bg" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/color_FC4C7B" android:id="@+id/text_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/image_vip" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:layout_marginTop="@dimen/dimen_4" android:src="@drawable/sign_jingyan" android:layout_below="@+id/text_day" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/color_FC4C7B" android:id="@+id/text_give_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:layout_below="@+id/image_vip" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/image_signed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_signed" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_signed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sign_yes_bg" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@+id/text_signed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_text_signed" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

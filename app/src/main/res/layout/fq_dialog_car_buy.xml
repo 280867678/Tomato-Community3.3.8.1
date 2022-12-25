@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/fq_shape_dialog_white_corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_img" android:layout_width="match_parent" android:layout_height="230dp"/>
+    <com.opensource.svgaplayer.SVGAImageView android:id="@+id/iv_anim" android:layout_width="match_parent" android:layout_height="300dp"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="13dp" android:paddingTop="11dp" android:paddingRight="13dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/iv_img">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+            <TextView android:textSize="10sp" android:textColor="@color/fq_text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_car_buy_tips" android:layout_toRightOf="@+id/tv_name" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_price_7_bg" android:background="@drawable/fq_shape_money_selected_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_tag_color_selector" android:id="@+id/tv_price_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_tag_color_selector" android:id="@+id/tv_time_7" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_price_30_bg" android:background="@drawable/fq_shape_money_selected_selector" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_weight="1">
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray_red_color_selector" android:id="@+id/tv_price_30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray_black_color_selector" android:id="@+id/tv_time_30" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+            <TextView android:textSize="12sp" android:textColor="#ff666666" android:id="@+id/tv_current_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/fq_current_balance"/>
+            <TextView android:textSize="14sp" android:textColor="@color/fq_colorPrimary" android:id="@+id/tv_buy_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_current_balance"/>
+            <TextView android:textSize="16sp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:id="@+id/tv_now_buy" android:background="@drawable/fq_btn_car_buy_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="110dp" android:minHeight="38dp" android:text="@string/fq_now_buy" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

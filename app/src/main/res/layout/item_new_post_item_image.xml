@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/relative_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/new_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" android:transitionName="shareView"/>
+        <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_centerInParent="true" android:indeterminateTint="@color/white" style="?android:attr/progressBarStyleLarge"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/relate_image_layer" android:background="@color/white_20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:visibility="visible" android:layout_width="@dimen/dimen_36" android:layout_height="@dimen/dimen_36" android:src="@drawable/post_image_reward" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/text_show_long" android:background="@drawable/common_shape_solid_corner12_black_alpha_50" android:paddingLeft="@dimen/dimen_8" android:paddingTop="@dimen/dimen_4" android:paddingRight="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/post_img_long"/>
+</FrameLayout>

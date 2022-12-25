@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <include layout="@layout/fq_include_divider_view"/>
+    <RelativeLayout android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_auth_logo" android:layout_width="163dp" android:layout_height="124dp" android:layout_marginTop="30dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/text_size_small" android:textColor="#cab2b0" android:id="@+id/tv_result_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/fq_complete_identy" android:layout_below="@+id/iv_auth_logo" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="18sp" android:textColor="#2a0202" android:gravity="center" android:id="@+id/tv_fail_info" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/fq_wait_identy" android:layout_below="@+id/tv_result_info" android:layout_centerHorizontal="true" android:layout_marginStart="26dp" android:layout_marginEnd="26dp"/>
+        <TextView android:textSize="14sp" android:textColor="#2a0202" android:gravity="center" android:id="@+id/tv_download_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fq_auth_helper_download_tips" android:layout_below="@+id/tv_fail_info" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2"/>
+        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_text_gray_dark" android:gravity="center" android:id="@+id/tv_re_auth" android:background="@drawable/fq_re_identy_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:minWidth="96dp" android:minHeight="36dp" android:text="@string/fq_re_identy" android:layout_below="@+id/tv_fail_info" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:id="@+id/tv_start_live" android:background="@drawable/fq_btn_start_live_selector_2" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="25dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/fq_download_start_live" android:layout_above="@+id/ll_contact_bg" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_contact_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="36dp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#ebdcdc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerVertical="true" android:layout_marginStart="25dp" android:layout_marginEnd="25dp"/>
+                <RelativeLayout android:background="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:paddingStart="36dp" android:paddingEnd="36dp">
+                    <TextView android:textSize="14sp" android:textColor="#cab2b0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_contact_customer_service"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_contact_item_bg_1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp">
+                    <ImageView android:id="@+id/iv_contact_logo" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="25dp"/>
+                    <TextView android:textSize="14sp" android:textColor="#cab2b0" android:gravity="center" android:id="@+id/tv_contact_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_contact_item_bg_2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:layout_marginEnd="8dp">
+                    <ImageView android:id="@+id/iv_contact_logo_2" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="25dp"/>
+                    <TextView android:textSize="14sp" android:textColor="#cab2b0" android:gravity="center" android:id="@+id/tv_contact_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_contact_item_bg_3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp">
+                    <ImageView android:id="@+id/iv_contact_logo_3" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="25dp"/>
+                    <TextView android:textSize="14sp" android:textColor="#cab2b0" android:gravity="center" android:id="@+id/tv_contact_title_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

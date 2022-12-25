@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <ScrollView android:id="@+id/scrollView" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_14" android:layout_marginRight="@dimen/margin_14">
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_margin_16" android:text="@string/circle_notice_subtitle"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_999ead" android:id="@+id/tv_circle_notice_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_margin_16"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_marginTop="@dimen/view_margin_16"/>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_middle" android:gravity="right" android:id="@+id/tv_circle_notice_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_margin_16"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.tomatolive.library.p136ui.view.widget.LoadingView android:layout_gravity="center" android:id="@+id/iv_loading" android:layout_width="48dp" android:layout_height="48dp"/>
+</FrameLayout>

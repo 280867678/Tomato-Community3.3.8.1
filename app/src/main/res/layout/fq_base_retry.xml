@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/fl_retry_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:theme="@style/Theme.AppCompat.Light">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/fq_text_gray_dark" android:gravity="center" android:id="@+id/tv_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="8dp" android:text="@string/fq_network_something_went_wrong" android:drawableTop="@drawable/fq_ic_placeholder_empty_logo" android:drawablePadding="12dp"/>
+        <TextView android:textColor="@color/fq_colorWhite" android:gravity="center" android:id="@+id/tv_btn_reload" android:background="@drawable/fq_btn_attention_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minWidth="160dp" android:minHeight="42dp" android:text="@string/fq_reload"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="banned_text">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1个小时</item>
+        <item>8个小时</item>
+        <item>1天</item>
+        <item>3天</item>
+        <item>7天</item>
+        <item>30天</item>
+    </array>
+    <array name="fq_search_tab_menu">
+        <item>すべて</item>
+        <item>キャスター</item>
+        <item>ライブ</item>
+    </array>
+    <array name="live_more_menu_title">
+        <item>美化</item>
+        <item>マイク</item>
+        <item>フラッシュ</item>
+        <item>大字幕</item>
+        <item>ミラーリング</item>
+        <item>発言設定</item>
+        <item>テーマ修正</item>
+        <item>贴片控件</item>
+        <item>屏蔽小礼物</item>
+        <item>人气卡</item>
+        <item>付费设置</item>
+    </array>
+    <array name="phone_country_code_key">
+        <item>82</item>
+        <item>86</item>
+        <item>81</item>
+        <item>66</item>
+        <item>1</item>
+    </array>
+    <array name="phone_country_code_value">
+        <item>韓国（+82）</item>
+        <item>中国（+86）</item>
+        <item>日本（+81）</item>
+        <item>タイ（+66）</item>
+        <item>アメリカ（+1）</item>
+    </array>
+    <array name="take_photo_text">
+        <item>撮影</item>
+        <item>ローカル取得</item>
+    </array>
+</resources>

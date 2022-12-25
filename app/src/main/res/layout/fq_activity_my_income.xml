@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <TextView android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="可兑换收益"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="23sp" android:textColor="@color/fq_colorPrimary" android:id="@+id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="0"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_tomato_money_str"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:id="@+id/tv_convert" android:background="@drawable/fq_btn_attention_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_marginTop="70dp" android:layout_marginRight="70dp" android:minHeight="45dp" android:text="@string/fq_my_live_convert"/>
+    <TextView android:textSize="16sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:id="@+id/tv_withdraw" android:background="@drawable/fq_btn_attention_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_marginTop="20dp" android:layout_marginRight="70dp" android:minHeight="45dp" android:text="@string/fq_my_live_withdraw"/>
+</LinearLayout>

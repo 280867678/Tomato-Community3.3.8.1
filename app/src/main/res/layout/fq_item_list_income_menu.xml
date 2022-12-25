@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="20dp" android:paddingRight="13dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_logo" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginRight="12dp"/>
+        <TextView android:textColor="@color/fq_text_black" android:id="@+id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14sp" android:layout_toLeftOf="@+id/tv_total" android:layout_toRightOf="@+id/iv_logo" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@color/fq_text_black" android:id="@+id/tv_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14sp" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height"/>
+</LinearLayout>

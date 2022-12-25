@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.one.tomato.thirdpart.emotion.PapaKeyboard xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/papa_keyboard" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/tv_place" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_video_comment_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+            <TextView android:textSize="@dimen/text_sma" android:textColor="#ff7c7e86" android:layout_gravity="center_horizontal" android:id="@+id/tv_comment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/video_comment_num"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_10" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.one.tomato.thirdpart.emotion.PapaKeyboard>

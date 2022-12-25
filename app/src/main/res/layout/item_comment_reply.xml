@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/color_f5f5f7" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_6">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/dimen_14" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_head" android:layout_width="@dimen/dimen_34" android:layout_height="@dimen/dimen_34" android:src="@drawable/default_img_head" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_toRightOf="@+id/iv_head">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_999ead" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_light" android:id="@+id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/red_ff5252" android:gravity="center" android:id="@+id/text_response" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:lines="1" android:singleLine="true" android:drawablePadding="@dimen/dimen_4" android:drawableStart="@drawable/icon_response"/>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:id="@+id/text_response_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:lines="2" android:singleLine="true"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_FAFAFF" android:paddingTop="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8">
+            <RelativeLayout android:paddingLeft="@dimen/dimen_8" android:paddingRight="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/text_dark" android:id="@+id/text_my_response_head" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_999ead" android:id="@+id/text_my_response" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_2" android:layout_toRightOf="@+id/text_my_response_head"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/relate_content" android:paddingLeft="@dimen/dimen_8" android:paddingRight="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_2">
+                <RelativeLayout android:id="@+id/relate" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                    <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_head" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:riv_border_color="@color/white" app:riv_border_width="@dimen/dimen_1" app:riv_corner_radius_bottom_left="@dimen/dimen_6" app:riv_corner_radius_top_left="@dimen/dimen_6" app:riv_mutate_background="true"/>
+                    <ImageView android:id="@+id/image_show_video" android:layout_width="@dimen/dimen_14" android:layout_height="@dimen/dimen_14" android:layout_marginRight="@dimen/dimen_2" android:layout_marginBottom="@dimen/dimen_2" android:src="@drawable/icon_post_image_video" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_light" android:id="@+id/text_content_duanwen" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:lines="2" android:singleLine="true" android:layout_toRightOf="@+id/relate" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

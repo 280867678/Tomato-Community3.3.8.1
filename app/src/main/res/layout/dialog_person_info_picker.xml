@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/common_item_height">
+            <TextView android:textSize="@dimen/text_subtitle" android:textStyle="bold" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_type" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/tv_confirm" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_confirm" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_date_pick" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

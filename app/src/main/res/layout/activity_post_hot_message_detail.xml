@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/post_hot_message_detail_bg" android:paddingTop="@dimen/dimen_40" android:layout_width="match_parent" android:layout_height="144dp">
+        <ImageView android:id="@+id/image_back" android:background="@drawable/icon_back_white" android:padding="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14"/>
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/text_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:lines="2" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

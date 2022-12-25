@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingTop="40dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_gray_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/fq_no_attention_tips" android:drawableTop="@drawable/fq_ic_placeholder_empty_logo"/>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_colorGray52" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_show_like_anchor_tips"/>
+    </LinearLayout>
+    <View android:background="@color/fq_colorBgPrimary" android:layout_width="match_parent" android:layout_height="5dp"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_colorBlack" android:gravity="center_vertical" android:id="@+id/tv_your_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/fq_your_recommend" android:drawableLeft="@drawable/fq_ic_recommend" android:drawablePadding="5dp"/>
+    </LinearLayout>
+</LinearLayout>

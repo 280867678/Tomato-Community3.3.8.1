@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/publish_post_dialog_bg" android:paddingLeft="@dimen/dimen_32" android:paddingTop="@dimen/dimen_24" android:paddingRight="@dimen/dimen_32" android:paddingBottom="@dimen/dimen_24" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/text_dark" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/publish_post_dialog_title"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_50">
+        <RelativeLayout android:id="@+id/relate_video" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/image_1" android:layout_width="@dimen/dimen_64" android:layout_height="@dimen/dimen_64" android:src="@drawable/post_video" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/circle_post_video" android:layout_below="@+id/image_1" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relate_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/image_2" android:layout_width="@dimen/dimen_64" android:layout_height="@dimen/dimen_64" android:src="@drawable/post_image" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/circle_post_img" android:layout_below="@+id/image_2" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relate_read" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/image_3" android:layout_width="@dimen/dimen_64" android:layout_height="@dimen/dimen_64" android:src="@drawable/post_text" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="@string/circle_post_read" android:layout_below="@+id/image_3" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/image_close" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_50" android:src="@drawable/post_search_delete" android:scaleType="fitXY"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_virtual_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_969696" android:id="@+id/tv_virtual_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_save_need_potato_label" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_969696" android:id="@+id/tv_virtual_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:layout_below="@+id/tv_virtual_tip" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_20" android:layout_below="@+id/tv_virtual_currency" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_content" android:textColor="@color/disable" android:gravity="center" android:id="@+id/tv_currency_download" android:background="@drawable/common_shape_stroke_corner30_white_divider" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="@dimen/dimen_16" android:minWidth="100dp"/>
+            <TextView android:textSize="@dimen/text_content" android:textColor="@color/disable" android:gravity="center" android:id="@+id/tv_open_vip" android:background="@drawable/common_shape_stroke_corner30_white_divider" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="@dimen/dimen_16" android:minWidth="100dp" android:text="@string/video_save_vip_free"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

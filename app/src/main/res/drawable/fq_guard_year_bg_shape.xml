@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/fq_chat_msg_bg_radius"/>
+    <gradient android:startColor="#665a00a6" android:endColor="#66fb44fd" android:angle="0"/>
+    <padding android:left="@dimen/fq_user_grade_bg_padding_left" android:top="4dp" android:right="@dimen/fq_user_grade_bg_padding_right" android:bottom="4dp"/>
+</shape>

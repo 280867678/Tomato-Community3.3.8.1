@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/x6" android:layout_width="@dimen/x170" android:layout_height="@dimen/x170">
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@+id/effect_recycler_img" android:padding="@dimen/x6" android:layout_width="@dimen/x140" android:layout_height="@dimen/x140" app:civ_border_width="0dp"/>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:id="@+id/tv_lottery_tips" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="12sp" android:textColor="#ff886f9e" android:id="@+id/tv_lottery_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    <FrameLayout android:gravity="center_vertical" android:background="@drawable/fq_shape_lottery_record_prize_bg" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/tv_lottery_tips">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycle_prize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        <TextView android:textSize="12sp" android:textColor="#ff886f9e" android:gravity="center" android:id="@+id/tv_not_won" android:paddingLeft="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32dp" android:text="@string/fq_lottery_not_won"/>
+    </FrameLayout>
+</RelativeLayout>

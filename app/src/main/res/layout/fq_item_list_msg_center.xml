@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/fq_colorWhite" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_msg_list_avatar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp">
+            <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_msg_list_name" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+            <TextView android:textSize="12sp" android:textColor="@color/fq_msg_C7C7C7" android:id="@+id/tv_msg_list_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_achieve_gray_878787" android:id="@+id/tv_msg_list_pre" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

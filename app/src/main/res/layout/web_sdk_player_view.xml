@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/surface_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/thumb" android:visibility="visible" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true"/>
+    <RelativeLayout android:id="@+id/layout_root_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_play_logo" android:visibility="gone" android:layout_width="80dp" android:layout_height="24dp" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/layout_top" android:visibility="visible" android:layout_width="match_parent" android:layout_height="48dp">
+                <ImageView android:id="@+id/back" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:src="@mipmap/video_back" android:scaleType="centerInside" android:layout_weight="1"/>
+                <TextView android:textSize="18sp" android:textColor="@android:color/white" android:id="@+id/title" android:paddingLeft="10dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                <ImageView android:id="@+id/iv_player_setting" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="8dp" android:src="@mipmap/icon_player_more" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@+id/start" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp" android:layout_centerInParent="true"/>
+    <com.gen.p059mh.webapp_extensions.views.SeekOrBackButton android:id="@+id/iv_player_back_to" android:visibility="gone" android:layout_width="50dp" android:layout_height="20dp" android:layout_marginRight="40dp" android:layout_toLeftOf="@+id/loading" android:layout_centerVertical="true" app:is_mirror="true" app:resource="@mipmap/tri" app:times="3"/>
+    <com.gen.p059mh.webapp_extensions.views.player.PlayerLoadingView android:layout_gravity="center" android:id="@+id/loading" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerInParent="true" app:SpinKit_Color="#ffffff" style="@style/SpinKitView.Small.FadingCircle"/>
+    <com.gen.p059mh.webapp_extensions.views.SeekOrBackButton android:id="@+id/iv_player_seek_to" android:visibility="gone" android:layout_width="50dp" android:layout_height="20dp" android:layout_marginLeft="40dp" android:layout_toRightOf="@+id/loading" android:layout_centerVertical="true" app:is_mirror="false" app:resource="@mipmap/tri" app:times="3"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/layout_bottom" android:background="@drawable/bottom_commmon_player_view_bg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10dp" android:textColor="#ffffff" android:id="@+id/current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="00:00"/>
+            <SeekBar android:layout_gravity="center_vertical" android:id="@+id/progress" android:background="@null" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progressDrawable="@drawable/common_video_seek_propress" android:minHeight="0.5dp" android:thumb="@drawable/common_video_seek_thumb" android:layout_weight="1"/>
+            <TextView android:textSize="10dp" android:textColor="#ffffff" android:id="@+id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="00:00"/>
+            <ImageView android:id="@+id/fullscreen" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="8dp" android:src="@mipmap/play_ic_screen_full"/>
+        </LinearLayout>
+    </LinearLayout>
+    <moe.codeest.enviews.ENPlayView android:layout_gravity="center_vertical" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <com.gen.p059mh.webapp_extensions.views.player.PlayerDialogFrameLayout android:orientation="vertical" android:id="@+id/player_dialog_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_player_error" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/play_fail" android:drawableLeft="@mipmap/icon_player_unable" android:drawablePadding="5dp"/>
+            <TextView android:textSize="14dp" android:textColor="#000000" android:gravity="center" android:id="@+id/tv_player_error_re_try" android:background="@drawable/web_sdk_player_error_retry_bg" android:layout_width="120dp" android:layout_height="36dp" android:layout_marginTop="25dp" android:text="@string/click_reload"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="right" android:id="@+id/fullscreen_2" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="28dp" android:layout_marginBottom="28dp" android:src="@mipmap/icon_player_closefull" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</RelativeLayout>

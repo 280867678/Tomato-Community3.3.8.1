@@ -1,0 +1,65 @@
+package com.tomatolive.library.model;
+
+import java.util.List;
+
+/* loaded from: classes3.dex */
+public class SendMessageEntity {
+    public String action;
+    public String anchorId;
+    public String anchorName;
+    public String appId;
+    public String avatar;
+    public String banPostAllStatus;
+    public String banPostStatus;
+    public String boxType;
+    public String carIcon;
+    public String carId;
+    public String carName;
+    public String carOnlineUrl;
+    public String carResUrl;
+    public String changeType;
+    public String changeValue;
+    public String clientIp;
+    public String content;
+    public String count;
+    public String createTime;
+    public String duration;
+    public String effectType;
+    public String enterType;
+    public String expGrade;
+    public String followStatus;
+    public String giftBoxUniqueCode;
+    public String giftCostType;
+    public String giftName;
+    public String giftNum;
+    public String goOutStatus;
+    public String guardType;
+    public String isPlayCarAnim;
+    public String isReconnect;
+    public String isStarGift;
+    public String liveCount;
+    public String liveId;
+    public String markId;
+    public String messageId;
+    public List<String> messageIdList;
+    public String offlineFlag;
+    public String openDanmu;
+    public String openNobilityDanmu;
+    public String postIntervalTimes;
+    public String price;
+    public String privateMsg;
+    public String propId;
+    public String recipientId;
+    public String role;
+    public String senderId;
+    public String sex;
+    public String shieldStatus;
+    public String status;
+    public String targetId;
+    public String targetName;
+    public String type;
+    public String typeMsg;
+    public String userId;
+    public String userName;
+    public String uuid;
+}

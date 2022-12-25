@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/rl_root" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/fq_achieve_gray_d3d3d3" android:id="@+id/tv_empty_wear_medal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_achieve_no_wear"/>
+    <ImageView android:id="@+id/iv_achieve_wear_speak_medal" android:layout_width="64dp" android:layout_height="64dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_achieve_gray_131313" android:id="@+id/tv_medal_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+    <TextView android:textSize="10sp" android:textColor="@color/fq_achieve_gray_878787" android:id="@+id/tv_medal_endTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

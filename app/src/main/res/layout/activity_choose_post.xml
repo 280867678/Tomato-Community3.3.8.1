@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/image_back" android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back_black"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_choose_next" android:layout_centerInParent="true"/>
+            <TextView android:id="@+id/text_next" android:padding="@dimen/dimen_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_next_step" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

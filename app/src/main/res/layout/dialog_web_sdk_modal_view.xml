@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.gen.p059mh.webapps.views.DefaultWebView android:id="@+id/web_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.gen.p059mh.webapp_extensions.views.player.PlayerLoadingView android:layout_gravity="center" android:id="@+id/loading" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerInParent="true" app:SpinKit_Color="#ffc933" style="@style/SpinKitView.Small.FadingCircle"/>
+</RelativeLayout>

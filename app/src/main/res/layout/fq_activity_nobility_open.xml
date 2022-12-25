@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ff101010" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <com.tomatolive.library.p136ui.view.widget.titlebar.BGATitleBar android:id="@+id/tb_prepare_title_bar" app:bgatitlebar_titleTextColor="@color/fq_nobility_tab_selected" style="@style/titleBar_style"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/magic_indicator" android:background="#ff101010" android:layout_width="match_parent" android:layout_height="48dp"/>
+            <android.support.p002v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

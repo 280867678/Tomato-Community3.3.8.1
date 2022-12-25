@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/fq_week_star_current_week_contest" android:drawableLeft="@drawable/fq_ic_week_star_rank_trophy" android:drawablePadding="3dp" android:layout_weight="1"/>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:gravity="center_vertical" android:id="@+id/tv_week_star_rule_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_week_star_rule_desc" android:drawableRight="@drawable/fq_ic_week_star_rank_help" android:drawablePadding="5dp"/>
+    </LinearLayout>
+    <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/magic_indicator_contest" android:background="@color/fq_week_star_gift_tab_normal" android:layout_width="match_parent" android:layout_height="30dp"/>
+    <com.tomatolive.library.p136ui.view.widget.WrapContentHeightViewPager android:id="@+id/view_pager_contest" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="180dp" android:overScrollMode="never"/>
+</LinearLayout>

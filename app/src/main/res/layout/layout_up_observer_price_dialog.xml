@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/dimen_24" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/up_observer_set_price_tip" android:layout_centerVertical="true"/>
+        <CheckBox android:id="@+id/checkbox_subscribe" android:background="@null" android:padding="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/up_set_observer_price_check" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_32">
+        <EditText android:theme="@style/UpObserverPriceEdit" android:textSize="@dimen/text_size_16" android:textColor="@color/color_9C9BAD" android:gravity="start|center_vertical" android:id="@+id/edit_month" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.3" android:inputType="number"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/up_observer_yuan" android:layout_weight="0.7"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24">
+        <EditText android:theme="@style/UpObserverPriceEdit" android:textSize="@dimen/text_size_16" android:textColor="@color/color_9C9BAD" android:gravity="start|center_vertical" android:id="@+id/edit_quarterly" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.3" android:inputType="number"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/up_observer_season" android:layout_weight="0.7"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24">
+        <EditText android:theme="@style/UpObserverPriceEdit" android:textSize="@dimen/text_size_16" android:textColor="@color/color_9C9BAD" android:gravity="start|center_vertical" android:id="@+id/edit_year" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="0.3" android:inputType="number"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/up_observer_year" android:layout_weight="0.7"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_light" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24" android:text="@string/up_observer_dialog_tip"/>
+    <Button android:textColor="@color/white" android:id="@+id/button" android:background="@drawable/common_selector_solid_corner5_coloraccent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_marginTop="@dimen/dimen_16" android:text="@string/common_confirm"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" android:useLevel="false">
+    <gradient android:startColor="#ffeba7a7" android:endColor="#ffe3b6b6" android:angle="270" android:centerColor="#ff836a70"/>
+    <size android:height="@dimen/fq_nobility_avatar_bg_size" android:width="@dimen/fq_nobility_avatar_bg_size"/>
+</shape>

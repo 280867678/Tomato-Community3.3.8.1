@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+            <solid android:color="#0d960606"/>
+            <corners android:radius="@dimen/fq_lottery_shape_radius_21"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+            <solid android:color="#10960606"/>
+            <corners android:radius="@dimen/fq_lottery_shape_radius_21"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+            <solid android:color="#15960606"/>
+            <corners android:radius="@dimen/fq_lottery_shape_radius_21"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+            <solid android:color="#20960606"/>
+            <corners android:radius="@dimen/fq_lottery_shape_radius_21"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+            <solid android:color="#30960606"/>
+            <corners android:radius="@dimen/fq_lottery_shape_radius_21"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:startColor="#fffff08e" android:endColor="#ffffab0a" android:angle="270"/>
+            <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+        </shape>
+    </item>
+</layer-list>

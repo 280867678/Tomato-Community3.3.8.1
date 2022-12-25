@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <include layout="@layout/fq_include_divider_view"/>
+    <ProgressBar android:id="@+id/pb" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progressDrawable="@drawable/fq_pb_bg" style="?android:attr/progressBarStyleHorizontal"/>
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/fq_base_retry"/>
+    </FrameLayout>
+</LinearLayout>

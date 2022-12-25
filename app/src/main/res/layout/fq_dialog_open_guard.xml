@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="160dp">
+            <ImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="160dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_guard_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/view_margin_10" android:layout_marginTop="@dimen/view_margin_10" android:text="@string/fq_guard_rule" android:drawableLeft="@drawable/fq_ic_guard_help" android:drawablePadding="5dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/fq_colorWhite" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_margin_10" android:layout_marginRight="@dimen/view_margin_10" android:text="@string/fq_guard_ta" android:drawableRight="@drawable/fq_ic_guard_arrow_white" android:drawablePadding="5dp" android:layout_alignParentRight="true"/>
+            <FrameLayout android:id="@+id/rl_avatar_bg" android:layout_width="@dimen/fq_guard_avatar_bg_size" android:layout_height="@dimen/fq_guard_avatar_bg_size" android:layout_marginTop="25dp" android:layout_centerHorizontal="true">
+                <FrameLayout android:id="@+id/fl_avatar_bg" android:background="@drawable/fq_shape_guard_avatar_bg_circle_1" android:layout_width="@dimen/fq_guard_avatar_bg_size" android:layout_height="@dimen/fq_guard_avatar_bg_size" android:layout_marginRight="10dp" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_avatar" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/fq_ic_guard_def_avatar"/>
+                </FrameLayout>
+                <ImageView android:layout_gravity="right" android:id="@+id/iv_guard_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_live_msg_mouth_guard"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <com.tomatolive.library.p136ui.view.custom.GuardChangeTitleView android:id="@+id/tv_week" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.tomatolive.library.p136ui.view.custom.GuardChangeTitleView android:id="@+id/tv_month" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <com.tomatolive.library.p136ui.view.custom.GuardChangeTitleView android:id="@+id/tv_year" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:text="@string/fq_guard_open_tips"/>
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:fillViewport="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_identity" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/fq_guard_identity" android:drawableTop="@drawable/fq_ic_guard_identity_icon" android:drawablePadding="15dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_join" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/fq_guard_join" android:drawableTop="@drawable/fq_ic_guard_join_icon" android:drawablePadding="15dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_guard_chat_bg" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/fq_chat_bg" android:drawableTop="@drawable/fq_ic_guard_bubble" android:drawablePadding="15dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_privilege" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/fq_guard_privilege" android:drawableTop="@drawable/fq_icon_guard_privilege_selector" android:drawablePadding="15dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_gift" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/fq_guard_gift" android:drawableTop="@drawable/fq_ic_guard_gift_icon" android:drawablePadding="15dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <include layout="@layout/fq_include_divider_view"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_money" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_open" android:background="@drawable/fq_blue_shape_guard_open" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_guard_open"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

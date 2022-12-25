@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/fq_ic_lottery_compose_suc_bg" android:layout_centerInParent="true"/>
+    <com.opensource.svgaplayer.SVGAImageView android:id="@+id/iv_svga" android:visibility="invisible" android:layout_width="220dp" android:layout_height="220dp" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/iv_gift_icon" android:layout_width="200dp" android:layout_height="200dp" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/iv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90dp" android:src="@drawable/fq_ic_lottery_compose_word" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="16sp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:id="@+id/tv_start" android:background="@drawable/fq_shape_red_yellow_corner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:minWidth="136dp" android:minHeight="42dp" android:text="@string/good_well" android:layout_below="@+id/iv_bg" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

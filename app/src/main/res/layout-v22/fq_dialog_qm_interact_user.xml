@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="375dp" android:layout_marginTop="60dp">
+        <ImageView android:id="@+id/iv_dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_qm_dialog_bg" android:scaleType="centerCrop"/>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:id="@+id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/fq_qm_more" android:layout_marginStart="12dp"/>
+        <RelativeLayout android:background="@drawable/fq_qm_white_shadow_bg" android:layout_width="match_parent" android:layout_height="340dp" android:layout_marginLeft="10dp" android:layout_marginTop="25dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_marginHorizontal="10dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_task_send_bg" android:paddingLeft="14dp" android:paddingTop="12dp" android:paddingRight="14dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="14dp" android:paddingVertical="12dp">
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/fq_text_black" android:gravity="center_vertical" android:id="@+id/tv_task_title" android:layout_width="wrap_content" android:layout_height="24dp" android:text="@string/fq_qm_task"/>
+                    <RelativeLayout android:id="@+id/rl_task_name_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:layout_toEndOf="@+id/tv_task_title">
+                        <EditText android:textSize="14dp" android:textColor="@color/fq_text_black" android:textColorHint="@color/fq_qm_gray_tips" android:gravity="center_vertical" android:id="@+id/et_task_name" android:background="@null" android:layout_width="match_parent" android:layout_height="24dp" android:hint="@string/fq_qm_task_empty_tips_2" android:singleLine="true" android:maxLength="15" android:layout_centerVertical="true" android:textCursorDrawable="@drawable/fq_cursor"/>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_tag_select_bg" android:background="@drawable/fq_qm_tag_selected_frame" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_centerVertical="true" android:paddingHorizontal="8dp">
+                            <TextView android:textSize="12dp" android:textColor="@color/fq_qm_primary" android:id="@+id/tv_task_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <ImageView android:id="@+id/iv_tag_close" android:layout_width="10dp" android:layout_height="10dp" android:src="@drawable/fq_ic_qm_task_close" android:layout_marginStart="3dp"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <View android:background="@color/fq_qm_gray_frame" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/rl_task_name_bg" android:layout_toEndOf="@+id/tv_task_title"/>
+                </RelativeLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="114dp" android:layout_marginTop="10dp">
+                    <RelativeLayout android:id="@+id/rl_task_tag_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="12dp" android:textColor="@color/fq_qm_gray_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_qm_recommend"/>
+                        <TextView android:textSize="12dp" android:textColor="#696969" android:id="@+id/tv_task_change" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_qm_task_change" android:drawableRight="@drawable/fq_ic_qm_task_change" android:drawablePadding="5dp" android:layout_alignParentRight="true"/>
+                        <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_task_tag_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp" android:layout_below="@+id/tv_task_change" android:overScrollMode="never"/>
+                    </RelativeLayout>
+                    <FrameLayout android:id="@+id/fl_task_tag_empty" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <ImageView android:id="@+id/iv_task_tag_empty" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                        <TextView android:textSize="12dp" android:textColor="@color/fq_text_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/fq_qm_task_tag_empty_tips_3" android:lineSpacingExtra="2dp" android:lineSpacingMultiplier="1.2"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/fq_qm_gift_setup"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <TextView android:textSize="12dp" android:textColor="@color/fq_qm_primary" android:textColorHint="@color/fq_qm_gray_tips" android:gravity="center" android:id="@+id/tv_gift_name" android:background="@drawable/fq_qm_tag_selector" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/fq_qm_gift_empty_tips" android:layout_weight="1" android:paddingVertical="5dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="x" android:layout_marginHorizontal="6dp"/>
+                    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <EditText android:textSize="12dp" android:textColor="@color/fq_text_black" android:textColorHint="@color/fq_qm_gray_tips" android:gravity="center" android:id="@+id/et_gift_num" android:background="@drawable/fq_qm_tag_selector" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/fq_qm_gift_num_empty_tips" android:inputType="number" android:textCursorDrawable="@drawable/fq_cursor" android:paddingHorizontal="16dp" android:paddingVertical="5dp"/>
+                        <ImageView android:id="@+id/iv_gift_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_qm_gift_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_gift_price_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                <TextView android:textSize="14dp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_send_invitation" android:background="@drawable/fq_qm_primary_btn_selector" android:paddingLeft="16dp" android:paddingTop="9dp" android:paddingRight="16dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:minWidth="130dp" android:text="@string/fq_qm_send_invitation" android:paddingHorizontal="16dp" android:paddingVertical="9dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_tab_record_bg" android:paddingTop="12dp" android:paddingBottom="12dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingVertical="12dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                    <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_achieve_back_black" android:layout_centerVertical="true" android:layout_marginStart="10dp"/>
+                    <TextView android:textSize="14dp" android:textColor="@color/fq_text_black" android:id="@+id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_gift_list" android:visibility="invisible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_desc_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                            <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_record_list" android:visibility="invisible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                            <com.tomatolive.library.p136ui.view.widget.Html5WebView android:id="@+id/web_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </FrameLayout>
+                        <TextView android:textSize="14dp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_now_practice" android:background="@drawable/fq_qm_primary_btn_selector" android:paddingLeft="16dp" android:paddingTop="9dp" android:paddingRight="16dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="4dp" android:minWidth="130dp" android:text="@string/fq_qm_now_practice" android:paddingHorizontal="16dp" android:paddingVertical="9dp"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="88dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:src="@drawable/fq_ic_qm_title" android:scaleType="fitCenter" android:layout_marginHorizontal="16dp"/>
+    <ImageView android:id="@+id/iv_dialog_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_qm_dialog_close" android:layout_alignParentRight="true"/>
+</RelativeLayout>

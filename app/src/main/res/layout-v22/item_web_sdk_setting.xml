@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="12dp">
+    <ImageView android:id="@+id/iv_video_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_player_pop_check"/>
+    <TextView android:textSize="16sp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/tv_video_data" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="24dp" android:text="1.0倍" android:layout_weight="1"/>
+</LinearLayout>

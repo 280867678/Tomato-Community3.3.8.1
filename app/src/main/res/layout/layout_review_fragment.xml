@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/relate_head" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.one.tomato.mvp.p080ui.post.item.ReviewWGItemView android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@+id/button" android:background="@drawable/common_shape_solid_corner5_coloraccent" android:visibility="gone" android:layout_width="@dimen/dimen_216" android:layout_height="@dimen/dimen_44" android:layout_marginBottom="@dimen/dimen_30" android:text="@string/post_start_review" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

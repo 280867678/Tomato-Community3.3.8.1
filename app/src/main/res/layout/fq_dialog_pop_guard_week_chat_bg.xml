@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p005v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:cardCornerRadius="8dp" app:cardElevation="4dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="@dimen/fq_guard_tips_pop_max_width" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_chat_bg"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fq_guard_own_chat_bg"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="@drawable/fq_ic_guard_bubble_month_tips"/>
+    </LinearLayout>
+</android.support.p005v7.widget.CardView>

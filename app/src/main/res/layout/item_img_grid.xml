@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/default_img" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.one.tomato.widget.SquareImageView android:id="@+id/siv_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:id="@+id/tv_image_num" android:background="@color/black_50" android:paddingLeft="@dimen/dimen_3" android:paddingTop="@dimen/dimen_1" android:paddingRight="@dimen/dimen_3" android:paddingBottom="@dimen/dimen_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:id="@+id/tv_long_image" android:background="#ff99bcfa" android:paddingLeft="@dimen/dimen_3" android:paddingTop="@dimen/dimen_1" android:paddingRight="@dimen/dimen_3" android:paddingBottom="@dimen/dimen_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_img_long" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/relate_image_layer" android:background="@color/white_20" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:visibility="visible" android:layout_width="@dimen/dimen_36" android:layout_height="@dimen/dimen_36" android:src="@drawable/post_image_reward" android:scaleType="centerInside" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

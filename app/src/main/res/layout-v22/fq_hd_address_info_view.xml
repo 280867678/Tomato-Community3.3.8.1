@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="#aeaeae" android:gravity="center" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+    <android.support.p005v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_below="@+id/tv_time" android:layout_marginHorizontal="15dp" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="15dp" app:cardElevation="0dp" app:contentPadding="0dp">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/fq_hd_award_detail_msg_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/tv_address" android:paddingLeft="15dp" android:paddingTop="18dp" android:paddingRight="15dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="15dp" android:paddingVertical="18dp"/>
+            <TextView android:textColor="@color/fq_hd_lottery_primary" android:layout_gravity="end|bottom" android:id="@+id/tv_has_given_prize" android:background="@drawable/fq_achieve_bg_shape_white_round_corner" android:paddingLeft="16dp" android:paddingTop="6dp" android:paddingRight="16dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:text="@string/fq_hd_has_given_award" android:layout_marginEnd="11dp" android:paddingHorizontal="16dp" android:paddingVertical="6dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_hd_inform"/>
+    </android.support.p005v7.widget.CardView>
+</RelativeLayout>

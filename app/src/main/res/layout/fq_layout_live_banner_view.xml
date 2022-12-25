@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_banner_bg" android:visibility="invisible" android:layout_width="@dimen/live_ad_banner_width" android:layout_height="@dimen/live_ad_banner_height" android:layout_marginBottom="10dp">
+        <com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:rlClipBackground="true" app:rlRadius="@dimen/fq_live_item_round_corners">
+            <com.tomatolive.library.p136ui.view.widget.bgabanner.BGABanner android:id="@+id/banner_top" android:layout_width="match_parent" android:layout_height="match_parent" app:banner_indicatorGravity="0x51" app:banner_pageChangeDuration="1500" app:banner_placeholderDrawable="@drawable/fq_shape_default_banner_cover_bg" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="5000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/fq_shape_banner_indicator_live_selector" app:banner_pointLeftRightMargin="1.5dp" app:banner_pointTopBottomMargin="4dp" app:banner_transitionEffect="1"/>
+        </com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout>
+        <ImageView android:id="@+id/iv_banner_close" android:visibility="invisible" android:layout_width="13dp" android:layout_height="13dp" android:layout_margin="1dp" android:src="@drawable/fq_ic_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_ad_bg" android:visibility="invisible" android:layout_width="@dimen/live_ad_banner_width" android:layout_height="60dp">
+        <RelativeLayout android:layout_width="45dp" android:layout_height="60dp" android:layout_alignParentRight="true">
+            <com.tomatolive.library.p136ui.view.widget.BannerWebView android:id="@+id/wv_vertical_ad" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/iv_ad" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_ad_close" android:layout_width="13dp" android:layout_height="13dp" android:layout_margin="1dp" android:src="@drawable/fq_ic_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

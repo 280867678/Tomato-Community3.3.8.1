@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title_top_bg" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_search_bg" android:background="@color/fq_colorWhite" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/ll_title_top_bg">
+        <EditText android:textSize="12sp" android:textColor="@color/fq_colorEditTextPrimary" android:textColorHint="@color/fq_colorEditTextPrimaryHint" android:id="@+id/et_search" android:background="@drawable/fq_shape_search_bg" android:paddingLeft="10dp" android:paddingTop="8dp" android:paddingRight="10dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/fq_hit_home_search" android:maxLines="1" android:singleLine="true" android:drawableLeft="@drawable/fq_ic_home_search_gray" android:drawablePadding="10dp" android:layout_weight="1" android:imeOptions="actionSearch"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+            <TextView android:textSize="14sp" android:textColor="@color/fq_colorPrimary" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_btn_cancel"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_search_bg">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_view_pager" android:background="@color/fq_colorWhite" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/magic_indicator" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="6dp" android:overScrollMode="never"/>
+            <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height"/>
+            <android.support.p002v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never"/>
+        </LinearLayout>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/fq_colorWhite" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fl_keyword_bg" android:background="#f2f5f5f7" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_search_bg">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view_keyword" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </FrameLayout>
+</RelativeLayout>

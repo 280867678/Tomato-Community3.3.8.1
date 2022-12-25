@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:gravity="center_vertical" android:id="@+id/tv_num" android:paddingLeft="@dimen/dimen_10" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height"/>
+    <include layout="@layout/recyclerview_layout"/>
+</LinearLayout>

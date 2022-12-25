@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/tumbe_background" android:background="@drawable/papa_tumbe_one" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:id="@+id/appbar_layout" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="240dp" app:elevation="0dp">
+        <android.support.design.widget.CollapsingToolbarLayout android:paddingTop="@dimen/dimen_30" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="174dp" app:contentScrim="@color/transparent" app:layout_scrollFlags="0x3">
+            <ImageView android:layout_gravity="bottom|center_horizontal" android:id="@+id/image_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20" android:src="@drawable/papa_hot_tumbe_image" app:layout_collapseMode="2"/>
+            <android.support.p005v7.widget.Toolbar android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" app:layout_collapseMode="1">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/back" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:layout_marginLeft="@dimen/dimen_16" android:src="@drawable/icon_back_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/toolbar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:alpha="1"/>
+                </RelativeLayout>
+            </android.support.p005v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.TabLayout android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginBottom="@dimen/dimen_16" app:tabGravity="1" app:tabIndicator="@drawable/shape_tablayoyt_indicator" app:tabIndicatorColor="@color/white" app:tabMode="1" app:tabSelectedTextColor="@color/white"/>
+    </android.support.design.widget.AppBarLayout>
+    <com.luck.picture.lib.widget.PreviewViewPager android:id="@+id/preview_pager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

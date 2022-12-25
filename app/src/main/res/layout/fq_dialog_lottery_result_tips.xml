@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="430dp">
+    <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="30dp" android:src="@drawable/fq_ic_lottery_packet_bg_03" android:scaleType="fitXY" android:layout_above="@+id/tv_start" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_packet_content_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/fq_ic_lottery_packet_bg_02" android:scaleType="fitXY" android:layout_above="@+id/tv_start" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:id="@+id/fl_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/tv_top_tips" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/rl_single_prize_bg" android:visibility="visible" android:layout_width="160dp" android:layout_height="160dp">
+            <com.opensource.svgaplayer.SVGAImageView android:id="@+id/iv_svga" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <RelativeLayout android:layout_width="120dp" android:layout_height="120dp" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/iv_single_prize" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TextView android:textSize="10sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_single_num" android:background="@drawable/fq_shape_red_corner_bg" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignRight="@+id/iv_single_prize" android:layout_alignBottom="@+id/iv_single_prize"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/ry_multi" android:visibility="invisible" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="never"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_single_prize_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/fl_root" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_colorBlack29" android:id="@+id/tv_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="#e66756" android:gravity="center_vertical" android:id="@+id/tv_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:drawablePadding="2dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_top_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:src="@drawable/fq_ic_lottery_packet_congratulation" android:layout_alignTop="@+id/iv_packet_content_view" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="10sp" android:id="@+id/tv_top_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="3dp" android:layout_below="@+id/iv_top_tips" android:layout_centerHorizontal="true"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_lottery_packet_bg_01" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="#f24335" android:gravity="center" android:id="@+id/tv_start" android:background="@drawable/fq_shape_yellow_corner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="138dp" android:minHeight="42dp" android:text="@string/fq_lottery_draw_again_tips" android:layout_above="@+id/tv_bottom_tips" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="10sp" android:textColor="#ffc87c" android:id="@+id/tv_bottom_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:text="@string/fq_winning_tip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_close" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginLeft="10dp" android:src="@drawable/fq_ic_dialog_bottom_close" android:layout_toRightOf="@+id/iv_packet_content_view"/>
+</RelativeLayout>

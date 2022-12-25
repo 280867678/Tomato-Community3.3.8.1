@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.one.tomato.thirdpart.recyclerview.BetterHorScrollRecyclerView android:id="@+id/recyclerView" android:paddingBottom="@dimen/dimen_60" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <android.support.p002v4.widget.NestedScrollView android:id="@+id/nestedScrollView" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/relate_no_data" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_60">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_data_common" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>

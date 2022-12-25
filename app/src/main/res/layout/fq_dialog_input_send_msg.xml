@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/Transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/out_side" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <RelativeLayout android:background="@color/fq_colorWhite" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="13sp" android:textColor="@color/fq_colorBlack" android:textColorHint="#ffccd0d2" android:id="@+id/et_input_message" android:background="@drawable/fq_input_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/fq_text_input_hint" android:maxLines="3" android:inputType="text" android:imeOptions="actionSend" android:textCursorDrawable="@drawable/fq_cursor"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dimen_20" android:paddingBottom="@dimen/dimen_20" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_copy" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <RelativeLayout android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                    <ImageView android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/video_copy" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/my_spread_title"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_report" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <RelativeLayout android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                    <ImageView android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/video_report" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/post_report"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_download" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <RelativeLayout android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                    <ImageView android:id="@+id/iv_download" android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/post_video_down_n" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:id="@+id/tv_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/common_download_offline"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_dcim" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <RelativeLayout android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                    <ImageView android:id="@+id/iv_dcim" android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/post_video_save" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:id="@+id/tv_dcim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/common_download_dcim"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_collect" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <RelativeLayout android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50">
+                    <ImageView android:id="@+id/iv_collect" android:background="@drawable/shape_post_menu_icon_bg" android:layout_width="@dimen/dimen_30" android:layout_height="@dimen/dimen_30" android:src="@drawable/selector_post_menu_collect" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:id="@+id/tv_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/post_collect"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:text="@string/common_cancel"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

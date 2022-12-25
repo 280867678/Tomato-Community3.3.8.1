@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/fq_shape_dialog_top_corner_black_bg" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/fq_live_whitening" android:drawableTop="@drawable/fq_ic_beauty_whiten"/>
+        <SeekBar android:id="@+id/whiten_seekbar" android:background="@null" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="10" android:indeterminate="false" android:progressDrawable="@drawable/fq_seekbar_progress_drawable" android:minHeight="2dp" android:thumb="@drawable/fq_shape_seekbar_thumb"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+        <TextView android:textSize="16sp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/fq_live_skin_grinding" android:drawableTop="@drawable/fq_ic_beauty_grind"/>
+        <SeekBar android:id="@+id/beauty_seekbar" android:background="@null" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:indeterminate="false" android:progressDrawable="@drawable/fq_seekbar_progress_drawable" android:minHeight="2dp" android:thumb="@drawable/fq_shape_seekbar_thumb"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/fq_live_blush" android:drawableTop="@drawable/fq_ic_beauty_ruddy"/>
+        <SeekBar android:id="@+id/ruddy_seekbar" android:background="@null" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="2dp" android:max="100" android:progress="6" android:progressDrawable="@drawable/fq_seekbar_progress_drawable" android:minHeight="2dp" android:thumb="@drawable/fq_shape_seekbar_thumb" android:indeterminateTint="#d38fdb"/>
+    </LinearLayout>
+</LinearLayout>

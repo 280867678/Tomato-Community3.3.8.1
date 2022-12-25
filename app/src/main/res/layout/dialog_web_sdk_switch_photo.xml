@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:textColor="#000" android:gravity="center" android:id="@+id/tv_camera" android:background="#fff" android:layout_width="match_parent" android:layout_height="50dp" android:text="相机"/>
+    <View android:background="#d1d1d1" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="18dp" android:textColor="#000" android:gravity="center" android:id="@+id/tv_album" android:background="#fff" android:layout_width="match_parent" android:layout_height="50dp" android:text="相册"/>
+    <TextView android:textSize="18dp" android:textColor="#000" android:gravity="center" android:id="@+id/tv_cancel" android:background="#fff" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:text="取消"/>
+</LinearLayout>

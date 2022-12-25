@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/fl_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-20dp">
+    <FrameLayout android:id="@+id/fl_avatar_bg" android:background="@drawable/fq_ic_top_crown" android:padding="5dp" android:layout_width="@dimen/fq_home_m_top_icon_bg_width" android:layout_height="@dimen/fq_home_m_top_icon_bg_height">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_gift_default"/>
+    </FrameLayout>
+</FrameLayout>

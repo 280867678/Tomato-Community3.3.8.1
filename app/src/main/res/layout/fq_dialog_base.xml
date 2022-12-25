@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/fq_shape_dialog_white_corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/fq_text_black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="18dp" android:text="@android:string/dialog_alert_title" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14sp" android:textColor="@color/fq_text_gray" android:gravity="center" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="27dp" android:text="@string/add_text" android:layout_below="@+id/tv_title" android:lineSpacingExtra="4dp"/>
+    <View android:id="@+id/v_divider" android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height" android:layout_below="@+id/tv_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp" android:layout_below="@+id/v_divider">
+        <TextView android:textSize="16sp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/fq_btn_cancel" android:layout_weight="1"/>
+        <View android:background="@color/fq_view_divider_color" android:layout_width="@dimen/fq_divider_height" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="@color/fq_colorPrimary" android:gravity="center" android:id="@+id/tv_sure" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/fq_btn_sure" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

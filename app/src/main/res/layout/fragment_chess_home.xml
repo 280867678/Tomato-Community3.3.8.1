@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/chess_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/title_status_bar" android:background="@color/chess_bg" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <com.one.tomato.widget.mzbanner.MZBannerView android:id="@+id/mzbanner" android:layout_width="match_parent" android:layout_height="140dp" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_12" app:indicatorPaddingBottom="@dimen/dimen_8" app:open_mz_mode="false"/>
+        <com.one.tomato.widget.MarqueeTextView android:textSize="@dimen/text_size_14" android:textColor="@color/chess_bright_bg" android:gravity="center" android:id="@+id/tv_notice" android:paddingLeft="@dimen/dimen_12" android:paddingRight="@dimen/dimen_12" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:text="@string/game_no_notice" android:singleLine="true" android:drawablePadding="@dimen/dimen_4" android:layout_alignParentTop="true" android:drawableStart="@drawable/chess_home_head_notice"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/relate_content" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/type_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toRightOf="@+id/type_recycler">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/linear_top_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/relate_recharge" android:background="@drawable/common_shape_solid_corner5_45457d" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_12">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_36" android:text="@string/chess_main_recharge" android:drawableLeft="@drawable/chess_home_top_recharge" android:drawablePadding="@dimen/dimen_1" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/relate_tx" android:background="@drawable/common_shape_solid_corner5_45457d" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_12">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_36" android:text="@string/withdraw_title" android:drawableLeft="@drawable/chess_home_top_tx" android:drawablePadding="@dimen/dimen_1" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/relate_transfer" android:background="@drawable/common_shape_solid_corner5_45457d" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_12">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_36" android:text="@string/chess_home_change" android:drawableLeft="@drawable/chess_home_top_tranfer" android:drawablePadding="@dimen/dimen_1" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/relate_spread" android:background="@drawable/common_shape_solid_corner5_45457d" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:layout_weight="1" android:layout_marginEnd="@dimen/dimen_12">
+                    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_36" android:text="@string/chess_home_spread" android:drawableLeft="@drawable/chess_home_top_share" android:drawablePadding="@dimen/dimen_1" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dimen_12">
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/type_sub_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/relate_refresh" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/refresh_lottie_main" android:visibility="visible" android:layout_width="@dimen/dimen_90" android:layout_height="@dimen/dimen_30" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/relate_no_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/image_no_data" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chess_home_no_data_common" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/chess_text_bright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32" android:text="@string/loading_no_data" android:layout_below="@+id/image_no_data" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

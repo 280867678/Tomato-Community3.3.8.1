@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.one.tomato.widget.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/dimen_5">
+    <com.one.tomato.widget.SquareImageView android:id="@+id/fiv" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/publish_add_img" android:scaleType="centerInside"/>
+    <ImageView android:layout_gravity="top|right" android:id="@+id/iv_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_2" android:src="@drawable/icon_clear_edittext"/>
+    <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@+id/tv_duration" android:paddingLeft="5dp" android:paddingTop="8dp" android:visibility="gone" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginBottom="5dp" android:text="00:00" android:drawableLeft="@drawable/publish_video" android:drawablePadding="5dp"/>
+    <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/tv_recharge_demo" android:background="@color/tip_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="20dp" android:text="@string/recharge_feedback_img_demo"/>
+</com.one.tomato.widget.SquareFrameLayout>

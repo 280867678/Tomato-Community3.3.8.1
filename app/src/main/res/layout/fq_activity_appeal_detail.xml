@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <com.tomatolive.library.p136ui.view.widget.titlebar.BGATitleBar android:id="@+id/tb_prepare_title_bar" app:bgatitlebar_leftAndRightTextColor="@color/fq_msg_gray_AEAEAE" style="@style/titleBar_style"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/fl_content_view" android:background="@color/fq_colorBgPrimary_2" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/fq_shape_white_corner_bg_small" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <TextView android:textSize="16sp" android:id="@+id/tv_prize_name" android:text="@string/add_text" android:layout_marginStart="0dp" style="@style/fq_appeal_detail_content_style"/>
+            <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/fq_hd_room" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:id="@+id/tv_live_name" style="@style/fq_appeal_detail_content_style"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:text="@string/fq_hd_lottery_time" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:id="@+id/tv_winning_time" style="@style/fq_appeal_detail_content_style"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:text="@string/fq_hd_type" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:id="@+id/tv_live_draw_type" style="@style/fq_appeal_detail_content_style"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:text="@string/fq_hd_nickname" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:id="@+id/tv_user_name" style="@style/fq_appeal_detail_content_style"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/fq_shape_white_corner_bg_small" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_appeal_status" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/fq_hd_appeal_state" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:id="@+id/tv_appeal_status" style="@style/fq_appeal_detail_content_style"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:text="@string/fq_hd_appeal_description" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:id="@+id/tv_appeal_desc" style="@style/fq_appeal_detail_content_style"/>
+            </LinearLayout>
+            <EditText android:textSize="14sp" android:gravity="top|left" android:id="@+id/et_appeal_content" android:background="@drawable/fq_hd_add_address_editbox_bg" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minHeight="80dp" android:maxLength="150"/>
+            <TextView android:layout_gravity="right" android:id="@+id/tv_current_max_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/fq_shape_white_corner_bg_small" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <TextView android:id="@+id/tv_upload_label" android:layout_width="wrap_content" android:text="@string/fq_hd_appeal_image" style="@style/fq_appeal_detail_text_style"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <FrameLayout android:layout_width="78dp" android:layout_height="78dp">
+                    <ImageView android:id="@+id/iv_appeal_img0" android:layout_width="78dp" android:layout_height="78dp" android:src="@drawable/fq_ic_hd_add"/>
+                    <TextView android:textSize="10sp" android:textColor="#ffacacac" android:layout_gravity="center" android:id="@+id/tv_placeholder_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_hd_no_image"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/iv_appeal_img1" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginStart="14dp"/>
+                <ImageView android:id="@+id/iv_appeal_img2" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginStart="14dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="#ff8b8b8b" android:id="@+id/tv_appeal_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fq_hd_upload_more_image"/>
+        <TextView android:textSize="16sp" android:textColor="#ff131313" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_submit_appeal" android:background="@drawable/fq_hd_submit_appeal_btn_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" android:text="@string/fq_hd_submit_appeal"/>
+    </LinearLayout>
+</LinearLayout>

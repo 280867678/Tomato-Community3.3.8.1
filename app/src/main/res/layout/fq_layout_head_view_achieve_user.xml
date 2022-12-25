@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_avatar" android:layout_width="68dp" android:layout_height="68dp" android:layout_marginBottom="8dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/fq_text_white_color" android:gravity="center_horizontal" android:id="@+id/tv_anchor_nickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:gravity="center_horizontal" android:id="@+id/tv_achieve_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginBottom="16dp" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tag_bg" android:layout_width="match_parent" android:layout_height="40dp">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:id="@+id/tv_anchor_achieve" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fq_achieve_anchor_achieve" android:layout_weight="1"/>
+        <View android:layout_gravity="center_vertical" android:background="@drawable/fq_achieve_shape_bg_vertical_divider" android:layout_width="1dp" android:layout_height="16dp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:id="@+id/tv_user_achieve" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fq_achieve_user_achieve" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="@drawable/fq_ic_achieve_tab_divider" android:layout_width="match_parent" android:layout_height="0.6dp"/>
+    <TextView android:textSize="14sp" android:textColor="#f4e5c3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" android:text="@string/fq_achieve_already_get_achieve" android:layout_marginStart="25dp"/>
+</LinearLayout>

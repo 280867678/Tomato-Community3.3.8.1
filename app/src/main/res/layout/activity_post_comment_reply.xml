@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/rl_root" android:background="@color/app_bg_grey" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_title_bg" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="@dimen/common_tab_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:id="@+id/back" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_back_black" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_line" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/comment_title_gb" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_5" android:layout_below="@+id/rl_title_bg">
+        <ImageView android:id="@+id/comment_title_icon_i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_20" android:src="@drawable/default_img_circle" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/comment_title_icon_i" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/black" android:id="@+id/comment_title_name_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5"/>
+            <TextView android:id="@+id/comment_title_content_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5" android:maxLines="2"/>
+            <TextView android:id="@+id/comment_title_timet_t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:layout_marginRight="@dimen/dimen_5"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.one.tomato.thirdpart.emotion.PostKeyboard android:id="@+id/post_keyboard" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/comment_title_gb">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:srlEnableFooterFollowWhenLoadFinished="true" app:srlEnableScrollContentWhenLoaded="true">
+            <com.one.tomato.thirdpart.recyclerview.PullToRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlClassicsSpinnerStyle="0"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.one.tomato.thirdpart.emotion.PostKeyboard>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="300dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_hd_task_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12sp" android:textColor="@color/fq_qm_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_qm_publish_task_empty_tips" android:drawableTop="@drawable/fq_ic_qm_task_empty" android:drawablePadding="8dp"/>
+        <FrameLayout android:id="@+id/fl_btn_bg" android:background="@drawable/fq_qm_primary_btn_frame" android:paddingLeft="16dp" android:paddingTop="9dp" android:paddingRight="16dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:minWidth="130dp" android:paddingHorizontal="16dp" android:paddingVertical="9dp">
+            <TextView android:textSize="14sp" android:textColor="@color/fq_qm_primary" android:layout_gravity="center" android:id="@+id/tv_empty_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_qm_add_new_task" android:drawableLeft="@drawable/fq_ic_qm_task_add" android:drawablePadding="8dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_qm_gray" android:layout_gravity="center" android:id="@+id/tv_task_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_qm_task_list_empty_tips" android:drawableTop="@drawable/fq_ic_qm_task_record_empty" android:drawablePadding="8dp"/>
+</FrameLayout>

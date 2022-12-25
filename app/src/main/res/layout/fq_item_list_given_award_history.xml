@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textSize="16sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:singleLine="true"/>
+            <TextView android:textSize="14sp" android:textColor="#aeaeae" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textSize="16sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height"/>
+</LinearLayout>

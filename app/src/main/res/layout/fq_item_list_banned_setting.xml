@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/fq_colorWhite" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_avatar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="10dp" android:src="@drawable/fq_ic_placeholder_avatar" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/tv_banned" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp">
+            <com.tomatolive.library.p136ui.view.custom.UserGradeView android:id="@+id/user_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/fq_text_black" android:ellipsize="end" android:id="@+id/tv_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:ellipsize="end" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:id="@+id/tv_banned" android:background="@drawable/fq_btn_round_red_selector" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70dp" android:minHeight="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

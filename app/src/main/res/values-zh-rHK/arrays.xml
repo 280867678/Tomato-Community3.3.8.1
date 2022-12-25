@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="banned_text">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1个小时</item>
+        <item>8个小时</item>
+        <item>1天</item>
+        <item>3天</item>
+        <item>7天</item>
+        <item>30天</item>
+    </array>
+    <array name="fq_search_tab_menu">
+        <item>全部</item>
+        <item>主播</item>
+        <item>直播</item>
+    </array>
+    <array name="live_more_menu_title">
+        <item>美化</item>
+        <item>麥克風</item>
+        <item>閃光燈</item>
+        <item>大字幕</item>
+        <item>鏡像</item>
+        <item>發言設置</item>
+        <item>修改主題</item>
+        <item>贴片控件</item>
+        <item>屏蔽小礼物</item>
+        <item>人气卡</item>
+        <item>付费设置</item>
+    </array>
+    <array name="phone_country_code_key">
+        <item>82</item>
+        <item>86</item>
+        <item>81</item>
+        <item>66</item>
+        <item>1</item>
+    </array>
+    <array name="phone_country_code_value">
+        <item>韩国（+82）</item>
+        <item>中国大陆（+86）</item>
+        <item>日本（+81）</item>
+        <item>泰国（+66）</item>
+        <item>美国（+1）</item>
+    </array>
+    <array name="take_photo_text">
+        <item>拍照</item>
+        <item>本地獲取</item>
+    </array>
+</resources>

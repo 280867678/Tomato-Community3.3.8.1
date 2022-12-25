@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16">
+    <RelativeLayout android:id="@+id/relate" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/color_9C9BAD" android:gravity="center" android:id="@+id/text_inte_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/post_list_item_hot_message" android:drawablePadding="@dimen/dimen_4" android:layout_centerVertical="true" android:drawableStart="@drawable/post_top2"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/disable" android:id="@+id/text_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:text="@string/circle_more" android:drawablePadding="@dimen/dimen_2" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/icon_arrow_right_grey"/>
+    </RelativeLayout>
+    <com.one.tomato.thirdpart.recyclerview.BetterHorScrollRecyclerView android:id="@+id/recycler_view" android:paddingRight="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:layout_below="@+id/relate"/>
+</RelativeLayout>

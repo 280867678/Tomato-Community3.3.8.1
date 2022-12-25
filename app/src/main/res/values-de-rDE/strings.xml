@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">Die Initialisierung ist fehlgeschlagen. Klicken Sie erneut, um es erneut zu versuchen</string>
+    <string name="tip_load_failed">Laden fehlgeschlagen</string>
+    <string name="tip_loading">Überprüfen</string>
+    <string name="tip_no_network">Netzwerk abnormal, bitte überprüfen Sie das Netzwerk und versuchen Sie es erneut</string>
+    <string name="tip_validate_timeout">Überprüfen Sie die Zeitüberschreitung. Schließen Sie das Netzwerk und überprüfen Sie es</string>
+</resources>

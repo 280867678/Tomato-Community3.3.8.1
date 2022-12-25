@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <android.support.p002v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/credit_rule_fraction" android:drawableLeft="@drawable/credit_rule_icon" android:drawablePadding="@dimen/dimen_8"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView_fraction" android:background="@drawable/shape_credit_rule_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/dimen_5" android:layout_marginTop="@dimen/dimen_20"/>
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height" android:layout_marginLeft="@dimen/dimen_16" android:text="@string/credit_rule_punish" android:drawableLeft="@drawable/credit_rule_icon" android:drawablePadding="@dimen/dimen_8"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView_punish" android:background="@drawable/shape_credit_rule_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_20"/>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>

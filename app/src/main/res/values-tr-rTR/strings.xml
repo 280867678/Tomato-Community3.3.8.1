@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">Ağ zaman aşımı, tekrar dene</string>
+    <string name="tip_load_failed">Yükleme başarısız</string>
+    <string name="tip_loading">doğrulama</string>
+    <string name="tip_no_network">Ağ anormal. Lütfen ağı kontrol edip tekrar deneyin.</string>
+    <string name="tip_validate_timeout">Zaman aşımını doğrulayın, lütfen kapatın ve ağı kontrol edin</string>
+</resources>

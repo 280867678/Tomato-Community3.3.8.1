@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/common_shape_solid_corner5_grey" android:layout_width="match_parent" android:layout_height="@dimen/dimen_32" android:layout_margin="@dimen/dimen_16">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_5" android:src="@drawable/post_search"/>
+        <com.one.tomato.widget.ClearEditText android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:layout_gravity="center_vertical" android:id="@+id/et_input" android:background="@null" android:paddingTop="@dimen/dimen_3" android:paddingBottom="@dimen/dimen_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:hint="@string/country_code_search" android:maxLines="1" android:singleLine="true" android:imeOptions="actionSearch"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.mcxtzhang.indexlib.IndexBar.widget.C2277IndexBar android:layout_gravity="right" android:id="@+id/indexBar" android:visibility="gone" android:layout_width="@dimen/dimen_24" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_30" android:layout_marginBottom="@dimen/dimen_30" app:indexBarPressBackground="@color/partTranslucent" app:indexBarTextSize="@dimen/text_content"/>
+        <TextView android:textSize="48sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/tvSideBarHint" android:background="@drawable/common_shape_solid_corner5_black" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp"/>
+    </FrameLayout>
+</LinearLayout>

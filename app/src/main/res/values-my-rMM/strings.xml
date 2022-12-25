@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">ကွန်ယက်ကို မှရပ်သွားသည်, ထပ်စမ်းကျေးဇူးပြုပြီး</string>
+    <string name="tip_load_failed">ဝန်ရန်မအောင်မြင်ခဲ့ပါ</string>
+    <string name="tip_loading">အတည်ပြု</string>
+    <string name="tip_no_network">ကွန်ယက်ကို မှကွဲလွဲချက်များ, သင့် network ကိုစစ်ဆေးပြီးထပ်ကြိုးစား</string>
+    <string name="tip_validate_timeout">တောင်းဆိုမှုအချိန်ကုန်ဆုံး，ကွန်ယက်ပြန်ကြိုးစားခြင်းကို ပိတ်ကျေးဇူးပြု.</string>
+</resources>

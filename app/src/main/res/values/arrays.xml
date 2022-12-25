@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="WheelArrayDefault">
+        <item>AigeStudio</item>
+        <item>Aige</item>
+        <item>爱哥</item>
+        <item>الحب  اخي</item>
+        <item>jeg elsker</item>
+        <item>사랑해요 형</item>
+        <item>Amor de irmão</item>
+        <item>armastan</item>
+        <item>愛の兄</item>
+        <item>обичам те</item>
+        <item>любовь - братa</item>
+        <item>miłość bracie</item>
+        <item>Liebe</item>
+        <item>Lamour</item>
+        <item>rakastan sinua</item>
+        <item>láska..</item>
+        <item>dragostea.</item>
+        <item>jag älskar</item>
+        <item>ljubezen, brat.</item>
+        <item>愛哥</item>
+        <item>ชอบพี่</item>
+        <item>αγάπη μου</item>
+        <item>a szerelem.</item>
+        <item>Amore, fratello.</item>
+    </array>
+    <array name="WheelArrayWeek">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </array>
+    <array name="banned_text">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1个小时</item>
+        <item>8个小时</item>
+        <item>1天</item>
+        <item>3天</item>
+        <item>7天</item>
+        <item>30天</item>
+    </array>
+    <array name="credit_rule_fraction_type">
+        <item>类型</item>
+        <item>分数变动</item>
+        <item>每日上限</item>
+    </array>
+    <array name="credit_rule_punish_type">
+        <item>分数区间</item>
+        <item>发帖次数</item>
+        <item>评论与回复</item>
+    </array>
+    <array name="fq_achieve_wear_center_menu">
+        <item>发言勋章</item>
+    </array>
+    <array name="fq_allow_type_menu">
+        <item>不允许</item>
+        <item>允许</item>
+    </array>
+    <array name="fq_anchor_live_end_error_tips">
+        <item>网络连接已断开，请检查网络设置</item>
+        <item>无可用推流服务，请联系管理员</item>
+        <item>内容涉嫌违规已被封禁。详询管理员</item>
+    </array>
+    <array name="fq_appeal_status_tips">
+        <item>待处理</item>
+        <item>处理中</item>
+        <item>已驳回</item>
+        <item>已核实</item>
+        <item>已取消</item>
+    </array>
+    <array name="fq_charge_type_menu">
+        <item>不收费</item>
+        <item>门票房</item>
+    </array>
+    <array name="fq_date_time_format_tips">
+        <item>今天 %tR</item>
+        <item>昨天 %tR</item>
+        <item>前天 %tR</item>
+        <item>早前 %tR</item>
+    </array>
+    <array name="fq_given_award_status">
+        <item>待确认</item>
+        <item>待收货</item>
+        <item>已完成</item>
+        <item>已过期</item>
+    </array>
+    <array name="fq_hd_lottery_scope">
+        <item>关注主播</item>
+        <item>全部观众</item>
+    </array>
+    <array name="fq_home_ranking_menu">
+        <item>魅力榜</item>
+        <item>富豪榜</item>
+        <item>周星榜</item>
+    </array>
+    <array name="fq_live_end_score_1_tips">
+        <item>言辞不当</item>
+        <item>污言秽语</item>
+        <item>不是本人</item>
+        <item>广告植入</item>
+        <item>傲慢无礼</item>
+        <item>难见真容</item>
+        <item>没声音</item>
+        <item>被骗了</item>
+    </array>
+    <array name="fq_live_end_score_2_tips">
+        <item>耍无赖</item>
+        <item>不真心</item>
+        <item>冷言冷语</item>
+        <item>龟速信号</item>
+        <item>所求无度</item>
+        <item>与本人不符</item>
+        <item>无信号</item>
+        <item>画面杂乱</item>
+    </array>
+    <array name="fq_live_end_score_3_tips">
+        <item>无趣</item>
+        <item>腹黑</item>
+        <item>尬聊</item>
+        <item>戏精</item>
+        <item>高冷</item>
+        <item>画质模糊</item>
+        <item>不和心意</item>
+        <item>定价过高</item>
+    </array>
+    <array name="fq_live_end_score_4_tips">
+        <item>佛系少女</item>
+        <item>绝美女音</item>
+        <item>邻家女孩</item>
+        <item>可爱萝莉</item>
+        <item>女汉子</item>
+        <item>软妹子</item>
+        <item>萌妹子</item>
+        <item>气质熟女</item>
+    </array>
+    <array name="fq_live_end_score_5_tips">
+        <item>知性大方</item>
+        <item>人美歌甜</item>
+        <item>风情万种</item>
+        <item>完美身材</item>
+        <item>秀色可餐</item>
+        <item>丰满诱人</item>
+        <item>期待再会</item>
+        <item>疯狂打call</item>
+    </array>
+    <array name="fq_live_end_score_menu">
+        <item>很不满意</item>
+        <item>不是很满意</item>
+        <item>一般般</item>
+        <item>比较满意</item>
+        <item>非常满意</item>
+    </array>
+    <array name="fq_live_more_menu">
+        <item>多语言翻译</item>
+        <item>私信</item>
+        <item>亲密互动</item>
+    </array>
+    <array name="fq_live_status_menu">
+        <item>全部</item>
+        <item>开播中</item>
+        <item>未开播</item>
+    </array>
+    <array name="fq_lottery_ticket_gold">
+        <item>1</item>
+        <item>10</item>
+        <item>100</item>
+        <item>20</item>
+        <item>200</item>
+        <item>2000</item>
+    </array>
+    <array name="fq_lottery_ticket_tips">
+        <item>消耗%s元，获取1次抽奖机会，每日首抽必中</item>
+        <item>消耗%s元，获取10次抽奖机会，必中蓝色区域</item>
+        <item>消耗%s元，获取100次抽奖机会，必中红色区域</item>
+        <item>消耗%s元，获取1次抽奖机会，每日首抽必中</item>
+        <item>消耗%s元，获取10次抽奖机会，必中蓝色区域</item>
+        <item>消耗%s元，获取100次抽奖机会，必中红色区域</item>
+    </array>
+    <array name="fq_nobility_h5_url">
+        <item>noble-open-notice.html</item>
+        <item>noble-open-effects.html</item>
+        <item>noble-join-welcome.html</item>
+        <item>noble-medal.html</item>
+        <item>noble-card.html</item>
+        <item>noble-level-speed.html</item>
+        <item>noble-horn.html</item>
+        <item>noble-danmu.html</item>
+        <item>noble-service.html</item>
+        <item>noble-custom-gift.html</item>
+        <item>noble-not-speak-out.html</item>
+    </array>
+    <array name="fq_nobility_money_use_tips">
+        <item>贵族币使用说明</item>
+        <item>1.贵族币与平台虚拟币等值，可用来送礼物、开守护、买座驾，其中送礼物和开守护后主播能获得收益；使用虚拟币时会优先使用贵族币。\n\n</item>
+        <item>2.贵族币永久有效，但贵族过期后未使用完的贵族币将被冻结，续费贵族或开通任意等级贵族后均可解冻贵族币。\n\n</item>
+        <item>3.贵族币不能用以购买贵族。\n\n</item>
+        <item>4.购买贵族赠送的贵族币在购买后立即到账。</item>
+    </array>
+    <array name="fq_nobility_name">
+        <item>游侠</item>
+        <item>骑士</item>
+        <item>子爵</item>
+        <item>伯爵</item>
+        <item>公爵</item>
+        <item>国王</item>
+        <item>皇帝</item>
+    </array>
+    <array name="fq_nobility_open_status_tips">
+        <item>生效中</item>
+        <item>续费保护期</item>
+        <item>已过期</item>
+    </array>
+    <array name="fq_nobility_privilege_open_pay_tips">
+        <item>开通皇帝贵族</item>
+        <item>开通国王贵族</item>
+        <item>开通公爵贵族</item>
+        <item>开通伯爵贵族</item>
+        <item>开通子爵贵族</item>
+        <item>开通骑士贵族</item>
+        <item>开通游侠贵族</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips">
+        <item>开通特效</item>
+        <item>贵族名片</item>
+        <item>贵族勋章</item>
+        <item>进场欢迎</item>
+        <item>开通广播</item>
+        <item>升级加速</item>
+        <item>平台喇叭</item>
+        <item>贵族弹幕</item>
+        <item>进场隐身</item>
+        <item>榜单隐身</item>
+        <item>防禁言</item>
+        <item>定制礼物</item>
+        <item>专属客服</item>
+        <item>置顶直播间</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_1">
+        <item>房间内开通横幅</item>
+        <item>贵族专属用户名片</item>
+        <item>游侠专属标识</item>
+        <item>进场显示贵族欢迎语</item>
+        <item>开通时房间内广播消息</item>
+        <item>骑士及以上等级贵族拥有</item>
+        <item>发出后全平台可见</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_2">
+        <item>房间内开通横幅</item>
+        <item>贵族专属用户名片</item>
+        <item>骑士专属标识</item>
+        <item>进场显示贵族欢迎语</item>
+        <item>开通时房间内广播消息</item>
+        <item>送礼物经验加速10%</item>
+        <item>发出后全平台可见</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_3">
+        <item>房间内开通横幅/开通特效</item>
+        <item>贵族专属用户名片</item>
+        <item>子爵专属标识</item>
+        <item>进场显示贵族欢迎语</item>
+        <item>开通时房间内广播消息</item>
+        <item>送礼物经验加速12%</item>
+        <item>发出后全平台可见</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_4">
+        <item>房间内开通横幅/开通特效</item>
+        <item>贵族专属用户名片</item>
+        <item>伯爵专属标识</item>
+        <item>进场显示贵族欢迎语</item>
+        <item>开通/续费时全平台广播消息</item>
+        <item>送礼物经验加速14%</item>
+        <item>赠送3个平台喇叭</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_5">
+        <item>房间内开通横幅/开通特效</item>
+        <item>贵族专属用户名片</item>
+        <item>公爵专属标识</item>
+        <item>进场显示高级贵族特效</item>
+        <item>开通/续费时全平台广播消息</item>
+        <item>送礼物经验加速16%</item>
+        <item>赠送5个平台喇叭</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_6">
+        <item>房间内开通横幅/开通特效</item>
+        <item>贵族专属用户名片</item>
+        <item>国王专属标识</item>
+        <item>进场显示高级贵族特效</item>
+        <item>开通/续费时全平台广播消息</item>
+        <item>送礼物经验加速18%</item>
+        <item>赠送10个平台喇叭</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_7">
+        <item>房间内开通横幅/开通特效</item>
+        <item>贵族专属用户名片</item>
+        <item>皇帝专属标识</item>
+        <item>进场显示高级贵族特效</item>
+        <item>开通/续费时全平台广播消息</item>
+        <item>送礼物经验加速20%</item>
+        <item>赠送20个平台喇叭</item>
+        <item>发言消息脱颖而出</item>
+        <item>低调看直播</item>
+        <item>神秘低调，默默守护主播</item>
+        <item>皇帝无法被房管禁言</item>
+        <item>定制属于你的礼物道具</item>
+        <item>24小时服务</item>
+        <item>推荐主播上热门</item>
+    </array>
+    <array name="fq_nobility_privilege_renew_pay_tips">
+        <item>续费皇帝贵族</item>
+        <item>续费国王贵族</item>
+        <item>续费公爵贵族</item>
+        <item>续费伯爵贵族</item>
+        <item>续费子爵贵族</item>
+        <item>续费骑士贵族</item>
+        <item>续费游侠贵族</item>
+    </array>
+    <array name="fq_nobility_privilege_tips">
+        <item>开通通知</item>
+        <item>开通特效</item>
+        <item>进场欢迎</item>
+        <item>贵族勋章</item>
+        <item>贵族用户名片</item>
+        <item>升级加速</item>
+        <item>平台喇叭</item>
+        <item>贵族弹幕</item>
+        <item>专属客服</item>
+        <item>定制礼物</item>
+        <item>防禁言/踢出</item>
+    </array>
+    <array name="fq_nobility_recommend_history_status">
+        <item>推荐中</item>
+        <item>已过期</item>
+    </array>
+    <array name="fq_nobility_recommend_history_type">
+        <item>匿名推荐</item>
+        <item>公开推荐</item>
+    </array>
+    <array name="fq_private_msg_shortcut_tips">
+        <item>你好，我们可以开始沟通啦！</item>
+        <item>请暂时不要退出直播间，否则会收不到我的消息哟~</item>
+        <item>收到！</item>
+    </array>
+    <array name="fq_qm_more_menu">
+        <item>玩法说明</item>
+        <item>互动记录</item>
+    </array>
+    <array name="fq_qm_record_status">
+        <item>执行中</item>
+        <item>已完成</item>
+        <item>已拒绝</item>
+        <item>超时</item>
+    </array>
+    <array name="fq_relation_type_menu">
+        <item>不关联</item>
+        <item>关联</item>
+    </array>
+    <array name="fq_search_tab_menu">
+        <item>全部</item>
+        <item>主播</item>
+        <item>直播</item>
+    </array>
+    <array name="fq_week_star_anchor_reward">
+        <item>周星封面挂件</item>
+        <item>周星直播间挂件</item>
+        <item>顶级推荐位</item>
+        <item>人气卡x2</item>
+    </array>
+    <array name="fq_week_star_live_tab">
+        <item>周星主播榜</item>
+        <item>周星富豪榜</item>
+    </array>
+    <array name="fq_week_star_user_reward">
+        <item>周星徽章x7天</item>
+        <item>周星礼物冠名x7天</item>
+        <item>周星座驾x7天</item>
+    </array>
+    <array name="fq_write_address_award_tips">
+        <item>7天内未点击“填写收货信息”将收货信息发送给主播则视为放弃奖品；如若防线奖品未送达、奖品违规，请及时通过页面右上角联系客服进行举报。</item>
+        <item>用户7天内未将收奖信息发送给主播则视为放弃奖品；如若发现信息不明确、信息违规，请及时联系用户修改。若故意延期发奖或其它违规行为，核实后将对主播进行处罚。</item>
+    </array>
+    <array name="fq_write_address_tips">
+        <item>填写收货信息</item>
+        <item>已填写，等待主播发货</item>
+        <item>主播已发奖</item>
+        <item>超时未填写，已关闭</item>
+    </array>
+    <array name="fq_write_address_tips_2">
+        <item>提醒对方填写收奖信息</item>
+        <item>已填写，确认发货</item>
+        <item>我已发奖</item>
+        <item>已超时</item>
+    </array>
+    <array name="inspect_adapter_titles">
+        <item>充值额度</item>
+        <item>稽核额度</item>
+        <item>已稽核</item>
+        <item>状态</item>
+    </array>
+    <array name="level_description_content">
+        <item>浏览海量帖子</item>
+        <item>圈子中找到真爱</item>
+        <item>和水友一起嗨聊</item>
+        <item>和大家分享独家</item>
+        <item>保存视频到本地</item>
+    </array>
+    <array name="level_description_title">
+        <item>看帖权益</item>
+        <item>圈子特权</item>
+        <item>评论权益</item>
+        <item>发帖权益</item>
+        <item>下载视频</item>
+    </array>
+    <array name="level_get_expire_desc">
+        <item>邀请用户下载登录</item>
+        <item>初来乍到奖励多多</item>
+        <item>浏览帖子轻松获取</item>
+        <item>不止升级还获奖励</item>
+    </array>
+    <array name="level_get_expire_title">
+        <item>推广任务</item>
+        <item>新手任务</item>
+        <item>日常任务</item>
+        <item>获得勋章</item>
+    </array>
+    <array name="level_nick">
+        <item>新手</item>
+        <item>射手</item>
+        <item>猎手</item>
+        <item>旗手</item>
+        <item>统领</item>
+        <item>王者</item>
+    </array>
+    <array name="live_more_menu_lottery_title">
+        <item>亲密互动</item>
+    </array>
+    <array name="live_more_menu_title">
+        <item>美化</item>
+        <item>麦克风</item>
+        <item>闪光灯</item>
+        <item>大字幕</item>
+        <item>镜像</item>
+        <item>发言设置</item>
+        <item>修改主题</item>
+        <item>贴片控件</item>
+        <item>屏蔽小礼物</item>
+        <item>人气卡</item>
+        <item>付费设置</item>
+    </array>
+    <array name="phone_country_code_key">
+        <item>82</item>
+        <item>86</item>
+        <item>81</item>
+        <item>66</item>
+        <item>1</item>
+    </array>
+    <array name="phone_country_code_value">
+        <item>韩国（+82）</item>
+        <item>中国大陆（+86）</item>
+        <item>日本（+81）</item>
+        <item>泰国（+66）</item>
+        <item>美国（+1）</item>
+    </array>
+    <array name="pullToRefresh_head_text">
+        <item>你的心也会讲道理，只是你的脑袋不知道</item>
+        <item>哪有人喜欢孤独，不过是不喜欢失望罢了</item>
+        <item>带不走的留不下，留不下的莫牵挂</item>
+        <item>这里没有末路，你从不曾孤独</item>
+        <item>恋爱不是用谈的，是坠入的</item>
+        <item>不要让你的梦想只是想想而已</item>
+        <item>如果余生都是你，晚到一点没关系</item>
+        <item>要么庸俗，要么孤独</item>
+        <item>在最深的绝望里,遇见最美丽的风景</item>
+        <item>除非黄土白骨,我守你百岁无忧</item>
+        <item>一厢情愿,就得愿赌服输</item>
+        <item>有些面具戴得太久,就摘不下来了</item>
+        <item>山有木兮木有枝，心悦君兮君不知</item>
+        <item>有生之年能遇见你,竟花光我所有运气</item>
+        <item>你不曾给我一次回眸，我却始终在对你微笑</item>
+        <item>你以为的极限，弄不好只是别人的起点</item>
+        <item>喜欢就会放肆，但爱就是克制</item>
+        <item>我渐渐意会到，深刻并不等于接近事实</item>
+    </array>
+    <array name="report_down_comment">
+        <item>涉嫌广告、欺骗信息</item>
+        <item>政治敏感、血腥暴力、违法犯罪</item>
+        <item>恶意攻击谩骂</item>
+        <item>其他</item>
+    </array>
+    <array name="report_down_post">
+        <item>内容清晰度不够</item>
+        <item>涉嫌广告、欺骗信息</item>
+        <item>未成年、儿童、人兽等违规内容</item>
+        <item>内容与标题、圈子、标签不符</item>
+        <item>非色情内容</item>
+        <item>其他</item>
+    </array>
+    <array name="report_member_content">
+        <item>乱发广告</item>
+        <item>违法犯罪</item>
+        <item>涉嫌欺诈</item>
+        <item>侮辱谩骂</item>
+        <item>造谣传谣</item>
+        <item>其他</item>
+    </array>
+    <array name="report_papa_item_content1">
+        <item>政治敏感</item>
+        <item>血腥暴力、违法违规</item>
+        <item>垃圾广告</item>
+        <item>造谣传谣、涉嫌欺诈</item>
+        <item>侮辱谩骂</item>
+    </array>
+    <array name="report_papa_item_content2">
+        <item>盗用TA人作品</item>
+        <item>侵犯TA人隐私</item>
+    </array>
+    <array name="report_papa_item_content3">
+        <item>儿童色情</item>
+    </array>
+    <array name="report_papa_item_content4">
+        <item>引人不适</item>
+        <item>标题党</item>
+        <item>标签不对</item>
+        <item>其他</item>
+    </array>
+    <array name="report_post_content">
+        <item>垃圾广告</item>
+        <item>欺骗信息</item>
+        <item>有害信息</item>
+        <item>人身攻击</item>
+    </array>
+    <array name="take_photo_text">
+        <item>拍照</item>
+        <item>本地获取</item>
+    </array>
+    <array name="vip_right_compare_list">
+        <item>权益</item>
+        <item>会员用户</item>
+        <item>普通用户</item>
+        <item>视频观看</item>
+        <item>无限制</item>
+        <item>限制次数</item>
+        <item>下載视频到\n相册</item>
+        <item>免费下载\n次数限制</item>
+        <item>收费下载</item>
+        <item>缓存视频到\napp内部</item>
+        <item>无限制</item>
+        <item>收费下载</item>
+        <item>评论/回复</item>
+        <item>无限制</item>
+        <item>等级限制\n次数限制</item>
+        <item>帖子发布</item>
+        <item>无限制</item>
+        <item>等级限制\n次数限制</item>
+        <item>查看完整视频</item>
+        <item>可查看</item>
+        <item>不可查看</item>
+        <item>会员特殊标识</item>
+        <item>有</item>
+        <item>无</item>
+    </array>
+</resources>

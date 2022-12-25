@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/publish_post_dialog_bg" android:paddingLeft="@dimen/dimen_24" android:paddingRight="@dimen/dimen_24" android:paddingBottom="@dimen/dimen_32" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingRight="@dimen/dimen_8" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_50">
+        <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_post_tishi" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/image_close" android:layout_width="@dimen/dimen_40" android:layout_height="@dimen/dimen_40" android:src="@drawable/post_search_delete" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/publish_post_tip" android:lineSpacingExtra="3dp"/>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/colorAccent" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_32" android:text="@string/publish_post_tishi_1" android:lineSpacingExtra="3dp"/>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16">
+        <CheckBox android:id="@+id/check_tip" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/publish_tip_check" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_dark" android:id="@+id/text_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="@string/publish_post_tishi_2" android:layout_toRightOf="@+id/check_tip" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

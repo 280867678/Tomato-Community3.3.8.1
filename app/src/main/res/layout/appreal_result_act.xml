@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/image" android:layout_width="@dimen/dimen_48" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_40"/>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_dark" android:id="@+id/text_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16"/>
+    <RelativeLayout android:id="@+id/relate_appreal_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_50" android:layout_marginRight="@dimen/dimen_16">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:id="@+id/text_account" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:id="@+id/text_account_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/text_account"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_appreal_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_16">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:id="@+id/text_phone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:id="@+id/text_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/text_phone"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_appreal_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_16">
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:id="@+id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:id="@+id/text_time_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/text_time"/>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/sp_16" android:textColor="@color/white" android:id="@+id/again_appreal" android:background="@drawable/common_selector_solid_corner5_coloraccent" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_30" android:layout_marginRight="@dimen/dimen_16" android:text="@string/login_appreal_again"/>
+</LinearLayout>

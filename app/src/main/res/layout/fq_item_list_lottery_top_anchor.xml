@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="26dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="#ff63487d" android:gravity="center_horizontal" android:id="@+id/tv_top_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minWidth="20dp"/>
+    <TextView android:textSize="12sp" android:textColor="#ffffffff" android:id="@+id/tv_anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_top_number"/>
+    <TextView android:textSize="12sp" android:textColor="#ff886f9e" android:id="@+id/tv_anchor_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/v_divider" android:background="#ff321b55" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp" android:layout_toRightOf="@+id/tv_top_number" android:layout_below="@+id/tv_top_number"/>
+</RelativeLayout>

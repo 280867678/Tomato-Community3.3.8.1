@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_16">
+                <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:id="@+id/my_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我的频道"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="点击进入频道" android:layout_toRightOf="@+id/my_channel" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_8">
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/my_channel_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_34">
+                <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:id="@+id/recomment_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐频道"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="点击添加频道" android:layout_toRightOf="@+id/recomment_channel" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginRight="@dimen/dimen_8">
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/recomment_channel_recycler" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

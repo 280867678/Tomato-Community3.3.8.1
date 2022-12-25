@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@drawable/fq_shape_user_avatar_oval_bg" android:layout_width="@dimen/fq_online_user_avatar_size" android:layout_height="@dimen/fq_online_user_avatar_size">
+    <TextView android:textSize="8sp" android:textColor="@color/fq_text_white_color" android:gravity="center_horizontal" android:id="@+id/tv_guard_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/fq_ic_guard_add" android:drawablePadding="1dp" android:layout_centerInParent="true"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval" android:useLevel="false">
+    <gradient android:startColor="#883500a2" android:endColor="#888c00a4" android:angle="90"/>
+    <size android:height="@dimen/fq_guard_avatar_bg_size" android:width="@dimen/fq_guard_avatar_bg_size"/>
+</shape>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/relate_top" android:background="@drawable/common_shape_solid_corner5_45457d" android:paddingLeft="@dimen/dimen_8" android:paddingRight="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="@dimen/dimen_48" android:layout_marginBottom="@dimen/dimen_12">
+        <ImageView android:id="@+id/image_1" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:src="@drawable/chess_home_post_top_1" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/image_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_4" android:src="@drawable/chess_home_post_top_2" android:layout_toRightOf="@+id/image_1" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/chess_9898CD" android:padding="@dimen/dimen_2" android:paddingTop="@dimen/dimen_4" android:paddingBottom="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chess_home_post_more_hot_thing" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:drawableEnd="@drawable/chess_icon_arrow_right"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_post" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/relate_top">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_post" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_features" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/relate_post">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_features" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_up" android:background="@drawable/chess_home_post_up_bg" android:layout_width="match_parent" android:layout_height="85dp" android:layout_below="@+id/relate_features">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:id="@+id/text_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginTop="@dimen/dimen_8"/>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:background="@drawable/chess_home_post_become_up_bg" android:paddingLeft="@dimen/dimen_4" android:paddingRight="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_28" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginTop="@dimen/dimen_8" android:text="@string/chess_home_post_up_text" android:drawablePadding="@dimen/dimen_2" android:layout_below="@+id/text_up" android:drawableEnd="@drawable/chess_home_post_up_arrow_right"/>
+    </RelativeLayout>
+    <Button android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:gravity="center" android:id="@+id/button_goin" android:background="@drawable/chess_goin_bg" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:text="@string/chess_home_goin_post" android:layout_below="@+id/relate_up"/>
+</RelativeLayout>

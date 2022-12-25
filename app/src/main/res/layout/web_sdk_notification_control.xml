@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/clroot" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/app_logo"/>
+    <TextView android:textSize="13sp" android:textStyle="bold" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:maxWidth="100dp" android:hint="主题测试" android:singleLine="true" app:layout_constraintLeft_toRightOf="@+id/img"/>
+    <TextView android:textSize="12sp" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:maxWidth="120dp" android:hint="描述" android:singleLine="true" app:layout_constraintLeft_toRightOf="@+id/img" app:layout_constraintTop_toBottomOf="@+id/tv_title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/img" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="@+id/img">
+        <ImageView android:id="@+id/btn_last" android:layout_width="25dp" android:layout_height="25dp" android:src="@mipmap/app_logo"/>
+        <ImageView android:id="@+id/btn_center" android:clickable="true" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="20dp" android:src="@mipmap/app_logo"/>
+        <ImageView android:id="@+id/btn_next" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="20dp" android:src="@mipmap/app_logo"/>
+        <ImageView android:id="@+id/btn_cancel" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginLeft="20dp" android:src="@mipmap/app_logo"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

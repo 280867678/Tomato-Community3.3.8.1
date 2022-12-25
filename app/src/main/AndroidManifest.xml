@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" platformBuildVersionName="9" platformBuildVersionCode="28" package="com.broccoli.bh" android:versionCode="338" android:versionName="3.3.8" android:compileSdkVersion="28" android:compileSdkVersionCodename="9">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true"/>
+    <uses-feature android:name="android.hardware.Camera"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="MediaStore.Images.Media.INTERNAL_CONTENT_URI"/>
+    <uses-permission android:name="MediaStore.Images.Media.EXTERNAL_CONTENT_URI"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:name="com.one.tomato.mvp.base.BaseApplication" android:allowBackup="false" android:largeHeap="true" android:supportsRtl="true" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="@string/app_name">
+        <activity android:theme="@style/Theme_AppStartLoadTranslucent" android:name="com.one.tomato.mvp.p080ui.start.view.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PublishPostSpecificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.start.view.WarnActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.start.view.AdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.start.view.LauncherActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MainTabTheme" android:name="com.one.tomato.p085ui.MainTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/MainTabTheme" android:name="com.one.tomato.mvp.p080ui.chess.view.ChessMainTabActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:theme="@style/ShowImageStyle" android:name="com.one.tomato.mvp.p080ui.showimage.ImageShowActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.search.view.PostSearchActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostCommentReplyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.one.tomato.p085ui.publish.PublishActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:theme="@style/Theme_Translucent" android:name="com.one.tomato.p085ui.publish.PublishStatusActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme_Translucent" android:name="com.one.tomato.p085ui.publish.PapaPublishStatusActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.one.tomato.p085ui.mine.PersonInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.ModifyPersonInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyFocusMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.AccoutnAprealActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyCollectPostActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyThumbPostActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.p085ui.feedback.FeedbackSystemMsgDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyBrowseListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyPublishActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MySignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyCommentListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.setting.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.setting.MessageSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.setting.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.setting.AccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.setting.PhoneBindActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.setting.ShieldListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.LoginActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.RegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.ForgetPsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.RegisterUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.p085ui.login.ModifyPSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.CountryCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.UserProtocolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.feedback.FeedbackEnterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.feedback.FeedbackDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.p085ui.webview.HtmlShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyFanListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.feedback.FeedbackHistoryDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.feedback.FeedbackHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.task.VirtualRecordInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.task.ExpireRecordInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.IncomeCenterActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.IncomeActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.InspectRecordActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.IncomeDetailActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.CashActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.CashApplyCompeledActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.VeritifyIdentityActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.TradePwdSettingActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.CashProgressDetailActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.IncomeAndCashActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.CashListActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.task.TaskCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.AlipayBindSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.BankBindActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.BankSelectListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.level.MyLevelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.level.CreditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.level.CreditRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.recharge.RechargeActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tomato" android:host="pt" android:path="/recharge/purse"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.one.tomato.p085ui.recharge.RechargeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.income.AlipayBindActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.tag.TagSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.tag.TagFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name="com.one.tomato.p085ui.lockscreen.LoginAccountVerityActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.one.tomato.p085ui.lockscreen.LockScreenPwdEnterActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.one.tomato.p085ui.lockscreen.LockScreenPwdSettingActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostAndMemberReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.papa.view.PapaReportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.one.tomato.p085ui.mine.LocationPickActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.CircleSingleActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden" android:parentActivityName="com.one.tomato.ui.MainTabActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.MainTabActivity"/>
+        </activity>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.CircleDetailNewActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.CircleActiveListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.CircleNoticeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.feedback.view.FeedbackRechargeIssuesActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.feedback.view.FeedbackRechargeActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.feedback.view.FeedbackOrderActivity"/>
+        <activity android:name="com.one.tomato.p085ui.mine.LanguageSwitchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.MyMessageNotifctionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyExchangeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyExchangeListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.mine.MyShareListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.PostReviewMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.CommentResponseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.FeedBackResponseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.FeedBackDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.SystemNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.messge.p086ui.SystemNoticeDetailAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.download.view.VideoDownloadActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/ActivityTransparent" android:name="com.one.tomato.mvp.p080ui.papa.view.NewPaPaListVideoActivity" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:theme="@style/ActivityTransparent" android:name="com.one.tomato.mvp.p080ui.mine.view.NewMyHomePageActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/ActivityTranction" android:name="com.one.tomato.mvp.p080ui.post.view.NewPostDetailViewPagerActivity" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tomato" android:host="tothost" android:path="/post/detail"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.one.tomato.mvp.p080ui.game.view.GameCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.game.view.GameSpreadActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.papa.view.PaPaHotListHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.NewChannelChooseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.CircleAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.papa.view.PaPaTumbeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.mine.view.MyInteractionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.UpHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.UpPlanActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.promotion.p081ui.SpreadInfoActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.promotion.p081ui.SpreadHtmlActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.promotion.p081ui.XiaobaiHtmlActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.promotion.p081ui.SpreadRecordActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.promotion.p081ui.WithdrawActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.promotion.p081ui.WithdrawStatusActivity"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.vip.p083ui.VipActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tomato" android:host="pt" android:path="/recharge/vip"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.one.tomato.mvp.p080ui.vip.p083ui.VipHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.vip.p083ui.VipRightActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.base.view.BaseHtmlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.ReviewPostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.newyear.NewYearHtmlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.AprealResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.login.view.LoginVerifyAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.TagPostListAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.UpApplyAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostPayActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostHotMessageDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostHotMessageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.sign.view.UserSignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.circle.view.CircleTabActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PostHotListActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.mine.view.ChoosePostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.mine.view.SingleSerialPostListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.mine.view.AppMarketHtmlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.ReviewPostWGActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.StartReviewPostActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.mine.view.CreatorCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.mine.view.CreatorCenterHtmlActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.chess.view.ChessLiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.recharge.RechargeExGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.UpRankHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MainTabTheme" android:name="com.one.tomato.mvp.p080ui.chess.view.ChessPostHomeActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:theme="@style/MainTabTheme" android:name="com.one.tomato.mvp.p080ui.chess.view.ChessPaPaHomeActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.chess.view.ChessGameActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.publish.ScannerResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.publish.PublishCaptureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.publish.PCTipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.p085ui.publish.ChoosePublishWayActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.game.view.GameWebActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PicSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.SubscribeUpListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.UpEditNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.p082up.view.UpSubscribeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.one.tomato.mvp.p080ui.post.view.PicSearchResultActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="CHANNEL_KEY" android:value="001_A008"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="com.pm.liquidlink.APP_KEY" android:value="a"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="notch.config" android:value="portrait|landscape"/>
+        <provider android:name="com.one.tomato.provider.ImgProvider" android:exported="false" android:authorities="com.broccoli.bh.imgProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/img_path"/>
+        </provider>
+        <provider android:name="com.one.tomato.provider.ApkProvider" android:exported="false" android:authorities="com.broccoli.bh.apkProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/apk_path"/>
+        </provider>
+        <service android:name="com.one.tomato.service.PublishService"/>
+        <provider android:name="com.gen.p059mh.webapp_extensions.utils.WebSdkFileProvider" android:exported="false" android:authorities="com.broccoli.bh.websdk.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_webapp_paths"/>
+        </provider>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.gen.p059mh.webapp_extensions.activities.WebAppActivity" android:screenOrientation="locked" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustUnspecified"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.gen.p059mh.webapp_extensions.activities.OpenWebActivity" android:screenOrientation="portrait" android:configChanges="screenSize|orientation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.gen.p059mh.webapp_extensions.matisse.p061ui.WebSdkMatisseActivity"/>
+        <activity android:name="com.gen.p059mh.webapp_extensions.matisse.internal.p060ui.AlbumPreviewActivity"/>
+        <activity android:name="com.gen.p059mh.webapp_extensions.matisse.internal.p060ui.SelectedPreviewActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.gen.p059mh.webapp_extensions.activities.TakePhotoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="cn.bertsir.zbar.QRActivity" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.p076mh.webappStart.test.audio.TestZZBMediaPlayerActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.p076mh.webappStart.android_plugin_impl.plugins.plugin_impl.media.audio.background.PlayingDetailActivity" android:launchMode="singleTask" android:configChanges="screenSize|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.p076mh.webappStart.test.audio.BackgroundPlayActivity" android:configChanges="screenSize|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.p076mh.webappStart.test.audio.ManyAudioPlayActivity" android:configChanges="screenSize|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.p076mh.webappStart.test.audio.SingleAudioPlayActivity" android:configChanges="screenSize|orientation"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.p076mh.webappStart.test.CZTestActivity" android:configChanges="screenSize|orientation"/>
+        <service android:name="com.p076mh.webappStart.android_plugin_impl.plugins.plugin_impl.media.audio.background.PlayService"/>
+        <provider android:name="com.iceteck.silicompressorr.provider.GenericFileProvider" android:exported="false" android:authorities="com.broccoli.bh.iceteck.silicompressor.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_sili_paths"/>
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:configChanges="screenSize|orientation|navigation|keyboardHidden"/>
+        <activity android:name="com.alipay.sdk.app.H5AuthActivity" android:exported="false" android:configChanges="screenSize|orientation|navigation|keyboardHidden"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.sdk.app.PayResultActivity" android:exported="true" android:launchMode="singleInstance" android:configChanges="screenSize|orientation|navigation|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.alipay.sdk.app.AlipayResultActivity" android:exported="true" android:launchMode="singleTask"/>
+        <activity android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="screenSize|orientation|navigation|keyboardHidden" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:name="com.luck.picture.lib.PictureFileProvider" android:exported="false" android:authorities="com.broccoli.bh.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.luck.picture.lib.PictureSelectorActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.luck.picture.lib.PicturePreviewActivity"/>
+        <activity android:name="com.luck.picture.lib.PictureVideoPlayActivity" android:screenOrientation="sensor" android:configChanges="screenSize|orientation|keyboardHidden"/>
+        <activity android:name="com.luck.picture.lib.PictureExternalPreviewActivity"/>
+        <activity android:name="com.tomato.ucrop.UCropActivity"/>
+        <activity android:name="com.tomato.ucrop.PictureMultiCuttingActivity"/>
+        <activity android:name="com.luck.picture.lib.PicturePlayAudioActivity"/>
+        <provider android:name="com.tomatolive.library.utils.PictureFileProvider" android:exported="false" android:authorities="com.broccoli.bh.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.tomatolive.library.service.KickDialogService"/>
+        <service android:name="com.tomatolive.library.service.TokenDialogService"/>
+        <activity android:name="com.tomatolive.library.p136ui.view.widget.matisse.p138ui.MatisseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.view.widget.matisse.internal.p137ui.AlbumPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.view.widget.matisse.internal.p137ui.SelectedPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.live.TomatoLiveActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.home.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.live.PrepareLiveActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:label="@string/fq_anchor_identy" android:name="com.tomatolive.library.p136ui.activity.home.AnchorAuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:label="@string/fq_anchor_identy" android:name="com.tomatolive.library.p136ui.activity.home.AnchorAuthResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.home.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live" android:name="com.tomatolive.library.p136ui.activity.mylive.MyLiveActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_my_income" android:name="com.tomatolive.library.p136ui.activity.mylive.MyIncomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.IncomeRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_dedicate" android:name="com.tomatolive.library.p136ui.activity.mylive.DedicateTopActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_house_setting" android:name="com.tomatolive.library.p136ui.activity.mylive.HouseSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_banned_setting" android:name="com.tomatolive.library.p136ui.activity.mylive.BannedSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_watch_record" android:name="com.tomatolive.library.p136ui.activity.mylive.WatchRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_home_top" android:name="com.tomatolive.library.p136ui.activity.home.RankingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_pre_notice" android:name="com.tomatolive.library.p136ui.activity.mylive.LivePreNoticeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_user_grade" android:name="com.tomatolive.library.p136ui.activity.mylive.UserGradeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_anchor_grade" android:name="com.tomatolive.library.p136ui.activity.mylive.AnchorGradeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_car_mall" android:name="com.tomatolive.library.p136ui.activity.mylive.CarMallActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_my_garage" android:name="com.tomatolive.library.p136ui.activity.mylive.MyCarActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_live_car_mall_detail" android:name="com.tomatolive.library.p136ui.activity.mylive.CarMallDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.IncomeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.live.ReportLiveActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobilityPrivilegeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobilityOpenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobilityOpenOrderActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/fq_my_account" android:name="com.tomatolive.library.p136ui.activity.mylive.MyAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobleHiddenInRankListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobleRecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobilityOpenRecordActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.noble.NobilityRecommendHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.MyTicketActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.AwardHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.AwardDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.SubmitAppealActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.AppealHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.AppealDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.home.RankingNewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.home.TargetFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/MyTranslucentTheme" android:name="com.tomatolive.library.p136ui.activity.home.TransparentDialogActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.live.AnchorImpressionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.WearCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.UserIncomeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tomatolive.library.p136ui.activity.mylive.MyClanActivity" android:screenOrientation="portrait"/>
+        <provider android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider" android:enabled="true" android:exported="false" android:authorities="com.broccoli.bh.SensorsDataContentProvider"/>
+        <meta-data android:name="com.sensorsdata.analytics.android.MainProcessName" android:value="com.broccoli.bh"/>
+        <activity android:theme="@style/ActivityTranslucent" android:name="com.blankj.utilcode.util.PermissionUtils.PermissionActivity" android:multiprocess="true" android:configChanges="screenSize|orientation|keyboardHidden" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="com.blankj.utilcode.util.Utils.FileProvider4UtilCode" android:exported="false" android:multiprocess="true" android:authorities="com.broccoli.bh.utilcode.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:name="com.blankj.utilcode.util.BusUtils.ServerService">
+            <intent-filter>
+                <action android:name="com.broccoli.bh.messenger"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <provider android:name="razerdp.basepopup.BasePopupRuntimeTrojanProvider" android:exported="false" android:multiprocess="false" android:authorities="com.broccoli.bh.basepopup-trojan"/>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+    <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_head" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:layout_marginLeft="@dimen/dimen_16" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:text="下的" android:layout_toRightOf="@+id/image_head" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_light" android:gravity="center" android:id="@+id/text_tot_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:drawablePadding="@dimen/dimen_6" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

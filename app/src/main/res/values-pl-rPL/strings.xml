@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">Limit czasu sieci, kliknij ponów</string>
+    <string name="tip_load_failed">Ładowanie nie powiodło się</string>
+    <string name="tip_loading">Inspekcja bezpieczeństwa</string>
+    <string name="tip_no_network">Sieć jest nienormalna. Sprawdź sieć i spróbuj ponownie.</string>
+    <string name="tip_validate_timeout">Sprawdź limit czasu, zamknij i sprawdź sieć</string>
+</resources>

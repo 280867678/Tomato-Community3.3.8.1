@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/fq_vip_empty_tips" android:drawableTop="@drawable/fq_ic_empty_vip_sofa" android:drawablePadding="16dp"/>
+    <TextView android:textSize="12sp" android:textColor="#ffaeaeae" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/fq_vip_empty_tips_2" android:layout_marginStart="10dp" android:layout_marginEnd="10dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip_empty_label_tips_1" android:drawableLeft="@drawable/fq_ic_empty_vip_label_1" android:drawablePadding="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip_empty_label_tips_2" android:drawableLeft="@drawable/fq_ic_empty_vip_label_2" android:drawablePadding="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip_empty_label_tips_3" android:drawableLeft="@drawable/fq_ic_empty_vip_label_3" android:drawablePadding="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip_empty_label_tips_4" android:drawableLeft="@drawable/fq_ic_empty_vip_label_4" android:drawablePadding="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip_empty_label_tips_5" android:drawableLeft="@drawable/fq_ic_empty_vip_label_5" android:drawablePadding="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip_empty_label_tips_6" android:drawableLeft="@drawable/fq_ic_empty_vip_label_6" android:drawablePadding="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

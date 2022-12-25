@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_45">
+        <include layout="@layout/merge_title_bar"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/liner_search" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24" android:text="@string/pic_search_1"/>
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/text_search" android:background="@drawable/common_shape_solid_corner5_coloraccent" android:paddingLeft="@dimen/dimen_20" android:paddingRight="@dimen/dimen_20" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_40" android:layout_marginTop="@dimen/dimen_12" android:text="@string/pic_search_2"/>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_dark" android:layout_gravity="center_horizontal" android:id="@+id/text_provide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:text="@string/pic_search_3" android:drawableStart="@drawable/pic_search_javdb"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/line_hot" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_16">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pic_search_4"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16">
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/hot_recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

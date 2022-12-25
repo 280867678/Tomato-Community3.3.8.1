@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/fq_colorWhite" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never"/>
+    <include layout="@layout/fq_include_divider_view"/>
+    <FrameLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/fq_colorWhite" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="#ff999999" android:layout_gravity="center" android:id="@+id/tv_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_nobility_open_no_tips" android:drawableLeft="@drawable/fq_ic_anchor_inform_gray" android:drawablePadding="6dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_open_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_first_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_renewal_fee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/fq_colorBtnTextPrimary" android:id="@+id/tv_open" android:background="@drawable/fq_btn_round_red_selector" android:paddingLeft="15dp" android:paddingTop="8dp" android:paddingRight="15dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_btn_open"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

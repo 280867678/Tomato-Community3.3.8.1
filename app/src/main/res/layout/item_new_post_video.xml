@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/image_back_ground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/image_bg_blur" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    <View android:id="@+id/background_view" android:background="@color/white_60" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:id="@+id/image_video_cove" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/image_video_play" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50" android:src="@drawable/icon_new_post_play" android:layout_centerInParent="true"/>
+    <TextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tv_video_time" android:background="@drawable/common_shape_solid_corner30_black50" android:paddingLeft="@dimen/dimen_7" android:paddingTop="@dimen/dimen_3" android:paddingRight="@dimen/dimen_7" android:paddingBottom="@dimen/dimen_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_11" android:layout_marginBottom="@dimen/dimen_16" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/fram_ijkplay_view" android:background="@color/transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+</RelativeLayout>

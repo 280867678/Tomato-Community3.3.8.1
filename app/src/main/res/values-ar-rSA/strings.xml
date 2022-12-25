@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Captcha</string>
+    <string name="tip_init_timeout">فشلت التهيئة ، انقر لإعادة المحاولة</string>
+    <string name="tip_load_failed">فشل تحميل رمز التحقق</string>
+    <string name="tip_loading">جاري التفتيش الأمني</string>
+    <string name="tip_no_network">الانترنت غير طبيع، يرجي فحص الانترنت والمحاولة لمرة أخرى</string>
+    <string name="tip_validate_timeout">انتهت مهلة التحقق، الرجاء إغلاق وفحص الإنترنت</string>
+</resources>

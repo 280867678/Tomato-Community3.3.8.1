@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/fq_shape_dialog_white_corner_bg" android:padding="9dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/iv_close">
+        <View android:background="@drawable/fq_shape_lottery_notice_bg" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <android.support.p002v4.widget.NestedScrollView android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="14sp" android:textColor="#ff381a94" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp"/>
+                <TextView android:textSize="13sp" android:textColor="#ff381a94" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="3dp"/>
+            </LinearLayout>
+        </android.support.p002v4.widget.NestedScrollView>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/fq_ic_dialog_bottom_close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

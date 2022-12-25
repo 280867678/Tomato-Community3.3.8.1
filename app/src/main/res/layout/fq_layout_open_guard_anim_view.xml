@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_centerVertical="true"/>
+    <RelativeLayout android:id="@+id/fq_rl_name_bg" android:background="@drawable/fq_ic_guard_year_open_tip" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_centerInParent="true" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="#ffffe563" android:ellipsize="marquee" android:id="@+id/fq_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:maxWidth="60dp" android:singleLine="true" android:includeFontPadding="false" android:maxLength="10" android:marqueeRepeatLimit="marquee_forever"/>
+            <TextView android:textSize="11sp" android:textColor="@color/fq_text_white_color" android:id="@+id/fq_tv_open_guard_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

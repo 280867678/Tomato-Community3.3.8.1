@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/fq_shape_car_list_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_img" android:layout_width="match_parent" android:layout_height="136dp"/>
+    <ImageView android:id="@+id/iv_label" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_label_limit"/>
+    <RelativeLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/iv_img">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="#ffaeaeae" android:id="@+id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:singleLine="true" android:layout_below="@+id/tv_name"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/tv_tips">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_colorRed" android:id="@+id/tv_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_times" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="11sp" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_money" android:background="@drawable/fq_btn_round_red_selector" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:minHeight="22dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/fq_colorRed" android:layout_gravity="center" android:id="@+id/tv_week_star_car" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_week_star_nabob_car"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

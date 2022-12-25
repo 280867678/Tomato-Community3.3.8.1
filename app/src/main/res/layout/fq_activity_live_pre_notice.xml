@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <com.tomatolive.library.p136ui.view.widget.ClearEditText android:textSize="14sp" android:textColor="@color/fq_colorEditTextPrimary" android:textColorHint="@color/fq_colorEditTextPrimaryHint" android:id="@+id/et_content" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="@string/fq_my_live_pre_notice_tips" android:maxLength="25"/>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp" android:text="@string/fq_my_live_pre_notice_check_tips"/>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_colorPrimary" android:id="@+id/tv_current_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="30dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_colorPrimary" android:id="@+id/tv_new_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="6dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:enabled="false" android:textSize="14sp" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:id="@+id/tv_save" android:background="@drawable/fq_btn_round_red_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="200dp" android:minHeight="40dp" android:text="@string/fq_btn_save" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

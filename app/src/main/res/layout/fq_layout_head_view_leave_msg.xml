@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="#aeaeae" android:gravity="center" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+    <android.support.p005v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="15dp" app:cardElevation="0dp" app:contentPadding="1dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/fq_hd_award_detail_bg" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_hd_lottery_gift"/>
+                    <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/tv_prize_name" style="@style/fq_appeal_detail_content_style"/>
+                </LinearLayout>
+                <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/tv_first_line" android:layout_width="match_parent" android:layout_marginTop="15dp" style="@style/fq_appeal_detail_text_style"/>
+                <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/tv_second_line" android:layout_width="match_parent" android:layout_marginTop="10dp" style="@style/fq_appeal_detail_text_style"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/fq_hd_award_detail_bg2" android:paddingLeft="15dp" android:paddingTop="16dp" android:paddingRight="15dp" android:paddingBottom="21dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#272727" android:id="@+id/tv_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.4"/>
+                <TextView android:textSize="12sp" android:textColor="#bb95d1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fq_hd_award_tip2"/>
+                <TextView android:textSize="14sp" android:textColor="#9800f1" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tv_add_receive_address" android:background="@drawable/fq_hd_award_detail_address_bg" android:paddingLeft="50dp" android:paddingTop="8dp" android:paddingRight="50dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="end|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_hd_inform"/>
+    </android.support.p005v7.widget.CardView>
+</LinearLayout>

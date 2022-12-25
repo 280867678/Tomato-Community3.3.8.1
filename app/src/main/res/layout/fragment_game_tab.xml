@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/title_status_bar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/relate_game" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.one.tomato.widget.MarqueeTextView android:textSize="@dimen/text_size_14" android:ellipsize="marquee" android:gravity="center" android:id="@+id/tv_notice" android:background="@color/color_f5f5f7" android:paddingLeft="8dp" android:paddingRight="@dimen/dimen_8" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/dimen_36" android:text="@string/game_no_notice" android:singleLine="true" android:drawablePadding="@dimen/dimen_4" android:layout_alignParentTop="true" android:marqueeRepeatLimit="marquee_forever" android:drawableStart="@drawable/game_head_notice"/>
+        <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="277dp" android:layout_below="@+id/tv_notice"/>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/game_recycler" android:padding="@dimen/dimen_10" android:layout_width="match_parent" android:layout_height="@dimen/dimen_108" android:layout_below="@+id/web_view"/>
+        <FrameLayout android:id="@+id/container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/web_view"/>
+    </RelativeLayout>
+</LinearLayout>

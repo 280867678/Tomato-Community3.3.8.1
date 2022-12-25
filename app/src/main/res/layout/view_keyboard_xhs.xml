@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/ic_spitview_horizontal"/>
+    <RelativeLayout android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/btn_voice_or_text" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="12dp" android:src="@drawable/btn_voice_or_text" android:layout_centerVertical="true"/>
+        <Button android:textColor="#727272" android:id="@+id/btn_voice" android:background="@drawable/btn_voice" android:visibility="gone" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="8dp" android:text="@string/btn_text_speak" android:layout_toLeftOf="@+id/rl_multi_and_send" android:layout_toRightOf="@+id/btn_voice_or_text" android:layout_centerVertical="true"/>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_input" android:background="@drawable/input_bg_gray" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/rl_multi_and_send" android:layout_toRightOf="@+id/btn_voice_or_text" android:layout_centerVertical="true">
+            <sj.keyboard.widget.EmoticonsEditText android:textSize="16sp" android:id="@+id/et_chat" android:background="@null" android:paddingLeft="8dp" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4" android:layout_toLeftOf="@+id/btn_face" android:layout_centerVertical="true" android:lineSpacingExtra="4dp"/>
+            <ImageView android:id="@+id/btn_face" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="10dp" android:src="@drawable/icon_face_nomal" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_multi_and_send" android:focusableInTouchMode="true" android:layout_width="58dp" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/btn_multimedia" android:layout_width="34dp" android:layout_height="34dp" android:src="@drawable/btn_multi_bg" android:layout_centerInParent="true"/>
+            <Button android:textSize="12sp" android:textColor="@color/btn_send_textcolor" android:id="@+id/btn_send" android:background="@drawable/btn_send_bg_disable" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="50dp" android:layout_height="30dp" android:text="@string/btn_text_send" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <sj.keyboard.widget.FuncLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ly_kvml" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

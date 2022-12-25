@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="banned_text">
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1个小时</item>
+        <item>8个小时</item>
+        <item>1天</item>
+        <item>3天</item>
+        <item>7天</item>
+        <item>30天</item>
+    </array>
+    <array name="credit_rule_fraction_type">
+        <item>類型</item>
+        <item>分數變動</item>
+        <item>每日上限</item>
+    </array>
+    <array name="credit_rule_punish_type">
+        <item>分數區間</item>
+        <item>發帖次數</item>
+        <item>評論與回復</item>
+    </array>
+    <array name="fq_search_tab_menu">
+        <item>全部</item>
+        <item>主播</item>
+        <item>直播</item>
+    </array>
+    <array name="inspect_adapter_titles">
+        <item>充值額度</item>
+        <item>稽核額度</item>
+        <item>已稽核</item>
+        <item>狀態</item>
+    </array>
+    <array name="level_description_content">
+        <item>流覽海量帖子</item>
+        <item>圈子中找到真愛</item>
+        <item>和水友一起嗨聊</item>
+        <item>和大家分享獨家</item>
+        <item>保存視頻到本地</item>
+    </array>
+    <array name="level_description_title">
+        <item>看帖權益</item>
+        <item>圈子特權</item>
+        <item>評論權益</item>
+        <item>發帖權益</item>
+        <item>下載視頻</item>
+    </array>
+    <array name="level_get_expire_desc">
+        <item>邀請用戶下載登錄</item>
+        <item>初來乍到獎勵多多</item>
+        <item>瀏覽帖子輕松獲取</item>
+        <item>不止升級還獲獎勵</item>
+    </array>
+    <array name="level_get_expire_title">
+        <item>推廣任務</item>
+        <item>新手任務</item>
+        <item>日常任務</item>
+        <item>獲得勛章</item>
+    </array>
+    <array name="level_nick">
+        <item>新手</item>
+        <item>射手</item>
+        <item>獵手</item>
+        <item>旗手</item>
+        <item>統領</item>
+        <item>王者</item>
+    </array>
+    <array name="live_more_menu_title">
+        <item>美化</item>
+        <item>麥克風</item>
+        <item>閃光燈</item>
+        <item>大字幕</item>
+        <item>鏡像</item>
+        <item>發言設置</item>
+        <item>修改主題</item>
+        <item>贴片控件</item>
+        <item>屏蔽小礼物</item>
+        <item>人气卡</item>
+        <item>付费设置</item>
+    </array>
+    <array name="phone_country_code_key">
+        <item>82</item>
+        <item>86</item>
+        <item>81</item>
+        <item>66</item>
+        <item>1</item>
+    </array>
+    <array name="phone_country_code_value">
+        <item>韩国（+82）</item>
+        <item>中国大陆（+86）</item>
+        <item>日本（+81）</item>
+        <item>泰国（+66）</item>
+        <item>美国（+1）</item>
+    </array>
+    <array name="pullToRefresh_head_text">
+        <item>哪有人喜歡孤獨，不過是不喜歡失望罷了</item>
+        <item>帶不走的留不下，留不下的莫牽掛</item>
+        <item>這裡沒有末路，你從不曾孤獨</item>
+        <item>戀愛不是用談的，是墜入的</item>
+        <item>想想我們曾經無關，又何必彼此為難</item>
+        <item>如果餘生都是你，晚到一點沒關係</item>
+        <item>要麼庸俗，要麼孤獨</item>
+        <item>在最深的絕望裡,遇見最美麗的風景</item>
+        <item>除非黃土白骨,我守你百歲無憂</item>
+        <item>一廂情願,就得願賭服輸</item>
+        <item>山有木兮木有枝，心悅君兮君不知</item>
+        <item>有有生之年能遇見你,竟花光我所有運氣了</item>
+        <item>山有木兮木有枝，心悦君兮君不知</item>
+        <item>你不曾給我一次回眸，我卻始終在對你微笑</item>
+        <item>你以為的極限，弄不好只是別人的起點</item>
+        <item>喜歡就會放肆，但愛就是克制</item>
+        <item>我漸漸意會到，深刻並不等於接近事實</item>
+        <item>總之歲月漫長，然而值得等待</item>
+    </array>
+    <array name="report_down_comment">
+        <item>涉嫌廣告、欺騙信息</item>
+        <item>政治敏感、血腥暴力、違法犯罪</item>
+        <item>惡意攻擊謾罵</item>
+        <item>其他</item>
+    </array>
+    <array name="report_down_post">
+        <item>內容清晰度不夠</item>
+        <item>涉嫌廣告、欺騙信息</item>
+        <item>未成年、兒童、人獸等違規內容</item>
+        <item>內容與標題、圈子、標籤不符</item>
+        <item>非色情內容</item>
+        <item>其他</item>
+    </array>
+    <array name="report_member_content">
+        <item>亂髮廣告</item>
+        <item>違法犯罪</item>
+        <item>涉嫌欺詐</item>
+        <item>侮辱謾駡</item>
+        <item>造謠傳謠</item>
+        <item>其他</item>
+    </array>
+    <array name="report_papa_item_content1">
+        <item>政治敏感</item>
+        <item>血腥暴力、違法違規</item>
+        <item>垃圾廣告</item>
+        <item>造謠傳謠、涉嫌欺詐</item>
+        <item>侮辱謾駡</item>
+    </array>
+    <array name="report_papa_item_content2">
+        <item>盜用TA人作品</item>
+        <item>侵犯TA人隱私</item>
+    </array>
+    <array name="report_papa_item_content3">
+        <item>兒童色情</item>
+    </array>
+    <array name="report_papa_item_content4">
+        <item>引人不適</item>
+        <item>標題黨</item>
+        <item>標籤不對</item>
+        <item>其他</item>
+    </array>
+    <array name="report_post_content">
+        <item>垃圾廣告</item>
+        <item>欺騙資訊</item>
+        <item>有害信息</item>
+        <item>人身攻擊</item>
+    </array>
+    <array name="take_photo_text">
+        <item>拍照</item>
+        <item>本地獲取</item>
+    </array>
+    <array name="vip_right_compare_list">
+        <item>權益</item>
+        <item>會員用戶</item>
+        <item>普通用戶</item>
+        <item>視頻觀看</item>
+        <item>無限制</item>
+        <item>限制次數</item>
+        <item>下載視頻到\n相冊</item>
+        <item>免費下載\n次數限制</item>
+        <item>收費下載</item>
+        <item>緩存視頻到\napp內部</item>
+        <item>無限制</item>
+        <item>收費下載</item>
+        <item>評論/回復</item>
+        <item>無限制</item>
+        <item>等級限制\n次數限制</item>
+        <item>帖子發布</item>
+        <item>無限制</item>
+        <item>等級限制\n次數限制</item>
+        <item>查看完整視頻</item>
+        <item>可查看</item>
+        <item>不可查看</item>
+        <item>會員特殊標識</item>
+        <item>有</item>
+        <item>無</item>
+    </array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="20dp" android:layout_marginRight="30dp" android:layout_marginBottom="20dp">
+        <View android:background="@color/fq_text_black" android:layout_width="match_parent" android:layout_height="1dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_reward_title" android:background="@color/fq_colorWhite" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_week_star_anchor_reward" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view_reward" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/margin_placeholder" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/rl_player_bg" android:layout_width="match_parent" android:layout_height="250dp">
+            <TextView android:textSize="10sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_home_court" android:background="@drawable/fq_pk_shape_red_frame_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/fq_pk_home_court"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_alignParentRight="true">
+                <TextView android:textSize="10sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_attention_anchor" android:background="@drawable/fq_pk_shape_red_bg" android:paddingLeft="6dp" android:paddingTop="5dp" android:paddingRight="6dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_pk_attention_ta"/>
+                <TextView android:textSize="10sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_enter_live" android:background="@drawable/fq_pk_shape_red_bg" android:paddingLeft="6dp" android:paddingTop="5dp" android:paddingRight="6dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_go_to_index" android:layout_marginStart="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginBottom="12dp" android:layout_alignParentBottom="true">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_red_pk_emblem_light" android:visibility="invisible" android:layout_width="130dp" android:layout_height="130dp"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_red_pk_emblem" android:layout_width="110dp" android:layout_height="110dp" android:alpha="0"/>
+                    <ImageView android:layout_gravity="bottom" android:id="@+id/iv_red_pk_emblem_small" android:visibility="invisible" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="-10dp" android:layout_marginStart="10dp"/>
+                </FrameLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_blue_pk_emblem_light" android:visibility="invisible" android:layout_width="130dp" android:layout_height="130dp"/>
+                    <ImageView android:layout_gravity="center" android:id="@+id/iv_blue_pk_emblem" android:layout_width="110dp" android:layout_height="110dp" android:alpha="0"/>
+                    <ImageView android:layout_gravity="bottom|right" android:id="@+id/iv_blue_pk_emblem_small" android:visibility="invisible" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="-10dp" android:layout_marginEnd="10dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/iv_countdown_num" android:layout_width="150dp" android:layout_height="150dp" android:layout_centerInParent="true"/>
+            <TextView android:textSize="10sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_clock" android:background="@drawable/fq_pk_layer_clock_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:minWidth="74dp" android:minHeight="18dp" android:drawableLeft="@drawable/fq_ic_pk_connect_clock" android:drawablePadding="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="10sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_clock_60" android:background="@drawable/fq_pk_layer_clock_bg" android:visibility="invisible" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginBottom="12dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <com.opensource.svgaplayer.SVGAImageView android:id="@+id/svga_fire" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="-30dp" android:layout_marginBottom="-20dp"/>
+        <com.tomatolive.library.p136ui.view.custom.PKBarView android:id="@+id/pk_bar" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="39dp" android:layout_marginTop="-3dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginTop="-19dp">
+            <RelativeLayout android:id="@+id/rl_versus_red_bg" android:background="@drawable/fq_ic_pk_versus_red_bg" android:layout_width="165dp" android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/rl_red_start_bg" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/iv_red_anchor_avatar" android:layout_width="34dp" android:layout_height="match_parent" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_red_anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@+id/iv_red_anchor_avatar"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_pk_our_side" android:layout_alignParentBottom="true" android:layout_toEndOf="@+id/iv_red_anchor_avatar"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_red_assist_bg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_centerVertical="true" android:alpha="0">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/fq_ic_pk_versus_red_hot_bg" android:paddingLeft="3dp" android:paddingTop="4dp" android:paddingRight="3dp" android:paddingBottom="4dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="6dp">
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_pk_popularity"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_red_popularity" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <RelativeLayout android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="28dp" android:layout_height="match_parent" android:layout_marginStart="6dp">
+                        <FrameLayout android:background="@drawable/fq_pk_oval_red_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_red_assist_avatar_3" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_ic_pk_versus_red_sofa"/>
+                        </FrameLayout>
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:background="@drawable/fq_pk_oval_red_bg" android:layout_width="10dp" android:layout_height="10dp" android:text="3" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="28dp" android:layout_height="match_parent" android:layout_marginStart="6dp">
+                        <FrameLayout android:background="@drawable/fq_pk_oval_red_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_red_assist_avatar_2" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_ic_pk_versus_red_sofa"/>
+                        </FrameLayout>
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:background="@drawable/fq_pk_oval_red_bg" android:layout_width="10dp" android:layout_height="10dp" android:text="2" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="28dp" android:layout_height="match_parent" android:layout_marginStart="6dp">
+                        <FrameLayout android:background="@drawable/fq_pk_oval_red_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_red_assist_avatar_1" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_ic_pk_versus_red_sofa"/>
+                        </FrameLayout>
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:background="@drawable/fq_pk_oval_red_bg" android:layout_width="10dp" android:layout_height="10dp" android:text="1" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_red_shadow_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_pk_versus_red_shadow_bg" android:alpha="0"/>
+                <ImageView android:id="@+id/iv_red_group_fail" android:visibility="invisible" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/fq_ic_pk_versus_group_fail" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_versus_blue_bg" android:background="@drawable/fq_ic_pk_versus_blue_bg" android:layout_width="165dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <RelativeLayout android:id="@+id/rl_blue_start_bg" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/iv_blue_anchor_avatar" android:layout_width="34dp" android:layout_height="match_parent" android:src="@drawable/fq_ic_placeholder_avatar_white" android:layout_alignParentRight="true" android:layout_marginStart="6dp" android:layout_marginEnd="6dp"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_blue_anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toStartOf="@+id/iv_blue_anchor_avatar"/>
+                    <TextView android:textSize="10dp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_pk_other_side" android:layout_alignParentBottom="true" android:layout_toStartOf="@+id/iv_blue_anchor_avatar"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/ll_blue_assist_bg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:alpha="0">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_blue_hot_bg" android:background="@drawable/fq_ic_pk_versus_blue_hot_bg" android:paddingLeft="3dp" android:paddingTop="4dp" android:paddingRight="3dp" android:paddingBottom="4dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentRight="true" android:layout_marginEnd="6dp">
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_pk_popularity"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_blue_popularity" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <RelativeLayout android:id="@+id/rl_blue_assist_avatar_bg_1" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="28dp" android:layout_height="match_parent" android:layout_marginEnd="6dp" android:layout_toStartOf="@+id/ll_blue_hot_bg">
+                        <FrameLayout android:background="@drawable/fq_pk_oval_blue_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_blue_assist_avatar_3" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_ic_pk_versus_blue_sofa"/>
+                        </FrameLayout>
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:background="@drawable/fq_pk_oval_blue_bg" android:layout_width="10dp" android:layout_height="10dp" android:text="3" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_blue_assist_avatar_bg_2" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="28dp" android:layout_height="match_parent" android:layout_marginEnd="6dp" android:layout_toStartOf="@+id/rl_blue_assist_avatar_bg_1">
+                        <FrameLayout android:background="@drawable/fq_pk_oval_blue_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_blue_assist_avatar_2" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_ic_pk_versus_blue_sofa"/>
+                        </FrameLayout>
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:background="@drawable/fq_pk_oval_blue_bg" android:layout_width="10dp" android:layout_height="10dp" android:text="2" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="28dp" android:layout_height="match_parent" android:layout_marginEnd="6dp" android:layout_toStartOf="@+id/rl_blue_assist_avatar_bg_2">
+                        <FrameLayout android:background="@drawable/fq_pk_oval_blue_bg" android:layout_width="match_parent" android:layout_height="28dp" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@+id/iv_blue_assist_avatar_1" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_ic_pk_versus_blue_sofa"/>
+                        </FrameLayout>
+                        <TextView android:textSize="8dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:background="@drawable/fq_pk_oval_blue_bg" android:layout_width="10dp" android:layout_height="10dp" android:text="1" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ImageView android:id="@+id/iv_blue_shadow_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_pk_versus_blue_shadow_bg" android:alpha="0"/>
+                <ImageView android:id="@+id/iv_blue_group_fail" android:visibility="invisible" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/fq_ic_pk_versus_group_fail" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_vs_status" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/fq_ic_pk_versus" android:layout_centerInParent="true"/>
+            <TextView android:textSize="12sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_prepare" android:background="@drawable/fq_pk_btn_ready_selector" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="67dp" android:minHeight="32dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.opensource.svgaplayer.SVGAImageView android:id="@+id/svga_first_kill_star_light" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_guide_h"/>
+    <com.opensource.svgaplayer.SVGAImageView android:id="@+id/svga_first_kill_medal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/view_guide_h" app:loopCount="1"/>
+    <View android:id="@+id/view_guide_h" android:layout_width="match_parent" android:layout_height="0dp" android:layout_centerInParent="true"/>
+</merge>

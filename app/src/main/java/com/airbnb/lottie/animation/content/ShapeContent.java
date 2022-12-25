@@ -1,0 +1,66 @@
+package com.airbnb.lottie.animation.content;
+
+import android.graphics.Path;
+import android.support.annotation.Nullable;
+import com.airbnb.lottie.LottieDrawable;
+import com.airbnb.lottie.animation.keyframe.BaseKeyframeAnimation;
+import com.airbnb.lottie.model.content.ShapePath;
+import com.airbnb.lottie.model.content.ShapeTrimPath;
+import com.airbnb.lottie.model.layer.BaseLayer;
+import com.airbnb.lottie.utils.Utils;
+import java.util.List;
+
+/* loaded from: classes2.dex */
+public class ShapeContent implements PathContent, BaseKeyframeAnimation.AnimationListener {
+    private boolean isPathValid;
+    private final LottieDrawable lottieDrawable;
+    private final Path path = new Path();
+    private final BaseKeyframeAnimation<?, Path> shapeAnimation;
+    @Nullable
+    private TrimPathContent trimPath;
+
+    public ShapeContent(LottieDrawable lottieDrawable, BaseLayer baseLayer, ShapePath shapePath) {
+        shapePath.getName();
+        this.lottieDrawable = lottieDrawable;
+        this.shapeAnimation = shapePath.getShapePath().mo5808createAnimation();
+        baseLayer.addAnimation(this.shapeAnimation);
+        this.shapeAnimation.addUpdateListener(this);
+    }
+
+    @Override // com.airbnb.lottie.animation.keyframe.BaseKeyframeAnimation.AnimationListener
+    public void onValueChanged() {
+        invalidate();
+    }
+
+    private void invalidate() {
+        this.isPathValid = false;
+        this.lottieDrawable.invalidateSelf();
+    }
+
+    @Override // com.airbnb.lottie.animation.content.Content
+    public void setContents(List<Content> list, List<Content> list2) {
+        for (int i = 0; i < list.size(); i++) {
+            Content content = list.get(i);
+            if (content instanceof TrimPathContent) {
+                TrimPathContent trimPathContent = (TrimPathContent) content;
+                if (trimPathContent.getType() == ShapeTrimPath.Type.Simultaneously) {
+                    this.trimPath = trimPathContent;
+                    this.trimPath.addListener(this);
+                }
+            }
+        }
+    }
+
+    @Override // com.airbnb.lottie.animation.content.PathContent
+    public Path getPath() {
+        if (this.isPathValid) {
+            return this.path;
+        }
+        this.path.reset();
+        this.path.set(this.shapeAnimation.mo5805getValue());
+        this.path.setFillType(Path.FillType.EVEN_ODD);
+        Utils.applyTrimPathIfNeeded(this.path, this.trimPath);
+        this.isPathValid = true;
+        return this.path;
+    }
+}

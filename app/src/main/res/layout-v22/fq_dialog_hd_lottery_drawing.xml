@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_content_bg" android:background="@drawable/fq_hd_shape_draw_dialog_bg" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp">
+        <ImageView android:id="@+id/iv_flower" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/fq_ic_hd_lottery_flower" android:scaleType="fitXY" android:layout_alignBottom="@+id/ll_drawing_bg" android:layout_marginHorizontal="12dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_drawing_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="56dp">
+            <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:id="@+id/tv_prize_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginHorizontal="15dp"/>
+            <TextView android:textSize="10sp" android:textColor="@color/fq_text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/fq_hd_anchor_award_tips"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+                <TextView android:textSize="18sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_time_1" android:background="@drawable/fq_hd_shape_time_text_bg" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:paddingHorizontal="8dp" android:paddingVertical="8dp"/>
+                <TextView android:textSize="18sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_time_2" android:background="@drawable/fq_hd_shape_time_text_bg" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:paddingHorizontal="8dp" android:paddingVertical="8dp"/>
+                <TextView android:textSize="23sp" android:textColor="@color/fq_text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=":" android:includeFontPadding="false" android:layout_marginEnd="15dp"/>
+                <TextView android:textSize="18sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_time_3" android:background="@drawable/fq_hd_shape_time_text_bg" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10dp" android:paddingHorizontal="8dp" android:paddingVertical="8dp"/>
+                <TextView android:textSize="18sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_time_4" android:background="@drawable/fq_hd_shape_time_text_bg" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="8dp" android:paddingVertical="8dp"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/fq_hd_lottery_yellow_light" android:gravity="center" android:id="@+id/tv_condition_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:lineSpacingExtra="2.4dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <FrameLayout android:background="@drawable/fq_hd_btn_yellow_circle_frame_bg" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_gift_img" android:layout_width="25dp" android:layout_height="25dp"/>
+                </FrameLayout>
+                <TextView android:textSize="14sp" android:textColor="#ffe927" android:id="@+id/tv_gift_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="x1"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="80dp">
+                <TextView android:textSize="10sp" android:textColor="#bfffffff" android:gravity="center" android:id="@+id/tv_price_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_now_join_bg" android:background="@drawable/fq_hd_btn_end_bg" android:paddingLeft="15dp" android:paddingTop="2dp" android:paddingRight="15dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7dp" android:minWidth="130dp" android:minHeight="40dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingHorizontal="15dp" android:paddingVertical="2dp">
+                    <TextView android:textSize="14sp" android:textColor="#292f37" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_hd_one_click_join"/>
+                    <TextView android:textSize="10sp" android:textColor="#c07900" android:gravity="center" android:id="@+id/tv_now_join" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_draw_end_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_has_won_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="69dp" android:layout_height="69dp" android:src="@drawable/fq_ic_hd_lottery_gift" android:layout_marginEnd="13dp"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18sp" android:textColor="@color/fq_text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_hd_congratulation_you"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/fq_hd_anchor_msg_you"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:id="@+id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_hd_now_write_address"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/fq_text_white_color" android:id="@+id/tv_no_winning_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_hd_no_winning_tips" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="10sp" android:textColor="#bb95d1" android:id="@+id/tv_winners_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="5dp" android:layout_marginRight="13dp" android:layout_marginBottom="5dp" android:layout_marginHorizontal="13dp"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/fq_hd_shape_winning_names_bg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="166dp" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginHorizontal="13dp">
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_winning_names" android:background="@color/fq_colorWhite" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:paddingHorizontal="10dp" android:paddingVertical="10dp"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textColor="#bb95d1" android:gravity="center" android:id="@+id/tv_winning_pws_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginTop="10dp" android:layout_marginRight="13dp" android:text="@string/fq_hd_winning_pws_tips" android:layout_marginHorizontal="13dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_draw_open_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+            <RelativeLayout android:layout_width="202dp" android:layout_height="194dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_hd_lottery_draw_open_bg"/>
+                <com.opensource.svgaplayer.SVGAImageView android:id="@+id/iv_open_anim" android:layout_width="160dp" android:layout_height="160dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/fq_hd_lottery_yellow_light" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/fq_hd_open_lottery_tips"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_rule_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="13dp">
+                <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/fq_ic_achieve_back_white"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_hd_rule_desc"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/fq_hd_shape_winning_names_bg" android:padding="4dp" android:layout_width="match_parent" android:layout_height="253dp" android:layout_marginLeft="13dp" android:layout_marginRight="13dp" android:layout_marginHorizontal="13dp">
+                <com.tomatolive.library.p136ui.view.widget.Html5WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_rule" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:src="@drawable/fq_ic_hd_lottery_more" android:layout_marginHorizontal="12dp" android:layout_marginVertical="12dp"/>
+        <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:src="@drawable/fq_ic_achieve_close_white" android:layout_alignParentRight="true" android:layout_marginHorizontal="12dp" android:layout_marginVertical="12dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/iv_lottery_draw" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="43dp" android:src="@drawable/fq_ic_hd_lottery_draw_winning" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_lottery_gift" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/fq_ic_hd_lottery_gift" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

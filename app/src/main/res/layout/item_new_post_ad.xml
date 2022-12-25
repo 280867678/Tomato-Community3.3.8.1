@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout android:id="@+id/cons_post_auth" android:layout_width="match_parent" android:layout_height="@dimen/dimen_56">
+        <com.one.tomato.roundimage.RoundedImageView android:id="@+id/image_head" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:layout_marginStart="@dimen/dimen_16" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/text_dark" android:id="@+id/post_auth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginStart="12dp" app:layout_constraintStart_toEndOf="@+id/image_head" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_EBEBEB" android:background="@drawable/common_shape_stroke_corner5_divider" android:padding="@dimen/dimen_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_ad" android:layout_marginEnd="16dp" app:layout_constraintEnd_toStartOf="@+id/image_post_detail" app:layout_editor_absoluteY="20dp"/>
+        <ImageView android:id="@+id/image_post_detail" android:layout_width="@dimen/dimen_24" android:layout_height="@dimen/dimen_24" android:layout_marginTop="16dp" android:src="@drawable/icon_post_down" android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </android.support.constraint.ConstraintLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="@dimen/dimen_post_item"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/rl_boom_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.tomatolive.library.p136ui.view.custom.luckpan.ArcProgress android:id="@+id/fq_arc_downcount" android:layout_width="match_parent" android:layout_height="match_parent" app:arc_angle="180" app:arc_max="100" app:arc_progress="100" app:arc_stroke_width="2dp"/>
+        <ImageView android:id="@+id/fq_gift_icon" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="2dp" android:src="@drawable/fq_ic_lottery_microphone" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="8sp" android:textColor="@color/fq_colorWhite" android:gravity="bottom|right" android:id="@+id/tv_gift_boomMultiple" android:background="@drawable/fq_img_baolvbg" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</merge>

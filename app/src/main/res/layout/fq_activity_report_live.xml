@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.tomatolive.library.p136ui.view.widget.titlebar.BGATitleBar android:id="@+id/tb_prepare_title_bar" style="@style/titleBar_style"/>
+            <TextView android:textSize="12sp" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:id="@+id/tv_submit" android:background="@drawable/fq_btn_report_submit_selector" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/fq_btn_submit" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.p002v4.widget.NestedScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:overScrollMode="never"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <include layout="@layout/fq_include_divider_view"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="120dp">
+                    <EditText android:textSize="12sp" android:textColor="@color/fq_text_black" android:textColorHint="@color/fq_colorEditTextPrimaryHint" android:id="@+id/et_content" android:background="@null" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/fq_report_live_input_content" android:maxLength="100" android:lineSpacingExtra="3dp"/>
+                    <TextView android:textSize="11sp" android:textColor="#ffaeaeae" android:id="@+id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0/100" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <ImageView android:id="@+id/iv_img" android:layout_width="43dp" android:layout_height="55dp" android:scaleType="centerCrop"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <TextView android:textSize="12sp" android:textColor="#ff292929" android:id="@+id/tv_report" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="#ff292929" android:id="@+id/tv_reported" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+                <TextView android:textSize="12sp" android:textColor="#ff292929" android:id="@+id/tv_live_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+                <EditText android:textSize="12sp" android:textColor="@color/fq_text_black" android:textColorHint="@color/fq_colorEditTextPrimaryHint" android:id="@+id/et_code" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/fq_put_code" android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" android:layout_weight="1"/>
+                <ImageView android:id="@+id/iv_code_img" android:layout_width="95dp" android:layout_height="35dp" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="#ff292929" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/fq_report_live_tips"/>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>

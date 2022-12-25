@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.opensource.svgaplayer.SVGAImageView android:id="@+id/iv_anim" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/fq_shape_top_corners_white_bg" android:paddingLeft="12dp" android:paddingTop="16dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="16sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_name_gold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/fq_colorBtnTextPrimary" android:gravity="center" android:id="@+id/tv_week_star_7_day" android:background="@drawable/fq_btn_round_red_selector" android:paddingLeft="12dp" android:paddingTop="3dp" android:paddingRight="12dp" android:paddingBottom="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="7天" android:includeFontPadding="false"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_day_tab_bg" android:background="@drawable/fq_shape_top_tag_gray_selector" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray_red_color_selector" android:id="@+id/tv_day_7" android:background="@drawable/fq_shape_top_tag_gray_selector" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray_red_color_selector" android:id="@+id/tv_day_30" android:background="@drawable/fq_shape_top_tag_gray_selector" android:paddingLeft="16dp" android:paddingTop="5dp" android:paddingRight="16dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="8dp" android:text="@string/fq_product_desc"/>
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:id="@+id/tv_desc" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="100dp" android:lineSpacingExtra="1dp"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="12sp" android:textColor="#ff666666" android:id="@+id/tv_current_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_current_balance"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/fq_colorPrimary" android:id="@+id/tv_buy_gold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="right" android:id="@+id/ll_week_star_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:id="@+id/tv_week_star_gold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:includeFontPadding="false" android:layout_alignBottom="@+id/tv_nabob_exclusive_car"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:id="@+id/tv_nabob_exclusive_car" android:background="@drawable/fq_week_star_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100dp" android:minHeight="35dp" android:text="@string/fq_week_star_nabob_exclusive_car" android:layout_toRightOf="@+id/tv_week_star_gold"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="14sp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_now_buy" android:background="@drawable/fq_btn_car_buy_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100dp" android:minHeight="35dp" android:text="@string/fq_now_buy"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

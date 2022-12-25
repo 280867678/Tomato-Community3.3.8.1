@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/coordinatorLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_one_manage" android:background="#d6ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_delete_comment" android:background="#d6ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/common_delete"/>
+                <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_report_comment" android:background="#d6ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_report"/>
+                <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_report_down_comment" android:background="#d6ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_manage"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_manage_menu" android:background="#d6ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_down_comment" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_down_comment"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_down_no_publish_comment" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_down_comment_no_publish"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_down_black" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/post_down_comment_black"/>
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/dimen_12"/>
+        <TextView android:textSize="@dimen/text_title" android:textColor="#ff007aff" android:gravity="center" android:id="@+id/tv_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_55" android:text="@string/common_cancel"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

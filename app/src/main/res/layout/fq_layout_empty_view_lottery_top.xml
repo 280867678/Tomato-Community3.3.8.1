@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:paddingTop="30dp" android:paddingBottom="50dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_empty_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_empty_lottery_top_anchor"/>
+    <TextView android:textSize="14sp" android:textColor="#ff886f9e" android:id="@+id/tv_empty_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_lottery_anchor_top_empty_tips"/>
+    <TextView android:textSize="14sp" android:textColor="@color/fq_text_white_color" android:gravity="center" android:id="@+id/tv_empty_btn" android:background="@drawable/fq_shape_lottery_empty_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:minWidth="130dp" android:minHeight="36dp" android:text="@string/fq_lottery_goto"/>
+</LinearLayout>

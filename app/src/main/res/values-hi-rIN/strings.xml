@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">प्रारंभ विफल रहा, फिर से प्रयास करने के लिए क्लिक करें</string>
+    <string name="tip_load_failed">लोड विफल हो गया</string>
+    <string name="tip_loading">पुष्टि करने</string>
+    <string name="tip_no_network">नेटवर्क असामान्य, कृपया नेटवर्क की जांच करें और पुनः प्रयास करें</string>
+    <string name="tip_validate_timeout">टाइमआउट सत्यापित करें, कृपया नेटवर्क बंद करें और जांचें</string>
+</resources>

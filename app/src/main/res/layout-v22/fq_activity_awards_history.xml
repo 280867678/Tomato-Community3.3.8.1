@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <com.tomatolive.library.p136ui.view.widget.titlebar.BGATitleBar android:id="@+id/tb_prepare_title_bar" app:bgatitlebar_leftAndRightTextColor="@color/fq_msg_gray_AEAEAE" style="@style/titleBar_style"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/fl_content_view" android:background="@color/fq_colorBgPrimary_2" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_tips_shadow_bg">
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableRefresh="true">
+                <com.scwang.smartrefresh.layout.header.ClassicsHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlAccentColor="#ffbdbdbd" app:srlClassicsSpinnerStyle="2" app:srlDrawableArrowSize="15dp" app:srlDrawableMarginRight="20dp" app:srlDrawableProgressSize="20dp" app:srlEnableLastTime="false" app:srlFinishDuration="500" app:srlPrimaryColor="@color/fq_colorBgPrimary_2" app:srlTextFailed="@string/fq_srl_header_failed" app:srlTextFinish="@string/fq_srl_header_finish" app:srlTextLoading="@string/fq_srl_header_loading" app:srlTextPulling="@string/fq_srl_header_pulling" app:srlTextRefreshing="@string/fq_srl_header_refreshing" app:srlTextRelease="@string/fq_srl_header_release" app:srlTextSecondary="@string/fq_srl_header_secondary" app:srlTextSizeTime="10dp" app:srlTextSizeTitle="@dimen/fq_smart_refresh_title_size" app:srlTextTimeMarginTop="2dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <View android:id="@+id/v_top" android:background="@color/fq_colorBgPrimary_2" android:layout_width="match_parent" android:layout_height="10dp"/>
+                    <View android:id="@+id/v_divider_2" android:background="@color/fq_view_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height"/>
+                    <LinearLayout android:gravity="end|center_vertical" android:orientation="horizontal" android:id="@+id/ll_selector" android:background="@color/colorWhite" android:paddingLeft="14dp" android:paddingTop="8dp" android:paddingRight="14dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="14dp" android:paddingVertical="8dp">
+                        <TextView android:textSize="14sp" android:textColor="#ff292f37" android:gravity="center_vertical" android:id="@+id/fq_tv_date_pick" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawablePadding="3dp" android:drawableEnd="@drawable/fq_ic_hd_down" android:layout_marginEnd="10dp" android:paddingVertical="8dp"/>
+                        <TextView android:textSize="14sp" android:textColor="#ff292f37" android:gravity="center_vertical" android:id="@+id/fq_tv_status_pick" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/fq_hd_text_all" android:drawablePadding="3dp" android:drawableEnd="@drawable/fq_ic_hd_down"/>
+                    </LinearLayout>
+                    <View android:id="@+id/v_divider" android:background="@color/fq_view_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/fq_divider_height"/>
+                    <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                </LinearLayout>
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter android:layout_width="match_parent" android:layout_height="wrap_content" app:srlAccentColor="#ffbdbdbd" app:srlDrawableArrowSize="15dp" app:srlPrimaryColor="@color/fq_colorBgPrimary_2" app:srlTextFailed="@string/fq_srl_footer_failed" app:srlTextFinish="@string/fq_srl_footer_finish" app:srlTextLoading="@string/fq_srl_footer_loading" app:srlTextNothing="@string/fq_srl_footer_nothing" app:srlTextPulling="@string/fq_srl_footer_pulling" app:srlTextRefreshing="@string/fq_srl_footer_refreshing" app:srlTextRelease="@string/fq_srl_footer_release" app:srlTextSizeTitle="@dimen/fq_smart_refresh_title_size"/>
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_tips_shadow_bg" android:background="@drawable/fq_shape_white_top_shadow_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingRight="15dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#ff979797" android:gravity="center" android:paddingLeft="23dp" android:paddingRight="23dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_hd_tip_award" android:paddingHorizontal="23dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

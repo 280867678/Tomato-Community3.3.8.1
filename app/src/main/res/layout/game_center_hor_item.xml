@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_12">
+    <RelativeLayout android:id="@+id/relate_background" android:paddingLeft="@dimen/dimen_1" android:paddingTop="@dimen/dimen_1" android:paddingRight="@dimen/dimen_1" android:layout_width="@dimen/dimen_56" android:layout_height="@dimen/dimen_56" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@+id/card_image" android:background="@drawable/shape_solid_game_center_image_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_game" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:riv_oval="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/white" android:gravity="center" android:id="@+id/text_brand_name" android:background="@drawable/common_shape_solid_corner30_fc4c7b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_15" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_light" android:ellipsize="end" android:gravity="center" android:id="@+id/text_game" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_6" android:lines="1" android:layout_below="@+id/relate_background" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

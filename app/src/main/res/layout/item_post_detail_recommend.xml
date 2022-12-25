@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp">
+        <RelativeLayout android:id="@+id/rl_video_bg" android:background="@drawable/default_img_grey" android:layout_width="127dp" android:layout_height="@dimen/dimen_70" android:layout_marginLeft="@dimen/dimen_15" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/video_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:id="@+id/video_duration" android:padding="@dimen/dimen_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_15" android:layout_toRightOf="@+id/rl_video_bg" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15">
+                <ImageView android:id="@+id/video_member_head" android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16"/>
+                <TextView android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:id="@+id/video_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5"/>
+                <View android:background="@color/divider" android:layout_width="@dimen/dimen_1" android:layout_height="10dp" android:layout_marginLeft="@dimen/dimen_5"/>
+                <TextView android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:id="@+id/tv_video_play_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_img" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/img_cover" android:background="@drawable/default_img_grey" android:layout_width="@dimen/dimen_70" android:layout_height="@dimen/dimen_70" android:layout_marginLeft="@dimen/dimen_15" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_15" android:layout_toRightOf="@+id/img_cover" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/img_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15">
+                <ImageView android:id="@+id/img_member_head" android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16"/>
+                <TextView android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:id="@+id/img_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_read" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:visibility="gone" android:layout_width="match_parent" android:layout_height="110dp">
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/read_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15"/>
+        <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_light" android:ellipsize="end" android:id="@+id/read_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_3" android:maxLines="1"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15">
+            <ImageView android:id="@+id/read_member_head" android:layout_width="@dimen/dimen_16" android:layout_height="@dimen/dimen_16"/>
+            <TextView android:textSize="@dimen/text_sma" android:textColor="@color/text_light" android:id="@+id/read_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5"/>
+        </LinearLayout>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider" android:layout_marginLeft="@dimen/dimen_15" android:layout_marginTop="@dimen/dimen_15" android:layout_marginRight="@dimen/dimen_15" android:layout_alignParentBottom="true"/>
+    </LinearLayout>
+</RelativeLayout>

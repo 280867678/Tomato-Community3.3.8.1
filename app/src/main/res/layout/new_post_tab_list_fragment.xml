@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/app_bg_grey" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/tipHeadView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40"/>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/new_search_header_item"/>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableFooterFollowWhenLoadFinished="true" app:srlEnableScrollContentWhenLoaded="true">
+            <com.one.tomato.thirdpart.recyclerview.PullToRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlClassicsSpinnerStyle="0"/>
+            <com.one.tomato.thirdpart.recyclerview.BetterHorScrollRecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout> /&gt; 
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_net" android:background="#ff4260" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_net_error_tip"/>
+        <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_5" android:text="@string/common_no_network"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_notice" android:background="@color/text_color_gb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.one.tomato.widget.MarqueeTextView android:textSize="@dimen/text_subtitle" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/tv_notice" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_delete_notice" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/post_notice_delete" android:scaleType="centerInside"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/refresh_lottie_main" android:visibility="gone" android:layout_width="170dp" android:layout_height="@dimen/dimen_100" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/image_scroll_up" android:visibility="gone" android:layout_width="@dimen/dimen_44" android:layout_height="@dimen/dimen_44" android:layout_marginRight="@dimen/dimen_30" android:layout_marginBottom="@dimen/dimen_30" android:src="@drawable/review_up" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/iv_activity" android:visibility="gone" android:layout_width="88dp" android:layout_height="88dp" android:layout_marginRight="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

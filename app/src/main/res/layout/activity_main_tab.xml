@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rl_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:background="#fafafa" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_tomato" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_tomato" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/select_main_tab_home" android:scaleType="centerInside" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/main_tab_text_color" android:id="@+id/tv_tomato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_2" android:text="@string/main_tab_post"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rl_game" android:layout_width="0dp" android:layout_height="80dp" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/select_main_tab_game" android:scaleType="centerInside" android:layout_above="@+id/tv_game" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="10sp" android:textColor="@color/main_tab_text_color" android:id="@+id/tv_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_2" android:text="@string/main_tab_game" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_live" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_live" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/select_main_tab_live" android:scaleType="centerInside" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/main_tab_text_color" android:id="@+id/tv_live" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_2" android:text="@string/main_tab_live"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_find" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+            <ImageView android:id="@+id/iv_find" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/select_main_tab_papa" android:scaleType="centerInside" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/main_tab_text_color" android:id="@+id/tv_find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_2" android:text="@string/main_tab_find"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/ll_mine" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_mine" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/select_main_tab_mine" android:scaleType="centerInside" android:layout_weight="1"/>
+                <TextView android:textSize="10sp" android:textColor="@color/main_tab_text_color" android:id="@+id/tv_mine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_2" android:text="@string/main_tab_mine"/>
+            </LinearLayout>
+            <View android:layout_gravity="right" android:id="@+id/main_red_point" android:background="@drawable/common_shape_red_point" android:visibility="gone" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_marginTop="@dimen/dimen_4" android:layout_marginRight="@dimen/dimen_10"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

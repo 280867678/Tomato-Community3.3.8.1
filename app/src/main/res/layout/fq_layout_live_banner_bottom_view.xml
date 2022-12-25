@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="@dimen/live_ad_banner_width" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="right" android:id="@+id/rl_banner_top_bg" android:layout_width="54dp" android:layout_height="64dp" android:layout_marginBottom="10dp">
+        <com.tomatolive.library.p136ui.view.widget.bgabanner.BGAViewPager android:id="@+id/vp_top" android:layout_width="50dp" android:layout_height="60dp" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/iv_banner_top_close" android:visibility="invisible" android:layout_width="13dp" android:layout_height="13dp" android:layout_margin="1dp" android:src="@drawable/fq_ic_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.tomatolive.library.p136ui.view.custom.TaskBoxView android:layout_gravity="right" android:id="@+id/task_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+    <RelativeLayout android:id="@+id/rl_banner_bottom_bg" android:visibility="visible" android:layout_width="@dimen/live_ad_banner_width" android:layout_height="@dimen/live_ad_banner_height">
+        <com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:rlClipBackground="true" app:rlRadius="@dimen/fq_live_item_round_corners">
+            <com.tomatolive.library.p136ui.view.widget.bgabanner.BGABanner android:id="@+id/banner_bottom" android:layout_width="match_parent" android:layout_height="match_parent" app:banner_indicatorGravity="0x51" app:banner_pageChangeDuration="1500" app:banner_placeholderDrawable="@drawable/fq_shape_default_banner_cover_bg" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="5000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/fq_shape_banner_indicator_live_transparent_selector" app:banner_pointLeftRightMargin="1.5dp" app:banner_pointTopBottomMargin="4dp" app:banner_transitionEffect="1"/>
+        </com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout>
+        <ImageView android:id="@+id/iv_banner_close" android:visibility="invisible" android:layout_width="13dp" android:layout_height="13dp" android:layout_margin="1dp" android:src="@drawable/fq_ic_close" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_banner_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/fq_ic_live_banner_arrow"/>
+</merge>

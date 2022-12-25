@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_image" android:layout_width="0dp" android:layout_height="wrap_content" android:scaleType="centerInside" android:minHeight="@dimen/dimen_35" android:layout_weight="3"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:id="@+id/tv_refresh" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_refresh"/>
+            <ProgressBar android:id="@+id/progressBar" android:paddingLeft="@dimen/dimen_15" android:paddingTop="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/disable" style="?android:attr/progressBarStyleSmall"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <EditText android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:id="@+id/et_input" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height" android:layout_marginTop="@dimen/dimen_10" android:hint="@string/post_comment_img_verify_input" android:layout_below="@+id/iv_image"/>
+</LinearLayout>

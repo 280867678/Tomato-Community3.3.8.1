@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/text_middle" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:id="@+id/surfaceView" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.king.zxing.ViewfinderView android:id="@+id/viewfinderView" android:layout_width="match_parent" android:layout_height="match_parent" app:cornerColor="@color/transparent" app:frameColor="@color/text_light" app:frameHeight="@dimen/dimen_200" app:frameWidth="@dimen/dimen_200" app:laserColor="@color/color_FC4C7B"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/ivTorch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/torchMarginTop" android:src="@drawable/zxl_torch_selector"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_80">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_light" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_scanner_01"/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/text_url" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_light" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_scanner_02"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/image_back" android:padding="@dimen/dimen_16" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:src="@drawable/icon_back_white" android:scaleType="centerInside"/>
+    </FrameLayout>
+</LinearLayout>

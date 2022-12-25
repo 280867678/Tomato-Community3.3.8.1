@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x1">
+            <RelativeLayout android:id="@+id/rl_search_history" android:layout_width="match_parent" android:layout_height="@dimen/dimen_30" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_14">
+                <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_search_history" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_clear_history" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_clear_history" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <com.zhy.view.flowlayout.TagFlowLayout android:id="@+id/flowlayout_history" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_7" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_7" app:max_select="-1"/>
+            <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_dark" android:id="@+id/tv_hot_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_14" android:text="@string/post_search_hot"/>
+            <com.zhy.view.flowlayout.TagFlowLayout android:id="@+id/flowlayout_hot" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_7" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_7" app:max_select="-1"/>
+            <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/dimen_10" android:layout_marginTop="@dimen/dimen_20"/>
+        </LinearLayout>
+        <com.one.tomato.widget.PagerSlidingTabStrip android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/common_tab_height" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/colorAccent" app:pstsUnderlineColor="@color/divider" app:pstsUnderlineHeight="@dimen/common_divider"/>
+    </android.support.design.widget.AppBarLayout>
+    <com.one.tomato.widget.NoHorScrollViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

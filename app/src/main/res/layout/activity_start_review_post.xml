@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="85dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/merge_title_bar"/>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/refresh_lottie_main" android:visibility="gone" android:layout_width="170dp" android:layout_height="@dimen/dimen_100" android:layout_centerInParent="true"/>
+    <Button android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@+id/button" android:background="@drawable/common_shape_solid_corner5_coloraccent" android:visibility="gone" android:layout_width="@dimen/dimen_216" android:layout_height="@dimen/dimen_44" android:layout_marginBottom="@dimen/dimen_30" android:text="@string/post_start_review_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:id="@+id/relate_no_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_data_common" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

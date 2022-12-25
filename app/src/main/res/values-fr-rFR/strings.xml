@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Captcha</string>
+    <string name="tip_init_timeout">L\'initialisation a échoué, cliquez pour réessayer</string>
+    <string name="tip_load_failed">téléchargement échoué</string>
+    <string name="tip_loading">en vérification</string>
+    <string name="tip_no_network">réseau anormal, veuillez examiner le réseau et réessayer</string>
+    <string name="tip_validate_timeout">vérification timeout, veuillez fermer et examiner le réseau</string>
+</resources>

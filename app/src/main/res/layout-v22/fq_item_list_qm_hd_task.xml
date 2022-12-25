@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@color/fq_colorWhite" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="13dp">
+    <ImageView android:id="@+id/iv_check" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/fq_qm_check_selector" android:layout_marginEnd="16dp"/>
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/fq_qm_gift_frame_bg" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="5dp">
+        <ImageView android:id="@+id/iv_gift" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/fq_qm_check_selector"/>
+    </FrameLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="30dp"/>
+    <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_task_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_edit" android:visibility="invisible" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/fq_ic_qm_task_edit" android:layout_marginEnd="20dp"/>
+        <ImageView android:id="@+id/iv_delete" android:visibility="invisible" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/fq_ic_qm_task_del" android:layout_toEndOf="@+id/iv_edit"/>
+        <ImageView android:id="@+id/iv_more" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/fq_ic_qm_task_more" android:layout_toEndOf="@+id/iv_edit"/>
+    </RelativeLayout>
+</LinearLayout>

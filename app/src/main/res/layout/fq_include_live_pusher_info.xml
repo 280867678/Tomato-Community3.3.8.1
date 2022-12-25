@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_pusher_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/fq_live_margin_width" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_root" android:background="@drawable/fq_live_msg_title_bg" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_avatar" android:layout_width="@dimen/fq_online_user_avatar_size" android:layout_height="@dimen/fq_online_user_avatar_size" android:layout_marginRight="5dp" android:src="@drawable/fq_ic_placeholder_avatar" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true">
+                    <TextView android:textSize="10sp" android:textColor="@color/fq_text_white_color" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:singleLine="true" android:includeFontPadding="false"/>
+                    <TextView android:textSize="10sp" android:textColor="#f0c45b" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:maxLength="15" android:drawableLeft="@drawable/fq_ic_live_fire" android:drawablePadding="3dp" android:layout_toRightOf="@+id/iv_avatar" android:layout_below="@+id/tv_name"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_follow" android:visibility="visible" android:layout_width="@dimen/fq_online_user_avatar_size" android:layout_height="@dimen/fq_online_user_avatar_size" android:src="@drawable/fq_icon_live_attention_selector" android:layout_toRightOf="@+id/ll_title_layout" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/recycle_user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:overScrollMode="never"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_vip_number" android:background="@drawable/fq_shape_live_vip_count_bg" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minHeight="28dp">
+                <TextView android:textSize="9sp" android:textColor="@color/fq_text_white_color" android:gravity="center_horizontal" android:id="@+id/tv_vip_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+                <TextView android:textSize="9sp" android:textColor="@color/fq_text_white_color" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_vip"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+        <LinearLayout android:gravity="center" android:background="@drawable/fq_live_msg_title_bg" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fq_live_margin_width" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="@color/fq_text_white_color" android:gravity="center_vertical" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/fq_ic_live_top_cup" android:drawableRight="@drawable/fq_ic_anchor_tomato_arrow" android:drawablePadding="5dp"/>
+        </LinearLayout>
+        <com.tomatolive.library.p136ui.view.widget.AutoMarqueeTextView android:textSize="10dp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:id="@+id/tv_charge_type" android:background="@drawable/fq_shape_pay_ticket_room_bg" android:visibility="invisible" android:layout_width="96dp" android:layout_height="wrap_content" android:minHeight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" android:paddingStart="8dp" android:paddingEnd="8dp" android:layout_marginEnd="@dimen/fq_live_margin_width"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <master.flame.danmaku.p144ui.widget.DanmakuView android:id="@+id/sv_danmaku" android:layout_width="match_parent" android:layout_height="180dp" android:layout_marginTop="50dp"/>
+        <com.tomatolive.library.p136ui.view.custom.LiveAdBannerView android:id="@+id/live_banner_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/fq_live_margin_width" android:layout_alignParentRight="true"/>
+        <com.tomatolive.library.p136ui.view.custom.GiftBoxView android:id="@+id/gift_box_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160dp" android:layout_marginRight="@dimen/fq_live_margin_width" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="90dp">
+            <RelativeLayout android:layout_gravity="right" android:id="@+id/rl_game_notice_bg" android:paddingLeft="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <RelativeLayout android:id="@+id/rl_pk_assist_king_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="10dp" android:textColor="@color/fq_colorWhite" android:gravity="center_vertical" android:id="@+id/tv_pk_assist_king" android:background="@drawable/fq_ic_pk_top_anim_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="10dp" android:paddingEnd="15dp" android:layout_marginStart="30dp"/>
+                    <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/fq_ic_pk_top_anim_mvp"/>
+                </RelativeLayout>
+                <com.tomatolive.library.p136ui.view.custom.LiveGamePrizeView android:id="@+id/game_prize_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="right" android:id="@+id/rl_top_notice_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="11sp" android:textColor="@color/fq_text_white_color" android:ellipsize="end" android:id="@+id/tv_top_notice" android:background="@drawable/fq_shape_live_top_notice_bg" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:maxLines="1" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/iv_gift_img" android:layout_width="38dp" android:layout_height="38dp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_top_charm_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <TextView android:textSize="11sp" android:textColor="#4f0e0e" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_top_charm_notice" android:background="@drawable/fq_charm_img_bg" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableLeft="@drawable/fq_icons_up" android:drawablePadding="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="11sp" android:textColor="@color/fq_text_white_color" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_anchor_open_notice" android:background="@drawable/fq_achieve_shape_bg_anchor_open_notice" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawableLeft="@drawable/fq_ic_achieve_anchor_open_icon" android:drawablePadding="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_sys_notice_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <RelativeLayout android:id="@+id/rl_trumpet_notice_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="11sp" android:textColor="@color/fq_colorWhite" android:gravity="center_vertical" android:id="@+id/tv_nobility_trumpet" android:background="@drawable/fq_trumpet_notice_bg" android:paddingLeft="28dp" android:paddingTop="6dp" android:paddingRight="10dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignBottom="@+id/iv_trumpet_icon" android:layout_centerInParent="true"/>
+                    <ImageView android:id="@+id/iv_trumpet_icon" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginLeft="-10dp" android:src="@drawable/fq_img_littlecute" android:scaleType="fitStart"/>
+                </RelativeLayout>
+                <TextView android:textSize="11sp" android:textColor="@color/fq_colorWhite" android:gravity="center_vertical" android:id="@+id/tv_sys_notice" android:background="@drawable/fq_btn_car_buy_selector" android:paddingLeft="8dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/fq_ic_live_top_horn" android:drawablePadding="8dp" android:layout_alignParentRight="true"/>
+                <RelativeLayout android:id="@+id/rl_nobility_open_notice_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <com.tomatolive.library.p136ui.view.custom.NobilityOpenTopNoticeView android:id="@+id/nobility_open_notice_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_recommend_hot_notice_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <RelativeLayout android:id="@+id/rl_badge_middle_bg" android:background="@drawable/fq_shape_danmu_nobility_bg_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_badge_left_bg" android:layout_centerVertical="true">
+                        <TextView android:textSize="10sp" android:textColor="#ff661700" android:id="@+id/tv_recommend_hot_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/fq_ic_nobility_live_recommend_hot" android:layout_toRightOf="@+id/tv_recommend_hot_tips" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_nobility_dm_roll_7_right" android:scaleType="fitXY" android:layout_toRightOf="@+id/rl_badge_middle_bg" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/iv_badge_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/fq_ic_nobility_dm_roll_7_left" android:layout_centerVertical="true"/>
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/fq_ic_nobility_badge_7"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_luck_notice_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <RelativeLayout android:id="@+id/rl_luck_middle_bg" android:background="@drawable/fq_shape_luck_notice" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_luck_left_bg" android:layout_centerVertical="true">
+                        <TextView android:textSize="10sp" android:textColor="@color/fq_colorWhite" android:gravity="left" android:id="@+id/tv_luck_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:singleLine="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <ImageView android:id="@+id/iv_luck_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_luck_bg_right" android:scaleType="fitXY" android:layout_toRightOf="@+id/rl_luck_middle_bg" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/iv_luck_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/fq_luck_bg_left" android:layout_centerVertical="true"/>
+                    <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="2dp" android:layout_marginBottom="12dp" android:src="@drawable/fq_img_gifts"/>
+                    <ImageView android:id="@+id/iv_luck_gift_icon" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginBottom="12dp" android:src="@drawable/fq_ic_lottery_microphone" android:layout_alignRight="@+id/iv_luck_right_bg"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

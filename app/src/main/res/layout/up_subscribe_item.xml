@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_20">
+    <RelativeLayout android:id="@+id/relate_hot" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_sort" android:visibility="gone" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:layout_centerVertical="true"/>
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/text_sort" android:background="@drawable/shape_solid_papa_hot_list_item_sort" android:visibility="gone" android:layout_width="@dimen/dimen_28" android:layout_height="@dimen/dimen_28" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/round_view" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:layout_marginLeft="@dimen/dimen_16" android:layout_toRightOf="@+id/relate_hot" android:layout_centerVertical="true" app:riv_oval="true"/>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:maxWidth="@dimen/dimen_80" android:lines="1" android:layout_centerVertical="true" android:layout_toEndOf="@+id/round_view"/>
+    <ImageView android:id="@+id/iv_up_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_4" android:layout_toEndOf="@+id/text_name"/>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/color_FC4C7B" android:gravity="center" android:id="@+id/text_intimacy" android:background="@drawable/up_shape_solid_rank_incom_30" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_20" android:layout_centerVertical="true" android:paddingStart="@dimen/dimen_8" android:paddingEnd="@dimen/dimen_8" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

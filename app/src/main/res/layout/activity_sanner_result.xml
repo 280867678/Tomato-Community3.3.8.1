@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="126dp" android:layout_height="126dp" android:layout_marginTop="@dimen/dimen_40" android:src="@drawable/publish_sanner_sucess"/>
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_dark" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30" android:text="@string/publish_sanner_sucess"/>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_light" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:text="@string/publish_sucess_tip"/>
+</LinearLayout>

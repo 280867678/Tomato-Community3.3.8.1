@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">Inizializzazione fallita, fare clic per riprovare</string>
+    <string name="tip_load_failed">Carico fallito</string>
+    <string name="tip_loading">Nella verifica</string>
+    <string name="tip_no_network">rete anormale, controlla la rete e riprova</string>
+    <string name="tip_validate_timeout">verificare il timeout, per favore chiudi e controllare la rete</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <android.support.design.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <RelativeLayout android:background="@drawable/shape_task_expire_bg" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="0x1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_center_expire_bg" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/white" android:id="@+id/tv_current_expire_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_16" android:text="@string/expire_record_current"/>
+                <TextView android:textSize="36sp" android:textColor="@color/white" android:id="@+id/tv_current_expire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_18" android:text="0" android:layout_below="@+id/tv_current_expire_hint" android:layout_alignLeft="@+id/tv_current_expire_hint"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_level" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_20" android:layout_below="@+id/tv_current_expire" android:layout_alignLeft="@+id/tv_current_expire_hint">
+                    <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_level_current" android:background="#ffa17a" android:paddingLeft="@dimen/dimen_8" android:layout_width="140dp" android:layout_height="match_parent" android:lines="1"/>
+                    <TextView android:textSize="@dimen/text_sma" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_level_next" android:background="@drawable/shape_task_expire_next_level_bg" android:paddingRight="@dimen/dimen_5" android:layout_width="140dp" android:layout_height="match_parent" android:lines="1"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:src="@drawable/icon_arrow_right_white"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

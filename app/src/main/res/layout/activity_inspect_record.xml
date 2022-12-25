@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_title" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="@dimen/common_tab_height" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/iv_back" android:paddingLeft="@dimen/dimen_10" android:paddingRight="@dimen/dimen_15" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_back_black" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/text_title" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/inspect_record" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/colorAccent" android:gravity="center" android:id="@+id/right_txt" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="centerInside" android:text="@string/inspect_record_sub_title" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.p002v4.widget.NestedScrollView android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/ll_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/income_coin_rl" android:background="@drawable/income_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginTop="@dimen/dimen_24" android:layout_marginRight="@dimen/dimen_14">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_account_avail" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_24" android:layout_weight="1">
+                    <TextView android:textSize="35sp" android:textColor="@color/white" android:id="@+id/tv_account_avail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:text="0"/>
+                    <TextView android:textSize="@dimen/text_content" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/inspect_enable_amount_lable"/>
+                </LinearLayout>
+                <View android:id="@+id/view_vertical_line" android:background="@color/white" android:layout_width="@dimen/dimen_1" android:layout_height="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_60"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_account_purse" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_24" android:layout_weight="1">
+                    <TextView android:textSize="35sp" android:textColor="@color/white" android:id="@+id/tv_account_un_avail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_15" android:text="0"/>
+                    <TextView android:textSize="@dimen/text_content" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_5" android:text="@string/inspect_un_enable_amount_lable"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginTop="@dimen/dimen_20" android:text="@string/inspect_detail_title"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:background="@drawable/vip_right_compare_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginTop="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_14" android:nestedScrollingEnabled="false"/>
+            <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_marginTop="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_14" android:text="@string/inspect_rule"/>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

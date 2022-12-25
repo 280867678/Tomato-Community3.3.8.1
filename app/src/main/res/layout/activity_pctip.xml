@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_light" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180dp" android:text="@string/publish_text_url"/>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:layout_gravity="center_horizontal" android:id="@+id/text_url" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/button" android:background="@drawable/common_shape_solid_corner5_coloraccent" android:layout_width="226dp" android:layout_height="@dimen/dimen_36" android:layout_marginTop="@dimen/dimen_100" android:text="@string/publish_scan_code"/>
+</LinearLayout>

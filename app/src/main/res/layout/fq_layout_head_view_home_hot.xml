@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout android:layout_width="match_parent" android:layout_height="120dp" app:rlClipBackground="true" app:rlRadius="@dimen/fq_live_item_round_corners">
+        <ImageView android:id="@+id/iv_default_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.tomatolive.library.p136ui.view.widget.bgabanner.BGABanner android:id="@+id/banner" android:layout_width="match_parent" android:layout_height="match_parent" app:banner_indicatorGravity="0x55" app:banner_pageChangeDuration="1500" app:banner_placeholderDrawable="@drawable/fq_shape_default_banner_cover_bg" app:banner_pointAutoPlayAble="true" app:banner_pointAutoPlayInterval="5000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/fq_shape_banner_indicator_selector" app:banner_transitionEffect="1"/>
+    </com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout>
+    <com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/dp_10" app:rlClipBackground="true" app:rlRadius="@dimen/fq_live_item_round_corners">
+        <com.tomatolive.library.p136ui.view.widget.bgabanner.BGABanner android:id="@+id/banner_top" android:layout_width="match_parent" android:layout_height="match_parent" app:banner_indicatorGravity="0x51" app:banner_pageChangeDuration="1500" app:banner_placeholderDrawable="@drawable/fq_shape_default_banner_cover_bg" app:banner_pointAutoPlayInterval="3000" app:banner_pointContainerBackground="@android:color/transparent" app:banner_pointDrawable="@drawable/fq_shape_brown_banner_indicator_selector" app:banner_pointLeftRightMargin="2dp" app:banner_transitionEffect="0"/>
+    </com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout>
+</LinearLayout>

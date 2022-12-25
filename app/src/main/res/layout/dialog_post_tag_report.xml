@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="@color/text_dark" android:gravity="center" android:layout_gravity="center_horizontal" android:background="@drawable/shape_post_tag_report" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/tag_feedback_dialog_title"/>
+    <com.one.tomato.widget.NoScrollListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/transparent"/>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_15">
+        <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_light" android:id="@+id/tv_cancel" android:background="@drawable/common_shape_stroke_corner30_divider" android:paddingLeft="@dimen/dimen_40" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_40" android:paddingBottom="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_cancel" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="@dimen/text_content" android:textColor="@color/white" android:id="@+id/tv_confirm" android:background="@drawable/common_selector_solid_corner30_coloraccent" android:paddingLeft="@dimen/dimen_40" android:paddingTop="@dimen/dimen_10" android:paddingRight="@dimen/dimen_40" android:paddingBottom="@dimen/dimen_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_confirm" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

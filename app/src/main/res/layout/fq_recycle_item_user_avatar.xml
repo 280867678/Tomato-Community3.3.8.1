@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+    <ImageView android:id="@+id/iv_user_avatar" android:layout_width="@dimen/fq_online_user_avatar_size" android:layout_height="@dimen/fq_online_user_avatar_size" android:src="@drawable/fq_ic_placeholder_avatar"/>
+    <ImageView android:id="@+id/fq_year_guard_icon" android:visibility="invisible" android:layout_width="12dp" android:layout_height="12dp" android:layout_alignTop="@+id/iv_user_avatar" android:layout_alignRight="@+id/iv_user_avatar"/>
+    <ImageView android:id="@+id/iv_badge" android:visibility="invisible" android:layout_width="12dp" android:layout_height="12dp" android:layout_alignRight="@+id/iv_user_avatar" android:layout_alignBottom="@+id/iv_user_avatar"/>
+</RelativeLayout>

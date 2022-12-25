@@ -1,0 +1,26 @@
+package com.facebook.cache.common;
+
+import com.facebook.cache.common.CacheErrorLogger;
+
+/* loaded from: classes2.dex */
+public class NoOpCacheErrorLogger implements CacheErrorLogger {
+    private static NoOpCacheErrorLogger sInstance;
+
+    @Override // com.facebook.cache.common.CacheErrorLogger
+    public void logError(CacheErrorLogger.CacheErrorCategory cacheErrorCategory, Class<?> cls, String str, Throwable th) {
+    }
+
+    private NoOpCacheErrorLogger() {
+    }
+
+    public static synchronized NoOpCacheErrorLogger getInstance() {
+        NoOpCacheErrorLogger noOpCacheErrorLogger;
+        synchronized (NoOpCacheErrorLogger.class) {
+            if (sInstance == null) {
+                sInstance = new NoOpCacheErrorLogger();
+            }
+            noOpCacheErrorLogger = sInstance;
+        }
+        return noOpCacheErrorLogger;
+    }
+}

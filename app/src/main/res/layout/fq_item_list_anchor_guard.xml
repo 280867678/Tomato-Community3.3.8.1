@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/fq_colorWhite" android:paddingTop="@dimen/view_margin_6" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rl_avatar_bg" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="13dp" android:layout_marginRight="@dimen/view_margin_8" android:layout_marginBottom="@dimen/view_margin_6">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/fq_ic_placeholder_avatar"/>
+        <ImageView android:id="@+id/iv_guard_type" android:layout_width="17dp" android:layout_height="17dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_money" android:layout_toRightOf="@+id/rl_avatar_bg" android:layout_centerVertical="true">
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+        <ImageView android:id="@+id/iv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/view_margin_5" android:layout_below="@+id/tv_name"/>
+        <com.tomatolive.library.p136ui.view.custom.UserGradeView android:id="@+id/user_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_gender" android:layout_below="@+id/tv_name"/>
+    </RelativeLayout>
+    <TextView android:textSize="10sp" android:textColor="#ff888888" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/view_margin_11" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="#fff5f5f5" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_toRightOf="@+id/rl_avatar_bg" android:layout_below="@+id/rl_avatar_bg"/>
+</RelativeLayout>

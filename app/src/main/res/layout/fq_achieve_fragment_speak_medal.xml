@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p002v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout style="@style/fq_achieve_wear_white_round_bg_style">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_margin_10" android:text="@string/fq_achieve_preview"/>
+                <FrameLayout android:background="@drawable/fq_achieve_bg_shape_wear_center_preview" android:padding="@dimen/view_margin_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/fq_recycle_item_chat_list"/>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/fq_achieve_wear_white_round_bg_style">
+                <TextView android:textSize="14sp" android:id="@+id/tv_achieve_speak_medal_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_achieve_wear_speak_medal" android:layout_marginTop="@dimen/view_margin_20" android:layout_marginBottom="@dimen/view_margin_8" style="@style/fq_achieve_wear_center_btn_style"/>
+                <include layout="@layout/fq_achieve_item_wear_center_speak_medal_icon"/>
+                <TextView android:id="@+id/tv_achieve_have_speak_medal" android:layout_marginTop="@dimen/view_margin_12" android:layout_marginBottom="@dimen/view_margin_8" style="@style/fq_achieve_wear_center_btn_style"/>
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_achieve_speak_medal_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+            </LinearLayout>
+            <LinearLayout style="@style/fq_achieve_wear_white_round_bg_style">
+                <TextView android:textSize="14sp" android:id="@+id/tv_achieve_speak_prefix_tip" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:id="@+id/tv_achieve_wear_speak_prefix" android:layout_marginTop="@dimen/view_margin_20" android:layout_marginBottom="@dimen/view_margin_8" style="@style/fq_achieve_wear_center_btn_style"/>
+                <include layout="@layout/fq_achieve_item_wear_center_speak_prefix_icon"/>
+                <TextView android:id="@+id/tv_achieve_have_speak_prefix" android:layout_marginTop="@dimen/view_margin_12" android:layout_marginBottom="@dimen/view_margin_8" android:text="@string/fq_achieve_already_have" style="@style/fq_achieve_wear_center_btn_style"/>
+                <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_achieve_speak_prefix_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.p002v4.widget.NestedScrollView>

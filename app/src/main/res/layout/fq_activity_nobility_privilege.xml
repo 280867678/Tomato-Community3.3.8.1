@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/fq_colorBgPrimary_2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_title_bar_bg" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+            <com.tomatolive.library.p136ui.view.widget.titlebar.BGATitleBar android:id="@+id/tb_prepare_title_bar" style="@style/titleBar_style"/>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

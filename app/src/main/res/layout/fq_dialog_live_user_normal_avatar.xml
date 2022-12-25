@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/fq_shape_dialog_white_corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/rl_manage_btn" android:paddingLeft="10dp" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="#ff292929" android:gravity="center_vertical" android:id="@+id/tv_report" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/fq_report" android:drawableLeft="@drawable/fq_ic_anchor_inform" android:drawablePadding="3dp" android:layout_marginStart="3dp"/>
+        <ImageView android:id="@+id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_anchor_live_manager"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:src="@drawable/fq_ic_lottery_dialog_close" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/iv_avatar" android:layout_width="66dp" android:layout_height="66dp" android:layout_marginTop="30dp" android:src="@drawable/fq_ic_placeholder_avatar" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_user_nickname_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_below="@+id/iv_avatar" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14dp" android:textColor="@color/fq_colorBlack" android:ellipsize="end" android:id="@+id/tv_nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:maxLines="1"/>
+            <ImageView android:id="@+id/iv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_user_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:id="@+id/tv_mark_content" android:layout_width="wrap_content" android:layout_height="22dp"/>
+            <com.tomatolive.library.p136ui.view.custom.UserGradeView android:id="@+id/user_grade_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="12dp" android:textColor="#aeaeae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/fq_avatar_dialog_sign_tips"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_attention_fans_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="12dp" android:textColor="@color/fq_colorBlack" android:id="@+id/tv_room_number" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:background="@color/fq_colorBlack" android:layout_width="1dp" android:layout_height="10dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/fq_colorBlack" android:id="@+id/tv_fans_num" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.tomatolive.library.p136ui.view.custom.UserCardFunctionView android:id="@+id/corner_user_grade" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/rl_user_nickname_bg"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/corner_user_grade">
+        <View android:id="@+id/v_divider" android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="16dp" android:textColor="@color/fq_text_red_gray_color_selector" android:gravity="center" android:id="@+id/tv_manage" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/fq_home_btn_attention" android:layout_weight="1"/>
+            <TextView android:textSize="16dp" android:textColor="@color/fq_text_black" android:gravity="center" android:id="@+id/tv_homepage" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/fq_homepage" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

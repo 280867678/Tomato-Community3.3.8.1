@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/rl_black_bg" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.one.tomato.widget.image.MNGestureView android:id="@+id/mn_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/relative_post_detail" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.one.tomato.thirdpart.recyclerview.BetterHorScrollRecyclerView android:id="@+id/post_detail" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </com.one.tomato.widget.image.MNGestureView>
+</android.support.constraint.ConstraintLayout>

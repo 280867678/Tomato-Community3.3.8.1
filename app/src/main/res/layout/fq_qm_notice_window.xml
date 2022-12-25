@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_root_icon" android:background="@drawable/fq_qm_notice_window_bg" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginBottom="2dp" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_gift_icon" android:layout_width="22dp" android:layout_height="22dp"/>
+    </FrameLayout>
+    <com.tomatolive.library.p136ui.view.widget.marqueenview.MarqueeTextView android:textSize="10sp" android:textColor="@color/colorWhite" android:id="@+id/mv_task_name" android:background="@drawable/fq_qm_shape_qm_marqueeview_bg" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:layout_width="50dp" android:layout_height="18dp" android:layout_marginTop="2dp" android:layout_below="@+id/fl_root_icon" android:layout_centerHorizontal="true"/>
+    <com.tomatolive.library.p136ui.view.widget.progress.QMTaskProgressView android:id="@+id/qm_task_progress" android:layout_width="50dp" android:layout_height="18dp" android:layout_marginTop="2dp" android:layout_below="@+id/fl_root_icon" android:layout_centerHorizontal="true" app:qm_background_color="#ffff477b" app:qm_background_gradient_color="#fffebd86" app:qm_background_second_color="#cbcbcb" app:qm_enable_gradient="true"/>
+</merge>

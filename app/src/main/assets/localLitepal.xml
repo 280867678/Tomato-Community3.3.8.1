@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="fq_live" ></dbname>
+
+    <version value="41" ></version>
+
+    <list>
+        <mapping class="com.tomatolive.library.model.db.SearchKeywordEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.WatchRecordEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.StickerEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.GiftBoxEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.GiftDownloadItemDBEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.AttentionAnchorDBEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.ShieldUserDBEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.LightImpressionDBEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.LiveDataEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.AnchorLiveDataEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.MsgDetailListEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.MsgListEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.MsgStatusEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.ShortcutItemEntity"></mapping>
+        <mapping class="com.tomatolive.library.model.db.PayLiveDBEntity"></mapping>
+    </list>
+
+</litepal>

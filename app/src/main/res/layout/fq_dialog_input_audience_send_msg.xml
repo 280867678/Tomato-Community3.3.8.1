@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/Transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tomatolive.library.p136ui.view.widget.SmoothInputLayout android:orientation="vertical" android:id="@+id/sil_lyt_content" android:background="@color/Transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:silAutoSaveKeyboardHeight="true" app:silInputPane="@+id/rl_trumpet_tip" app:silInputView="@+id/et_input_message">
+        <View android:id="@+id/sil_v_list" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <RelativeLayout android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/rl_top_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageButton android:id="@+id/ib_normal" android:background="@color/Transparent" android:padding="@dimen/view_margin_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_normal_danmu_selector" android:layout_centerVertical="true"/>
+                <ImageButton android:id="@+id/ib_guard" android:background="@color/Transparent" android:padding="@dimen/view_margin_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_guard_danmu_selector" android:layout_toRightOf="@+id/ib_normal" android:layout_centerVertical="true"/>
+                <ImageButton android:id="@+id/ib_nobility" android:background="@color/Transparent" android:padding="@dimen/view_margin_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_nobility_danmu_selector" android:layout_toRightOf="@+id/ib_guard" android:layout_centerVertical="true"/>
+                <ImageButton android:id="@+id/ib_trumpet" android:background="@color/Transparent" android:padding="@dimen/view_margin_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_trumpet_danmu_selector" android:layout_toRightOf="@+id/ib_nobility" android:layout_centerVertical="true"/>
+                <View android:background="#ffd3d3d3" android:layout_width="0.5dp" android:layout_height="20dp" android:layout_marginRight="12dp" android:layout_toLeftOf="@+id/tv_input_type" android:layout_centerVertical="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/fq_gray66" android:id="@+id/tv_input_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/view_line" android:background="@color/fq_chat_background_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/rl_top_bg"/>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/fq_input_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:layout_marginBottom="10dp" android:layout_below="@+id/view_line">
+                <TextView android:textColor="#ff8634" android:layout_gravity="center_vertical" android:id="@+id/tv_trumpet" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/fq_trumpet"/>
+                <EditText android:textSize="13sp" android:textColor="@color/fq_colorBlack" android:textColorHint="#ffccd0d2" android:gravity="center_vertical" android:id="@+id/et_input_message" android:background="@null" android:paddingLeft="5dp" android:paddingTop="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_10" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/fq_text_input_hint" android:maxLines="3" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSend" android:textCursorDrawable="@drawable/fq_cursor"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/rl_trumpet_tip" android:background="@drawable/fq_trumpet_bg_gb" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="25dp" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="12sp" android:textColor="@color/fq_colorBlack29" android:id="@+id/tv_trumpet_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="#26747f" android:id="@+id/tv_trumpet_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/tv_trumpet_count" android:lineSpacingExtra="5dp"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </com.tomatolive.library.p136ui.view.widget.SmoothInputLayout>
+</LinearLayout>

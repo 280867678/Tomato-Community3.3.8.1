@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_lottery_turntable_light" android:layout_centerInParent="true"/>
+    <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_lottery_turntable_light_point" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.tomatolive.library.p136ui.view.custom.luckpan.ArcProgress android:id="@+id/arc_progress" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <com.tomatolive.library.p136ui.view.custom.luckpan.WheelSurfPanView android:id="@+id/pan_view" android:padding="25dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_lottery_turntable_centre_begin" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_lottery_turntable_centre_red" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_lottery_turntable_start_lottery_word" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/fq_achieve_gray_878787" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_msg_reply_tips" android:lineSpacingExtra="1dp" android:lineSpacingMultiplier="1.1"/>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_achieve_gray_878787" android:id="@+id/tv_tips" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_msg_reply_tips_2" android:lineSpacingExtra="1dp" android:lineSpacingMultiplier="1.1"/>
+</LinearLayout>

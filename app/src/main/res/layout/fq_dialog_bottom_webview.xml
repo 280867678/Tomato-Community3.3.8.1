@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/fq_shape_dialog_top_corner_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp"/>
+    <View android:background="@color/fq_colorBgPrimary_2" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ProgressBar android:id="@+id/pb" android:background="@null" android:visibility="visible" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progressDrawable="@drawable/fq_pb_bg" style="?android:attr/progressBarStyleHorizontal"/>
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/fq_base_retry"/>
+    </FrameLayout>
+</LinearLayout>

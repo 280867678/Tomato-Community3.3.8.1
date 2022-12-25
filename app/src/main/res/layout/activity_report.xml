@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_14" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.one.tomato.widget.ClearEditText android:textSize="@dimen/text_subtitle" android:textColor="#ff999ead" android:gravity="start" android:id="@+id/et_input" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="160dp" android:hint="@string/update_report_reason" android:maxLength="200"/>
+            <TextView android:textSize="@dimen/text_subtitle" android:textColor="#ff999ead" android:layout_gravity="right" android:id="@+id/tv_input_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10" android:text="@string/update_report_text_num"/>
+            <EditText android:textSize="@dimen/sp_16" android:textColor="#323232" android:textColorHint="#999ead" android:id="@+id/connect_e" android:background="#f5f5f7" android:paddingLeft="@dimen/dimen_14" android:layout_width="match_parent" android:layout_height="@dimen/common_button_height" android:layout_marginTop="@dimen/dimen_12" android:text="" android:hint="@string/report_touch" android:singleLine="true" android:maxLength="100"/>
+            <TextView android:textColor="#7c7e86" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_6" android:layout_marginBottom="@dimen/dimen_20" android:text="@string/setting_touch_me"/>
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:overScrollMode="never"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@+id/relativeLayout" android:background="#fff9f9fb" android:layout_width="match_parent" android:layout_height="90dp">
+        <ImageView android:id="@+id/iv_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_camera_large" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

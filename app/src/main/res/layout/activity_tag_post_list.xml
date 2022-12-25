@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/tag_post_bg" android:paddingBottom="@dimen/dimen_18" android:layout_width="match_parent" android:layout_height="106dp">
+        <ImageView android:id="@+id/image_tag_back" android:padding="@dimen/dimen_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8" android:src="@drawable/icon_back_white" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@+id/text_tag_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_6" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.one.tomato.widget.PagerSlidingTabStrip android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/common_tab_height" android:layout_marginBottom="@dimen/dimen_6" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/colorAccent" app:pstsUnderlineColor="@color/transparent" app:pstsUnderlineHeight="0dp"/>
+    <com.one.tomato.widget.NoHorScrollViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

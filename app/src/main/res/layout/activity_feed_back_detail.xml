@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginRight="@dimen/dimen_10">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12">
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_middle" android:gravity="center" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:drawablePadding="@dimen/dimen_4" android:drawableStart="@drawable/icon_feedback_reply"/>
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_999ead" android:id="@+id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" android:layout_marginTop="@dimen/dimen_12" android:lines="1" android:singleLine="true" android:layout_toRightOf="@+id/text_title" android:layout_alignBaseline="@+id/text_title"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_282828" android:id="@+id/text_order" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12"/>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/color_282828" android:id="@+id/text_reason" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_marginBottom="@dimen/dimen_12"/>
+        <com.one.tomato.widget.NoScrollGridView android:id="@+id/grid_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_12" android:horizontalSpacing="@dimen/dimen_5" android:verticalSpacing="@dimen/dimen_5" android:numColumns="3"/>
+        <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="0.2dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/color_FAFAFF" android:padding="@dimen/dimen_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12">
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_999ead" android:id="@+id/text_content_time" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/color_282828" android:id="@+id/text_reply" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_4"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

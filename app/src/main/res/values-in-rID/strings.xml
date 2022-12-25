@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">Inisialisasi gagal, klik untuk mencoba lagi</string>
+    <string name="tip_load_failed">Pemuatan gagal</string>
+    <string name="tip_loading">Inspeksi keamanan</string>
+    <string name="tip_no_network">Jaringan tidak normal. Periksa jaringan dan coba lagi.</string>
+    <string name="tip_validate_timeout">Verifikasi waktu tunggu, tutup dan periksa jaringan</string>
+</resources>

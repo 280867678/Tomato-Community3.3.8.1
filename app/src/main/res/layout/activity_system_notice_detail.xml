@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dimen_14" android:paddingTop="@dimen/dimen_19" android:paddingRight="@dimen/dimen_14" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_19">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="@dimen/dimen_45" android:layout_height="@dimen/dimen_45" android:src="@drawable/icon_systeam_notice"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12">
+                <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:id="@+id/text_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_light" android:id="@+id/text_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_light" android:id="@+id/text_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_22"/>
+        <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/text_dark" android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_24" android:text="@string/string_fanqie"/>
+    </LinearLayout>
+</LinearLayout>

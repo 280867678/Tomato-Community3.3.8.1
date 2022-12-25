@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.one.tomato.widget.PagerSlidingTabStrip android:id="@+id/tab_layout" android:layout_width="match_parent" android:layout_height="@dimen/common_tab_height" app:layout_constraintTop_toTopOf="0" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/colorAccent" app:pstsUnderlineColor="@color/divider" app:pstsUnderlineHeight="@dimen/common_divider"/>
+    <com.one.tomato.widget.NoHorScrollViewPager android:id="@+id/viewpager" android:paddingBottom="@dimen/dimen_30" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/tab_layout"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:id="@+id/rl_root" android:background="@drawable/fq_achieve_wear_center_speak_icon_bg_selector" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/fq_achieve_gray_d3d3d3" android:id="@+id/tv_empty_wear_prefix" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_achieve_no_wear"/>
+    <ImageView android:id="@+id/iv_achieve_wear_speak_prefix" android:visibility="visible" android:layout_width="84dp" android:layout_height="37dp" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:paddingEnd="20dp">
+        <TextView android:textSize="12sp" android:textColor="@color/fq_achieve_gray_131313" android:id="@+id/tv_prefix_desc" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="10sp" android:textColor="@color/fq_achieve_gray_878787" android:id="@+id/tv_prefix_endTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+    </LinearLayout>
+</RelativeLayout>

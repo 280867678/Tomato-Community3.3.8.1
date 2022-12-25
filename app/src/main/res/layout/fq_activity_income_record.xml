@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_title_top_bg" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/title_top_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+    </LinearLayout>
+    <RelativeLayout android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="48dp">
+        <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/magic_indicator" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_centerHorizontal="true"/>
+        <android.support.p005v7.widget.AppCompatCheckedTextView android:textSize="16sp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/ctv_back" android:background="@android:color/transparent" android:paddingLeft="12dp" android:paddingRight="12dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="85dp" android:singleLine="true" android:drawableLeft="@drawable/fq_ic_title_back" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <include layout="@layout/fq_include_divider_view"/>
+    <android.support.p002v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+</LinearLayout>

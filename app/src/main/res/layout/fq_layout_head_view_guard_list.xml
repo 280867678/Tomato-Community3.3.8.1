@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="@dimen/view_margin_16" android:layout_marginBottom="@dimen/view_margin_12">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_avatar" android:layout_width="90dp" android:layout_height="90dp"/>
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_guard_avatar_bg"/>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_margin_5" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_grade_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/view_margin_3" android:layout_below="@+id/tv_name" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/iv_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp"/>
+            <com.tomatolive.library.p136ui.view.custom.UserGradeView android:id="@+id/user_grade" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/fq_text_gray" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll_grade_bg" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

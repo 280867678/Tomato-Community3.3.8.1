@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_trade_pwd" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/color_f5f5f7" android:layout_width="match_parent" android:layout_height="@dimen/common_item_height">
+        <TextView android:textSize="@dimen/text_item_title" android:textStyle="bold" android:textColor="@color/text_dark" android:gravity="center" android:id="@+id/tv_trade_pwd_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trade_pwd_entry_title" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_13" android:src="@drawable/dialog_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="@dimen/common_divider"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_enter_pwd" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.one.tomato.widget.SeparatedEditText android:id="@+id/et_trade_pwd" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/dimen_52" android:layout_marginLeft="@dimen/dimen_32" android:layout_marginTop="@dimen/dimen_32" android:layout_marginRight="@dimen/dimen_32" android:inputType="number" app:borderColor="@color/lignt_grey" app:cursorWidth="3dp" app:maxLength="6" app:password="true" app:sepTextColor="@color/text_646464" app:separateType="@integer/type_hollow" app:showCursor="false"/>
+        <TextView android:textSize="@dimen/text_item_content" android:textColor="@color/text_999ead" android:gravity="right" android:layout_gravity="right" android:id="@+id/tv_trade_pwd_forget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_32" android:layout_marginBottom="@dimen/dimen_32" android:text="@string/trade_pwd_forget"/>
+    </LinearLayout>
+</LinearLayout>

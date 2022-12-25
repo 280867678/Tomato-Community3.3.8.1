@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:paddingTop="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_light" android:id="@+id/text_no_foucs" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/circle_no_foucs"/>
+    <RelativeLayout android:id="@+id/relate" android:paddingLeft="@dimen/dimen_16" android:paddingRight="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16">
+        <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/round_view" android:layout_width="@dimen/dimen_50" android:layout_height="@dimen/dimen_50"/>
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_72" android:lines="1" android:layout_toRightOf="@+id/round_view"/>
+        <TextView android:id="@+id/text_foucs_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_4" android:layout_marginRight="@dimen/dimen_72" android:layout_toRightOf="@+id/round_view" android:layout_below="@+id/text_name"/>
+        <TextView android:gravity="center" android:id="@+id/text_add_foucs" android:layout_width="@dimen/dimen_60" android:layout_height="@dimen/dimen_24" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

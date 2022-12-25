@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/fq_rl_name_bg" android:background="@drawable/fq_shape_gift_anim_bg" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/iv_avatar" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="8dp" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/iv_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="12sp" android:textColor="#ffffe563" android:ellipsize="marquee" android:id="@+id/fq_stv_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            <TextView android:textSize="10sp" android:textColor="@color/fq_text_white_color" android:id="@+id/fq_tv_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <com.opensource.svgaplayer.SVGAImageView android:id="@+id/fq_iv_gift_svga_view" android:visibility="visible" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginRight="10dp" android:scaleType="centerCrop" android:layout_toRightOf="@+id/ll_text_layout" android:layout_centerVertical="true" app:antiAlias="true" app:loopCount="1"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_gift_num_bg" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_toRightOf="@+id/fq_rl_name_bg">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_batch_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_gift_num_x"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_gift_num" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

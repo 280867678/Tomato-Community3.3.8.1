@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableFooterFollowWhenLoadFinished="true" app:srlEnableScrollContentWhenLoaded="true">
+        <com.one.tomato.thirdpart.recyclerview.PullToRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlClassicsSpinnerStyle="0"/>
+        <ScrollView android:id="@+id/scrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/colorPrimary" android:paddingBottom="@dimen/dimen_70" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/member_not_focus_head" android:scaleType="centerCrop"/>
+                <com.one.tomato.widget.NoScrollGridView android:id="@+id/gridView" android:layout_width="match_parent" android:layout_height="wrap_content" android:numColumns="3"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/ll_change" android:paddingLeft="@dimen/dimen_10" android:paddingTop="@dimen/dimen_3" android:paddingRight="@dimen/dimen_10" android:paddingBottom="@dimen/dimen_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_30">
+                    <TextView android:textSize="@dimen/text_sma" android:textColor="@color/colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_cnage"/>
+                    <ImageView android:id="@+id/iv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_3" android:src="@drawable/post_recommend_circle_refresh" android:scaleType="centerInside"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

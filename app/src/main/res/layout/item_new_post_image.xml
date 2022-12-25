@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/frame_image_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.p005v7.widget.RecyclerView android:id="@+id/image_recycle" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:id="@+id/text_show_index" android:background="@drawable/common_shape_solid_corner12_black_alpha_50" android:paddingLeft="@dimen/dimen_8" android:paddingTop="@dimen/dimen_4" android:paddingRight="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:text="0/0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

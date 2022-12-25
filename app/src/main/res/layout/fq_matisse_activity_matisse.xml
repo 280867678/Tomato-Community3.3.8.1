@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p005v7.widget.Toolbar android:theme="?attr/toolbar" android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp">
+        <TextView android:textSize="20sp" android:textColor="@color/fq_colorWhite" android:gravity="center" android:id="@+id/selected_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/fq_ic_matisse_arrow_drop_down_white_24dp"/>
+    </android.support.p005v7.widget.Toolbar>
+    <FrameLayout android:id="@+id/bottom_toolbar" android:background="?attr/bottomToolbar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="4dp">
+        <TextView android:textSize="16sp" android:textColor="?attr/bottomToolbar_preview_textColor" android:layout_gravity="start" android:id="@+id/button_preview" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_matisse_button_preview"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/originalLayout" android:padding="16dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tomatolive.library.p136ui.view.widget.matisse.internal.p137ui.widget.CheckRadioView android:layout_gravity="center_vertical" android:id="@+id/original" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/fq_ic_matisse_preview_radio_off"/>
+            <TextView android:enabled="true" android:textSize="14sp" android:textColor="?attr/bottomToolbar_preview_textColor" android:layout_gravity="center_vertical" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_matisse_button_original" android:paddingStart="4dp"/>
+        </LinearLayout>
+        <TextView android:textSize="16sp" android:textColor="?attr/bottomToolbar_apply_textColor" android:layout_gravity="end" android:id="@+id/button_apply" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_toolbar" android:layout_below="@+id/toolbar"/>
+    <FrameLayout android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_toolbar" android:layout_below="@+id/toolbar">
+        <TextView android:textSize="16sp" android:textColor="?attr/album_emptyView_textColor" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_matisse_empty_text" android:drawableTop="?attr/album_emptyView" android:drawablePadding="8dp"/>
+    </FrameLayout>
+</RelativeLayout>

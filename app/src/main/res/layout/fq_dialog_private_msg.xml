@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/fq_shape_dialog_top_corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp" android:paddingEnd="10dp">
+        <FrameLayout android:id="@+id/fl_left_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="10dp" android:paddingEnd="5dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_delete"/>
+        </FrameLayout>
+        <TextView android:textSize="16sp" android:textColor="@color/fq_colorBlack" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_msg_center" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_achieve_help_black" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/colorWhite" android:id="@+id/tv_save" android:background="@drawable/fq_red_shape_nobility_open" android:paddingLeft="10dp" android:paddingTop="7dp" android:paddingRight="10dp" android:paddingBottom="7dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_create_and_save" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ViewStub android:id="@+id/view_stub" android:layout="@layout/fq_layout_reconn_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <include layout="@layout/fq_include_divider_view"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_msg_list" android:background="@color/fq_msg_F3F3F3" android:visibility="invisible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_msg_detail_root" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_msg_detail_list" android:background="@color/fq_msg_F3F3F3" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:overScrollMode="never"/>
+            <LinearLayout android:id="@+id/ll_msg_send_bg" android:background="@color/fq_colorWhite" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_shortcut" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:src="@drawable/fq_ic_private_msg_shortcut"/>
+                <EditText android:textSize="13sp" android:textColor="@color/fq_colorBlack" android:textColorHint="@color/fq_msg_gray_AEAEAE" android:layout_gravity="center_vertical" android:id="@+id/et_msg_detail" android:background="@drawable/fq_input_gray_bg" android:padding="10dp" android:layout_width="0dp" android:layout_height="37dp" android:layout_marginRight="10dp" android:hint="@string/fq_text_msg_list_input_hint" android:maxLines="3" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSend" android:textCursorDrawable="@drawable/fq_cursor"/>
+                <TextView android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tv_msg_detail_send" android:background="@drawable/fq_red_shape_nobility_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="35dp" android:text="@string/fq_text_send_msg" android:paddingStart="18dp" android:paddingEnd="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_msg_shortcut_root" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="13dp" android:textColor="@color/fq_colorBlack" android:textColorHint="@color/fq_msg_gray_AEAEAE" android:id="@+id/et_msg_shortcut_detail" android:background="@drawable/fq_input_gray_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="37dp" android:hint="@string/fq_text_msg_list_input_hint" android:maxLines="3" android:maxLength="20" android:inputType="text" android:imeOptions="actionDone" android:textCursorDrawable="@drawable/fq_cursor"/>
+                <TextView android:textSize="14sp" android:textColor="@color/fq_achieve_gray_131313" android:layout_gravity="right" android:id="@+id/tv_length" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginTop="5dp" android:text="0/20"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.tomatolive.library.p136ui.view.widget.Html5WebView android:id="@+id/web_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_gray" android:gravity="center" android:id="@+id/tv_loading" android:background="@color/fq_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/hint_text_dialog_loading_data"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p005v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cardView" android:layout_width="@dimen/dimen_100" android:layout_height="180dp" android:layout_marginRight="@dimen/dimen_8" app:cardBackgroundColor="@color/color_white_al_60" app:cardCornerRadius="@dimen/dimen_5" app:cardElevation="0dp">
+    <RelativeLayout android:id="@+id/relate_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/relate" android:layout_width="match_parent" android:layout_height="157dp">
+            <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" app:riv_corner_radius_bottom_left="4dp" app:riv_corner_radius_bottom_right="@dimen/dimen_4" app:riv_corner_radius_top_left="@dimen/dimen_4" app:riv_corner_radius_top_right="@dimen/dimen_4"/>
+            <RelativeLayout android:id="@+id/relate_bar" android:background="@drawable/shape_post_detail_video_top_bar" android:layout_width="match_parent" android:layout_height="@dimen/dimen_25">
+                <ImageView android:id="@+id/image_top_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/circle_image" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dimen_4"/>
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/white" android:id="@+id/text_top_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_4" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/relate_text" android:background="@drawable/shape_solid_circle_item_title_text" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/text_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:src="@drawable/circle_text" android:layout_marginStart="@dimen/dimen_4"/>
+                <TextView android:textSize="@dimen/sp_12" android:ellipsize="end" android:gravity="center" android:id="@+id/text_des" android:layout_width="match_parent" android:layout_height="match_parent" android:lines="5" android:layout_below="@+id/text_image"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_title" android:background="@drawable/shape_solid_circle_item_text" android:paddingLeft="@dimen/dimen_8" android:paddingTop="@dimen/dimen_2" android:paddingRight="@dimen/dimen_8" android:paddingBottom="@dimen/dimen_2" android:layout_width="@dimen/dimen_100" android:layout_height="@dimen/dimen_23" android:lines="1" android:layout_below="@+id/relate"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/text_click" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/circle_click_text_goin_circle"/>
+</android.support.p005v7.widget.CardView>

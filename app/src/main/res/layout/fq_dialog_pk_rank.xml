@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/fq_shape_dialog_top_corner_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:textColor="@color/fq_text_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="13dp" android:text="@string/fq_pk_rank_title"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recycler_view_ranking" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_gray" android:gravity="center" android:id="@+id/tv_loading_fail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/fq_data_loading_fail_retry"/>
+        <TextView android:textSize="14sp" android:textColor="@color/fq_text_gray" android:gravity="center" android:id="@+id/tv_loading" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/hint_text_dialog_loading_data"/>
+    </FrameLayout>
+</LinearLayout>

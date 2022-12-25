@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <android.support.p005v7.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_16" android:translationZ="0dp" android:backgroundTint="@color/color_FCFCFC" app:cardCornerRadius="@dimen/dimen_4" app:cardElevation="0dp">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/liner_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/text_title">
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/relative_pic">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/post_top_tip"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_red_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:maxLines="1"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_pic_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:maxLines="2"/>
+                    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/text_content" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_2" android:maxLines="1"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/relative_pic" android:background="@drawable/common_shape_soild_corner5_40white" android:visibility="gone" android:layout_width="@dimen/dimen_120" android:layout_height="@dimen/dimen_68" android:layout_marginLeft="@dimen/dimen_20" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/image_pic" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/dimen_3" android:scaleType="centerCrop" app:riv_corner_radius_bottom_left="@dimen/dimen_6" app:riv_corner_radius_bottom_right="@dimen/dimen_6" app:riv_corner_radius_top_left="@dimen/dimen_6" app:riv_corner_radius_top_right="@dimen/dimen_6"/>
+                    <ImageView android:id="@+id/image_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/post_video_play" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <android.support.constraint.ConstraintLayout android:id="@+id/cons_shar_zan" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:layout_below="@+id/liner_content">
+                <TextView android:textSize="@dimen/sp_12" android:textColor="@color/color_5B92E1" android:id="@+id/text_tag" android:background="@drawable/common_shape_solid_corner30_grey" android:paddingLeft="@dimen/dimen_6" android:paddingTop="@dimen/dimen_3" android:paddingRight="@dimen/dimen_6" android:paddingBottom="@dimen/dimen_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_new_post_tag" android:drawablePadding="@dimen/dimen_3"/>
+                <RelativeLayout android:gravity="center" android:id="@+id/relate_conmment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="14dp" app:layout_constraintEnd_toStartOf="@+id/relate_zan">
+                    <ImageView android:id="@+id/image_conmment" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_2" android:src="@drawable/icon_new_post_conmment"/>
+                    <TextView android:textSize="@dimen/dimens_10sp" android:textColor="@color/text_dark" android:id="@+id/text_conmment_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:layout_toRightOf="@+id/image_conmment"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:id="@+id/relate_zan" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0">
+                    <ImageView android:id="@+id/image_zan" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginTop="@dimen/dimen_2" android:src="@drawable/icon_new_post_zan"/>
+                    <TextView android:textSize="@dimen/dimens_10sp" android:textColor="@color/text_dark" android:id="@+id/text_zan_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_4" android:layout_toRightOf="@+id/image_zan"/>
+                </RelativeLayout>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </android.support.p005v7.widget.CardView>
+</LinearLayout>

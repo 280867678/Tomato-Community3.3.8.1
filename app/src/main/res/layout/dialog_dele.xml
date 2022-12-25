@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#11ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dele_dialog_gb" android:layout_width="280dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/feedback_history_clear"/>
+        <TextView android:gravity="center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/feedback_cler"/>
+        <View android:background="#e4e4e4" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp" android:layout_margin="@dimen/dimen_15">
+            <TextView android:textSize="16sp" android:textColor="@color/app_bg_grey" android:gravity="center" android:id="@+id/no" android:background="@drawable/dele_souer_gb" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="15dp" android:text="@string/feedback_silder" android:singleLine="true" android:layout_weight="1"/>
+            <View android:background="#e4e4e4" android:visibility="invisible" android:layout_width="1px" android:layout_height="match_parent"/>
+            <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/yes" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="15dp" android:text="@string/common_confirm" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

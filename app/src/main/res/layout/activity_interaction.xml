@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/merge_title_bar"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_browse" android:layout_width="wrap_content" android:layout_height="wrap_content" app:leftImage="@drawable/icon_my_browse" app:leftText="@string/my_browse" app:showLeftImage="true" app:showLine="true" app:showRightImage="true"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" app:leftImage="@drawable/icon_my_comment" app:leftText="@string/my_comment" app:showLeftImage="true" app:showLine="true" app:showRightImage="true"/>
+    <com.one.tomato.widget.MineCustomItemLayout android:id="@+id/rl_thumb" android:layout_width="wrap_content" android:layout_height="wrap_content" app:leftImage="@drawable/icon_my_thumb" app:leftText="@string/my_thumb" app:showLeftImage="true" app:showLine="true" app:showRightImage="true"/>
+</LinearLayout>

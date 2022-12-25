@@ -1,0 +1,70 @@
+package com.luck.picture.lib;
+
+/* loaded from: classes3.dex */
+public final class R$layout {
+    public static final int abc_action_bar_title_item = 2131492864;
+    public static final int abc_action_bar_up_container = 2131492865;
+    public static final int abc_action_menu_item_layout = 2131492866;
+    public static final int abc_action_menu_layout = 2131492867;
+    public static final int abc_action_mode_bar = 2131492868;
+    public static final int abc_action_mode_close_item_material = 2131492869;
+    public static final int abc_activity_chooser_view = 2131492870;
+    public static final int abc_activity_chooser_view_list_item = 2131492871;
+    public static final int abc_alert_dialog_button_bar_material = 2131492872;
+    public static final int abc_alert_dialog_material = 2131492873;
+    public static final int abc_alert_dialog_title_material = 2131492874;
+    public static final int abc_cascading_menu_item_layout = 2131492875;
+    public static final int abc_dialog_title_material = 2131492876;
+    public static final int abc_expanded_menu_layout = 2131492877;
+    public static final int abc_list_menu_item_checkbox = 2131492878;
+    public static final int abc_list_menu_item_icon = 2131492879;
+    public static final int abc_list_menu_item_layout = 2131492880;
+    public static final int abc_list_menu_item_radio = 2131492881;
+    public static final int abc_popup_menu_header_item_layout = 2131492882;
+    public static final int abc_popup_menu_item_layout = 2131492883;
+    public static final int abc_screen_content_include = 2131492884;
+    public static final int abc_screen_simple = 2131492885;
+    public static final int abc_screen_simple_overlay_action_mode = 2131492886;
+    public static final int abc_screen_toolbar = 2131492887;
+    public static final int abc_search_dropdown_item_icons_2line = 2131492888;
+    public static final int abc_search_view = 2131492889;
+    public static final int abc_select_dialog_material = 2131492890;
+    public static final int abc_tooltip = 2131492891;
+    public static final int activity_picture_play_audio = 2131492980;
+    public static final int notification_action = 2131493646;
+    public static final int notification_action_tombstone = 2131493647;
+    public static final int notification_template_custom_big = 2131493654;
+    public static final int notification_template_icon_group = 2131493655;
+    public static final int notification_template_part_chronometer = 2131493659;
+    public static final int notification_template_part_time = 2131493660;
+    public static final int picture_activity_external_preview = 2131493671;
+    public static final int picture_activity_video_play = 2131493672;
+    public static final int picture_album_folder_item = 2131493673;
+    public static final int picture_alert_dialog = 2131493674;
+    public static final int picture_audio_dialog = 2131493675;
+    public static final int picture_camera_pop_layout = 2131493676;
+    public static final int picture_empty = 2131493677;
+    public static final int picture_image_grid_item = 2131493678;
+    public static final int picture_image_preview = 2131493679;
+    public static final int picture_item_camera = 2131493680;
+    public static final int picture_preview = 2131493681;
+    public static final int picture_selector = 2131493682;
+    public static final int picture_title_bar = 2131493683;
+    public static final int picture_wind_base_dialog_xml = 2131493684;
+    public static final int picture_window_folder = 2131493685;
+    public static final int select_dialog_item_material = 2131493713;
+    public static final int select_dialog_multichoice_material = 2131493714;
+    public static final int select_dialog_singlechoice_material = 2131493715;
+    public static final int support_simple_spinner_dropdown_item = 2131493719;
+    public static final int tomato_ucrop_activity_photobox = 2131493721;
+    public static final int tomato_ucrop_aspect_ratio = 2131493722;
+    public static final int tomato_ucrop_controls = 2131493723;
+    public static final int tomato_ucrop_layout_rotate_wheel = 2131493724;
+    public static final int tomato_ucrop_layout_scale_wheel = 2131493725;
+    public static final int tomato_ucrop_picture_activity_multi_cutting = 2131493726;
+    public static final int tomato_ucrop_picture_gf_adapter_edit_list = 2131493727;
+    public static final int tomato_ucrop_view = 2131493728;
+
+    private R$layout() {
+    }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/review_no_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="28sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_30" android:text="@string/review_no_title"/>
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_30" android:layout_marginTop="@dimen/dimen_8" android:text="@string/review_no_tishi"/>
+        </LinearLayout>
+        <android.support.p005v7.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginTop="121dp" android:layout_marginRight="@dimen/dimen_16" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dimen_4" app:cardElevation="0dp">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_16" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="为使茄友发布的内容更及时高效的被展示，诚邀大家为社区内容审核贡献一份力量，一起发掘、鉴别优质的内容，维护社区良好的内容氛围。"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_16">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/review_1" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="什么是审帖员？" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="审帖员可对社区用户发布的帖子进行审核，被多位审核员共同审核通过的帖子将发布上线。"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_16">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/review_2" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="满足什么条件能成为审帖员？" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="等级&gt;=5级" android:drawablePadding="@dimen/dimen_4" android:drawableStart="@drawable/review_ok"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="信誉分&gt;=50" android:drawablePadding="@dimen/dimen_4" android:drawableStart="@drawable/review_ok"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="获得点赞总数&gt;=100" android:drawablePadding="@dimen/dimen_4" android:drawableStart="@drawable/review_ok"/>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="经管理与筛选甄别后，可获得审帖资格；长时间不参与审核或审核准确率过低会被收回权限。"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_16">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/review_3" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成为审帖员有什么好处？" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8" android:text="可获得“审帖达人”徽章；\10每月抽取50位审帖数量及准确率综合评分较高的审帖员，获得积分和番茄币奖励。"/>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/dimen_48" android:layout_marginTop="@dimen/dimen_16">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/review_4" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/text_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="审核帖子标准？" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_middle" android:id="@+id/text_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8"/>
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tip_color" android:layout_gravity="center" android:id="@+id/text_weigui" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16" android:text="@string/post_review_wg_"/>
+            </LinearLayout>
+        </android.support.p005v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

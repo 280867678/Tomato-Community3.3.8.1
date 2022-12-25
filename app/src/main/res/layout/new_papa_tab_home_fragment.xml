@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/title_status_bar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/common_tab_height">
+        <ImageView android:id="@+id/image_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:src="@drawable/icon_back_black" android:layout_centerVertical="true"/>
+        <com.one.tomato.widget.PagerSlidingTabStrip android:id="@+id/tab_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginRight="@dimen/dimen_70" android:layout_toRightOf="@+id/image_back" app:pstsDividerColor="@color/transparent" app:pstsIndicatorColor="@color/colorAccent_80" app:pstsUnderlineHeight="@dimen/common_divider"/>
+        <ImageView android:id="@+id/iv_publish" android:padding="@dimen/dimen_8" android:layout_width="@dimen/dimen_32" android:layout_height="@dimen/dimen_32" android:layout_marginRight="@dimen/dimen_16" android:src="@drawable/papa_tab_home_publish" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.luck.picture.lib.widget.PreviewViewPager android:id="@+id/viewpager" android:paddingBottom="@dimen/dimen_50" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

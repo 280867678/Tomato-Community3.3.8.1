@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout android:id="@+id/rl_card_style" android:layout_width="110dp" android:layout_height="56dp" app:rlClipBackground="true" app:rlRadius="@dimen/fq_live_item_round_corners">
+        <ImageView android:id="@+id/iv_card_style" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/fq_ic_week_star_popularity_card_default"/>
+    </com.tomatolive.library.p136ui.view.widget.RoundRelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_card_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@+id/rl_card_style"/>
+    <TextView android:textSize="14sp" android:textColor="@color/fq_D9D9D9" android:id="@+id/tv_card_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:singleLine="true" android:layout_toLeftOf="@+id/tv_card_remaining" android:layout_below="@+id/tv_card_value" android:layout_alignLeft="@+id/tv_card_value"/>
+    <TextView android:textSize="14sp" android:textColor="@color/fq_D9D9D9" android:id="@+id/tv_card_remaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:singleLine="true" android:layout_below="@+id/tv_card_value" android:layout_alignParentRight="true"/>
+</RelativeLayout>

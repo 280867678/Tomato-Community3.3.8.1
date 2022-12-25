@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/cl_bg" android:background="@color/app_bg_grey" android:layout_width="match_parent" android:layout_height="56dp">
+    <ImageView android:id="@+id/iv_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_dark" android:id="@+id/tv_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_6" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/iv_recharge" app:layout_constraintTop_toTopOf="0"/>
+</android.support.constraint.ConstraintLayout>

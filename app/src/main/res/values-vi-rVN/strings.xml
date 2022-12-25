@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">Khởi tạo thất bại, nhấp để thử lại</string>
+    <string name="tip_load_failed">Mã xác minh đã thất bại</string>
+    <string name="tip_loading">Kiểm tra an ninh</string>
+    <string name="tip_no_network">Mạng lưới ngoại lệ, xin vui lòng kiểm tra lại mạng</string>
+    <string name="tip_validate_timeout">Kiểm tra thời gian, xin vui lòng tắt và kiểm tra mạng</string>
+</resources>

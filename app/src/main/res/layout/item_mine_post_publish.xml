@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/dimen_70" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginRight="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16">
+    <RelativeLayout android:id="@+id/relate_check" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/dimen_4">
+        <CheckBox android:id="@+id/checkbox" android:background="@drawable/common_selector_check" android:visibility="visible" android:layout_width="@dimen/dimen_25" android:layout_height="@dimen/dimen_25" android:checked="false" android:button="@null" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/image_move" android:visibility="gone" android:layout_width="@dimen/dimen_20" android:layout_height="@dimen/dimen_20" android:layout_marginRight="@dimen/dimen_8" android:src="@drawable/single_serial_move" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/relate_image" android:layout_width="@dimen/dimen_120" android:layout_height="match_parent" android:layout_toRightOf="@+id/relate_check">
+        <com.one.tomato.thirdpart.roundimage.RoundedImageView android:id="@+id/round_view" android:layout_width="@dimen/dimen_120" android:layout_height="match_parent" android:src="@color/color_D8D8D8" android:scaleType="centerCrop" app:riv_corner_radius="@dimen/dimen_4"/>
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/white" android:id="@+id/text_num_time" android:background="@drawable/common_shape_solid_corner30_black50" android:paddingLeft="@dimen/dimen_4" android:paddingTop="@dimen/dimen_2" android:paddingRight="@dimen/dimen_4" android:paddingBottom="@dimen/dimen_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_4" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_dark" android:ellipsize="end" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:lines="2" android:layout_toRightOf="@+id/relate_image" android:lineSpacingExtra="2sp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_toRightOf="@+id/relate_image" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@+id/text_comment" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_light" android:id="@+id/text_zan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_14" android:layout_toRightOf="@+id/text_comment"/>
+    </RelativeLayout>
+</RelativeLayout>

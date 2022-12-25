@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/dimen_15" android:paddingRight="@dimen/dimen_15" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50">
+    <TextView android:textSize="@dimen/text_subtitle" android:textColor="@color/text_middle" android:id="@+id/tv_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="@dimen/text_content" android:textColor="@color/text_middle" android:id="@+id/tv_select_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/location_pick" android:drawableRight="@drawable/icon_arrow_right_grey" android:drawablePadding="@dimen/dimen_5" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/iv_select" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_check_s" android:layout_alignParentRight="true"/>
+</RelativeLayout>

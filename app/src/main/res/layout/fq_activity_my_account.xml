@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <include layout="@layout/fq_include_divider_view"/>
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="18dp" android:paddingRight="15dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:text="@string/fq_account_balance" android:drawableLeft="@drawable/fq_ic_my_live_gold" android:drawablePadding="6dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/fq_colorBtnTextPrimary" android:id="@+id/tv_recharge" android:background="@drawable/fq_btn_round_red_selector" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_recharge"/>
+                </LinearLayout>
+                <TextView android:textSize="22sp" android:textColor="@color/fq_colorMoneyPrimary" android:id="@+id/tv_gold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="18dp" android:paddingRight="15dp" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="13sp" android:textColor="#ff878787" android:id="@+id/tv_gold_general" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textColor="#ff878787" android:id="@+id/tv_gold_nobility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22dp"/>
+                    <ImageView android:id="@+id/iv_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_my_live_car_help_2"/>
+                    <TextView android:textSize="13sp" android:textColor="#ff878787" android:id="@+id/tv_frozen" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/fq_text_frozen"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_nobility_open" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/fq_nobility_open_record" android:drawableLeft="@drawable/fq_ic_my_live_nobility_open" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp"/>
+            <include layout="@layout/fq_include_divider_view"/>
+            <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:id="@+id/tv_income_record" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="15dp" android:paddingRight="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fq_my_live_income_record" android:drawableLeft="@drawable/fq_ic_my_live_income_record" android:drawableRight="@drawable/fq_ic_arrow_right_gray" android:drawablePadding="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="banned_text">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hours</item>
+        <item>8 hours</item>
+        <item>1 days</item>
+        <item>3 days</item>
+        <item>7 days</item>
+        <item>30 days</item>
+    </array>
+    <array name="credit_rule_fraction_type">
+        <item>Types of</item>
+        <item>Score change</item>
+        <item>Daily limit</item>
+    </array>
+    <array name="credit_rule_punish_type">
+        <item>Fractional interval</item>
+        <item>Number of posts</item>
+        <item>Comments and responses</item>
+    </array>
+    <array name="fq_achieve_wear_center_menu">
+        <item>Medal of speech</item>
+    </array>
+    <array name="fq_anchor_live_end_error_tips">
+        <item>The network connection has been lost, please check the network settings</item>
+        <item>No push service available, please contact administrator</item>
+        <item>The alleged violation of the content has been banned. Consult the administrator</item>
+    </array>
+    <array name="fq_home_ranking_menu">
+        <item>Charm List</item>
+        <item>Rich List</item>
+        <item>Star List</item>
+    </array>
+    <array name="fq_lottery_ticket_tips">
+        <item>Consume %s virtual coins, get 1 chance to draw, the first draw of each day must be won</item>
+        <item>Consume %s virtual coins and get 10 lucky draw opportunities, must hit the blue area</item>
+        <item>Consume %s virtual coins and get 100 lucky draw opportunities, must hit the red area</item>
+        <item>Consume %s virtual coins, get 1 chance to draw, the first draw of the day must be won</item>
+        <item>Consume %s virtual coins and get 10 lucky draw opportunities, must hit the blue area</item>
+        <item>Consume %s virtual coins and get 100 lucky draw opportunities, must hit the red area</item>
+    </array>
+    <array name="fq_nobility_h5_url">
+        <item>noble-open-notice.html</item>
+        <item>noble-open-effects.html</item>
+        <item>noble-join-welcome.html</item>
+        <item>noble-medal.html</item>
+        <item>noble-card.html</item>
+        <item>noble-level-speed.html</item>
+        <item>noble-horn.html</item>
+        <item>noble-danmu.html</item>
+        <item>noble-service.html</item>
+        <item>noble-custom-gift.html</item>
+        <item>noble-not-speak-out.html</item>
+    </array>
+    <array name="fq_nobility_money_use_tips">
+        <item>Noble currency instructions</item>
+        <item>1.The noble coin and the platform virtual coin are equivalent, which can be used to give gifts, open guards, and buy cars. Among them, the anchor can get income after giving gifts and open guards; when using virtual coins, the noble coins will be used first. \n\n</item>
+        <item>2.The noble coins are permanently valid, but the noble coins that have not been used up after the noble expires will be frozen. You can unfreeze the noble coins after renewing the noble or opening any level of noble. \n\n</item>
+        <item>3.Noble coins cannot be used to purchase noble coins. \n\n</item>
+        <item>4.The noble coins donated by the nobles will be credited immediately after purchase.</item>
+    </array>
+    <array name="fq_nobility_name">
+        <item>ranger</item>
+        <item>knight</item>
+        <item>viscount</item>
+        <item>count</item>
+        <item>duke</item>
+        <item>king</item>
+        <item>emperor</item>
+    </array>
+    <array name="fq_nobility_open_status_tips">
+        <item>in effect</item>
+        <item>renewal protection period</item>
+        <item>expired</item>
+    </array>
+    <array name="fq_nobility_privilege_open_pay_tips">
+        <item>Open Emperor Noble</item>
+        <item>Open King Noble</item>
+        <item>Open Duke Noble</item>
+        <item>Open Earl Noble</item>
+        <item>Open Viscount Noble</item>
+        <item>Open Knight Noble</item>
+        <item>Open Ranger Noble</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips">
+        <item>Open special effects</item>
+        <item>Noble business card</item>
+        <item>Noble medal</item>
+        <item>Enter welcome</item>
+        <item>Open broadcast</item>
+        <item>Upgrade acceleration</item>
+        <item>Platform horn</item>
+        <item>Noble barrage</item>
+        <item>Incognito</item>
+        <item>List stealth</item>
+        <item>Anti-forbidden words</item>
+        <item>Customized gifts</item>
+        <item>Exclusive customer service</item>
+        <item>Sticky Live Room</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_1">
+        <item>Open banner in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>Ranger exclusive logo</item>
+        <item>Enter the court to show the noble welcome</item>
+        <item>Broadcast a message in the room when it opens</item>
+        <item>Nobles owned by knights and above</item>
+        <item>Visible on all platforms after sending</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_2">
+        <item>Open banner in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>Knight Exclusive Logo</item>
+        <item>Enter the court to show the noble welcome</item>
+        <item>Broadcast a message in the room when it opens</item>
+        <item>10% faster gifting experience</item>
+        <item>Visible on all platforms after sending</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_3">
+        <item>Open banners / open special effects in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>Viscount exclusive logo</item>
+        <item>Enter the court to show the noble welcome</item>
+        <item>Broadcast a message in the room when it opens</item>
+        <item>12% faster gifting experience</item>
+        <item>Visible on all platforms after sending</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_4">
+        <item>Open banners / open special effects in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>Earl&apos;s exclusive logo</item>
+        <item>Enter the court to show the noble welcome</item>
+        <item>Broadcasting news on all platforms during activation / renewal</item>
+        <item>14% faster gifting experience</item>
+        <item>3 free platform speakers</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_5">
+        <item>Open banners / open special effects in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>Duke exclusive logo</item>
+        <item>Enter the show to show advanced noble effects</item>
+        <item>Broadcasting news on all platforms during activation / renewal</item>
+        <item>16% faster gifting experience</item>
+        <item>Free 5 platform speakers</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_6">
+        <item>Open banners / open special effects in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>King&apos;s exclusive logo</item>
+        <item>Enter the show to show advanced noble effects</item>
+        <item>Broadcasting news on all platforms during activation / renewal</item>
+        <item>18% faster gifting experience</item>
+        <item>10 free platform speakers</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_open_tips_desc_7">
+        <item>Open banners / open special effects in the room</item>
+        <item>Noble exclusive user business card</item>
+        <item>Emperor&apos;s exclusive logo</item>
+        <item>Enter the show to show advanced noble effects</item>
+        <item>Broadcasting news on all platforms during activation / renewal</item>
+        <item>20% faster gifting experience</item>
+        <item>20 free platform speakers</item>
+        <item>Speaking news stands out</item>
+        <item>Watch live in low profile</item>
+        <item>Mysteriously low-key, silently guarding the anchor</item>
+        <item>The emperor cannot be banned by the housekeeper</item>
+        <item>Customize your own gift props</item>
+        <item>24-hour service</item>
+        <item>Recommended anchor</item>
+    </array>
+    <array name="fq_nobility_privilege_renew_pay_tips">
+        <item>Renew Emperor Noble</item>
+        <item>Renew King Noble</item>
+        <item>Renew Duke Noble</item>
+        <item>Renew Earl Noble</item>
+        <item>Renew Viscount Noble</item>
+        <item>Renew Knight Noble</item>
+        <item>Renew Ranger Noble</item>
+    </array>
+    <array name="fq_nobility_privilege_tips">
+        <item>Open notice</item>
+        <item>Open special effects</item>
+        <item>Enter welcome</item>
+        <item>Noble medal</item>
+        <item>Noble user business card</item>
+        <item>Upgrade acceleration</item>
+        <item>Platform speakers</item>
+        <item>Noble Barrage</item>
+        <item>Exclusive customer service</item>
+        <item>Customized gifts</item>
+        <item>Anti-forbidden words / kick out</item>
+    </array>
+    <array name="fq_nobility_recommend_history_status">
+        <item>recommended</item>
+        <item>expired</item>
+    </array>
+    <array name="fq_nobility_recommend_history_type">
+        <item>Anonymous recommendation</item>
+        <item>Public recommendation</item>
+    </array>
+    <array name="fq_search_tab_menu">
+        <item>All</item>
+        <item>Host</item>
+        <item>Broadcast</item>
+    </array>
+    <array name="fq_week_star_anchor_reward">
+        <item>Cover pendant</item>
+        <item>Live room pendant</item>
+        <item>Top recommendation</item>
+        <item>Popularity card x2</item>
+    </array>
+    <array name="fq_week_star_live_tab">
+        <item>Anchor list</item>
+        <item>Rich list</item>
+    </array>
+    <array name="fq_week_star_user_reward">
+        <item>Badge x7 days</item>
+        <item>Title of gift x7 days</item>
+        <item>Vehicle x7 days</item>
+    </array>
+    <array name="inspect_adapter_titles">
+        <item>Recharge amount</item>
+        <item>audit quota</item>
+        <item>Audited</item>
+        <item>Status</item>
+    </array>
+    <array name="level_description_content">
+        <item>read plenty of articles</item>
+        <item>find true love in the circle</item>
+        <item>Chat with other players</item>
+        <item>Share to everyone</item>
+        <item>save video</item>
+    </array>
+    <array name="level_description_title">
+        <item>see the article is rights</item>
+        <item>circle rights</item>
+        <item>comment rights</item>
+        <item>post rights</item>
+        <item>download video</item>
+    </array>
+    <array name="level_get_expire_desc">
+        <item>Invite users to download login</item>
+        <item>I have a lot of rewards at the beginning.</item>
+        <item>Browse posts easily</item>
+        <item>Not only upgrades but also rewards</item>
+    </array>
+    <array name="level_get_expire_title">
+        <item>Promotion task</item>
+        <item>Novice task</item>
+        <item>Daily task</item>
+        <item>Obtain a medal</item>
+    </array>
+    <array name="level_nick">
+        <item>Novice</item>
+        <item>Shooter</item>
+        <item>Hunter</item>
+        <item>Chess player</item>
+        <item>Command</item>
+        <item>King</item>
+    </array>
+    <array name="live_more_menu_title">
+        <item>Beautify</item>
+        <item>Mike</item>
+        <item>Flashlight</item>
+        <item>Big caption</item>
+        <item>Mirror</item>
+        <item>Speech setting</item>
+        <item>Change theme</item>
+        <item>SMD controls</item>
+        <item>Block small gifts</item>
+        <item>Popular card</item>
+        <item>Paid settings</item>
+    </array>
+    <array name="phone_country_code_key">
+        <item>82</item>
+        <item>86</item>
+        <item>81</item>
+        <item>66</item>
+        <item>1</item>
+    </array>
+    <array name="phone_country_code_value">
+        <item>Korea（+82）</item>
+        <item>China（+86）</item>
+        <item>Japan（+81）</item>
+        <item>Thailand（+66）</item>
+        <item>U.S.A（+1）</item>
+    </array>
+    <array name="pullToRefresh_head_text">
+        <item>Your heart has reasons, your head does not know</item>
+        <item>Love is everywhere, look for it</item>
+        <item>This is a good moment, do not forget this moment</item>
+        <item>Once you have made friends, please do not leave</item>
+        <item>Do not let your dreams be dreams.</item>
+        <item>They told me I could not. That is why I did</item>
+        <item>Courage is being afraid but going on anyhow</item>
+        <item>Do not regret anything that ever made you smile</item>
+        <item>Not all the people in your life are meant to stay</item>
+        <item>Not all the people in your life are meant to stay</item>
+        <item>Forget what hurt you but never forget what it taught you</item>
+        <item>View the vast, the more lonely in my heart.</item>
+        <item>It is just a shallow, it is condensed into sorrow.</item>
+        <item>They told me I could not. That is why I did</item>
+        <item>Love is everywhere, look for it.</item>
+        <item>This is a good moment, do not forget this moment</item>
+        <item>Love is everywhere, look for it.</item>
+        <item>Love is everywhere, look for it.</item>
+    </array>
+    <array name="report_down_comment">
+        <item>Suspected of advertising, deceptive information</item>
+        <item>Political sensitivity, bloody violence, illegal crimes</item>
+        <item>Malicious attack and abuse</item>
+        <item>Other</item>
+    </array>
+    <array name="report_down_post">
+        <item>The content clarity is not enough</item>
+        <item>Suspected of advertising, deceptive information</item>
+        <item>Illegal content such as minors, children, humans and animals</item>
+        <item>The content does not match the title, circle, label</item>
+        <item>Non-pornographic content</item>
+        <item>Other</item>
+    </array>
+    <array name="report_member_content">
+        <item>Scrambled Ad</item>
+        <item>illegal</item>
+        <item>Suspected fraud</item>
+        <item>Insult</item>
+        <item>rumor</item>
+        <item>others</item>
+    </array>
+    <array name="report_papa_item_content1">
+        <item>Politically Sensitive</item>
+        <item>Bloody violence、illegal</item>
+        <item>Spam</item>
+        <item>Achievement, suspected of fraud</item>
+        <item>Insult</item>
+    </array>
+    <array name="report_papa_item_content2">
+        <item>Stealing TA is work collection</item>
+        <item>Violation TA is privacy</item>
+    </array>
+    <array name="report_papa_item_content3">
+        <item>Child pornography</item>
+    </array>
+    <array name="report_papa_item_content4">
+        <item>let people feel unconfortable</item>
+        <item>title file</item>
+        <item>label incorrect</item>
+        <item>others</item>
+    </array>
+    <array name="report_post_content">
+        <item>spam</item>
+        <item>Fraud information</item>
+        <item>Harmful message</item>
+        <item>Personal attack</item>
+    </array>
+    <array name="take_photo_text">
+        <item>Photograph</item>
+        <item>Capture from local database</item>
+    </array>
+    <array name="vip_right_compare_list">
+        <item>Equity</item>
+        <item>Member User</item>
+        <item>Normal User</item>
+        <item>Video Watch</item>
+        <item>unlimited</item>
+        <item>limit times</item>
+        <item>Download video to \n album</item>
+        <item>Free Downloads \n Time Limit</item>
+        <item>Paid download</item>
+        <item>Cache video to the \n inside of the app</item>
+        <item>unlimited</item>
+        <item>charged download</item>
+        <item>Comments/Replies</item>
+        <item>unlimited</item>
+        <item>level limit \n times limit</item>
+        <item>post post</item>
+        <item>unlimited</item>
+        <item>level limit \n times limit</item>
+        <item>View full video</item>
+        <item>Viewable</item>
+        <item>Not viewable</item>
+        <item>Member special logo</item>
+        <item>Yes</item>
+        <item>None</item>
+    </array>
+</resources>

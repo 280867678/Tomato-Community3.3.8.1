@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="#0dff3184"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="#10ff3184"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="#15ff3184"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="#20ff3184"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="#30ff3184"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <gradient android:startColor="#c070f9" android:endColor="#ff3182" android:angle="270"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="@android:color/transparent"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="@android:color/transparent"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="@android:color/transparent"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="@android:color/transparent"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp"/>
+                    <solid android:color="@android:color/transparent"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="#24ffffff"/>
+                    <corners android:radius="@dimen/fq_lottery_shape_radius"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--数据库名称-->
+    <dbname value="FQ"/>
+    <!--版本号  数据库改动 ，需要➕1-->
+    <version value="338"/>
+    <list>
+        <!--表名 需要增加新的表，在这里加-->
+        <mapping class="com.one.tomato.entity.db.SystemParam"/>
+        <mapping class="com.one.tomato.entity.db.LoginInfo"/>
+        <mapping class="com.one.tomato.entity.db.UserInfo"/>
+        <mapping class="com.one.tomato.entity.db.LevelBean"/>
+        <mapping class="com.one.tomato.entity.db.LockScreenInfo"/>
+        <mapping class="com.one.tomato.entity.db.AdPage"/>
+        <mapping class="com.one.tomato.entity.db.AdLiveBean"/>
+        <mapping class="com.one.tomato.entity.db.VideoDownload"/>
+        <mapping class="com.one.tomato.entity.db.CountryDB"/>
+        <mapping class="com.one.tomato.entity.db.LookTimeBean"/>
+        <mapping class="com.one.tomato.entity.db.ChannelInfo"/>
+        <mapping class="com.one.tomato.entity.db.ShareParamsBean" />
+        <mapping class="com.one.tomato.entity.db.OpenInstallChannelBean" />
+        <mapping class="com.one.tomato.entity.db.InitAppInfo" />
+        <mapping class="com.one.tomato.entity.db.PostHotSearch" />
+        <mapping class="com.one.tomato.entity.db.WebAppChannel" />
+        <mapping class="com.one.tomato.entity.db.CircleAllBean" />
+        <mapping class="com.one.tomato.entity.db.DefaultChannelBean" />
+        <mapping class="com.one.tomato.entity.db.UpRecommentBean" />
+        <mapping class="com.one.tomato.entity.db.PostRewardId" />
+        <mapping class="com.one.tomato.entity.db.PostDownPayBean" />
+        <mapping class="com.one.tomato.entity.db.VerNumBean" />
+        <mapping class="com.one.tomato.entity.db.Tag" />
+        <mapping class="com.one.tomato.entity.db.SubGamesBean" />
+        <mapping class="com.one.tomato.entity.db.PostHotMessageBean" />
+        <mapping class="com.one.tomato.entity.db.GameRegisterUserBean" />
+    </list>
+</litepal>

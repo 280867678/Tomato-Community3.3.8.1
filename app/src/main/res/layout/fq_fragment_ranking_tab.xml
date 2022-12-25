@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <net.lucode.hackware.magicindicator.MagicIndicator android:id="@+id/magic_indicator" android:background="@drawable/fq_shape_top_tag_gray_selector" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <android.support.p002v4.view.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

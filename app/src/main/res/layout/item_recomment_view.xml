@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/text_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16" android:layout_marginBottom="@dimen/dimen_16" android:text="@string/circle_recomment_6" android:drawablePadding="@dimen/dimen_4" android:drawableStart="@drawable/post_top2"/>
+    <com.one.tomato.thirdpart.recyclerview.BetterHorScrollRecyclerView android:id="@+id/better_recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

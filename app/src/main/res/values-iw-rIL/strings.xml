@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tip_init_timeout">האתחול נכשל, לחץ כדי לנסות שוב</string>
+    <string name="tip_load_failed">טעינה נכשלה</string>
+    <string name="tip_loading">בדיקת בטיחות</string>
+    <string name="tip_no_network">רשת לא תקינה, בדוק את הרשת ונסה שוב</string>
+    <string name="tip_validate_timeout">אמת את הזמן הקצוב, סגור וסמן את הרשת</string>
+</resources>

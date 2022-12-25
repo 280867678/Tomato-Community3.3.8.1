@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tomatolive.library.p136ui.view.widget.SquareWidthRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ll_item_layout" android:background="@drawable/fq_hd_shape_gift_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.tomatolive.library.p136ui.view.widget.SquareLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_item_logo" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="centerCrop"/>
+        <TextView android:textSize="10sp" android:textColor="#383838" android:ellipsize="end" android:id="@+id/tv_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="2dp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginHorizontal="2dp"/>
+        <TextView android:textSize="10sp" android:textColor="#9f9f9f" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_item_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="1" android:includeFontPadding="false"/>
+    </com.tomatolive.library.p136ui.view.widget.SquareLinearLayout>
+    <ImageView android:id="@+id/iv_selected" android:visibility="invisible" android:layout_width="12dp" android:layout_height="12dp" android:layout_margin="2dp" android:src="@drawable/fq_ic_hd_lottery_check_selected" android:layout_alignParentRight="true"/>
+</com.tomatolive.library.p136ui.view.widget.SquareWidthRelativeLayout>

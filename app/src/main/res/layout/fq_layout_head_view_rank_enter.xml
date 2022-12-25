@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@drawable/fq_shape_week_star_rank_bg" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_521D00" android:id="@+id/tv_left_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_left_avatars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:layout_gravity="center_vertical" android:id="@+id/line" android:background="#d9d9d9" android:layout_width="0.5dp" android:layout_height="15dp" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10"/>
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/rl_right" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14sp" android:textColor="@color/fq_521D00" android:id="@+id/tv_right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/rv_right_avatars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

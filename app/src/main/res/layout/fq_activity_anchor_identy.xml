@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <android.support.p002v4.widget.NestedScrollView android:visibility="visible" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="214dp" android:layout_height="0dp" android:layout_marginTop="@dimen/view_margin_16" android:layout_marginBottom="@dimen/view_margin_16" android:src="@drawable/fq_anchor_identy" android:layout_weight="2"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/fq_shape_top_corners_white_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3.5">
+                <LinearLayout android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/fq_name"/>
+                    <EditText android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:textColorHint="@color/fq_gray96" android:ellipsize="end" android:id="@+id/edit_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/fq_put_name" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+                <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <LinearLayout android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/fq_idcard"/>
+                    <EditText android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:textColorHint="@color/fq_gray96" android:ellipsize="end" android:id="@+id/edit_idcard" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/fq_put_idcard" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+                <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/fq_phone"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/fq_text_black" android:textColorHint="@color/fq_text_black" android:id="@+id/tv_country_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="+86" android:drawableRight="@drawable/fq_ic_code_arrow_down" android:drawablePadding="6dp"/>
+                    </LinearLayout>
+                    <EditText android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:textColorHint="@color/fq_gray96" android:ellipsize="end" android:id="@+id/edit_phone" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/fq_put_phone" android:maxLines="1" android:singleLine="true" android:inputType="phone"/>
+                </LinearLayout>
+                <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="15dp" android:text="@string/fq_code"/>
+                    <EditText android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_colorBlack" android:textColorHint="@color/fq_gray96" android:ellipsize="end" android:id="@+id/edit_code" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/fq_put_code" android:maxLines="1" android:singleLine="true" android:layout_weight="1" android:inputType="numberSigned"/>
+                    <TextView android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_btn_auth_code_color_selector" android:gravity="center" android:id="@+id/tv_send_code" android:background="@drawable/fq_send_code_bg_red" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="110dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:minHeight="36dp" android:text="@string/fq_get_code"/>
+                </LinearLayout>
+                <View android:background="@color/fq_view_divider_color" android:layout_width="match_parent" android:layout_height="0.8dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/fq_colorWhite" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5">
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="7dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_up_idcrad_front" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <FrameLayout android:id="@+id/fl_id_card_front" android:background="@drawable/fq_shape_corner_dash" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="16sp" android:textColor="#cdcdcd" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/fq_up_zidcard" android:drawableTop="@drawable/fq_add_id_card" android:drawablePadding="10dp"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="7dp" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_up_idcrad_back" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <FrameLayout android:id="@+id/fl_id_card_back" android:background="@drawable/fq_shape_corner_dash" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <TextView android:textSize="16sp" android:textColor="#cdcdcd" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/fq_up_idcard" android:drawableTop="@drawable/fq_add_id_card" android:drawablePadding="10dp"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="@color/fq_colorWhite" android:padding="@dimen/dp_10" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <TextView android:enabled="false" android:textSize="@dimen/basic_text_size" android:textColor="@color/fq_btn_auth_color_selector" android:gravity="center" android:id="@+id/tv_commit_info" android:background="@drawable/fq_btn_round_red_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="45dp" android:text="@string/fq_commit_identy" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>

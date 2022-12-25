@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/fq_ic_nobility_hd_recommend_bg" android:layout_centerInParent="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="22sp" android:textColor="#ffbc8303" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜你"/>
+        <TextView android:textSize="14sp" android:textColor="#ffbc8303" android:gravity="center_horizontal" android:id="@+id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingExtra="5dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/fq_ic_dialog_bottom_close" android:layout_alignParentRight="true"/>
+</RelativeLayout>

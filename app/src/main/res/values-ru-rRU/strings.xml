@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Captcha</string>
+    <string name="tip_init_timeout">Инициализация не удалась, нажмите, чтобы повторить попытку</string>
+    <string name="tip_load_failed">ошибка загрузки</string>
+    <string name="tip_loading">Мониторинг безопасности</string>
+    <string name="tip_no_network">Сеть ненормальна. Проверьте сеть и повторите попытку.</string>
+    <string name="tip_validate_timeout">истечение времени ожидания, закройте и проверьте сеть.</string>
+</resources>

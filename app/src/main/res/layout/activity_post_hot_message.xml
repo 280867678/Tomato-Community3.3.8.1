@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/game_bg_relate" android:layout_width="match_parent" android:layout_height="144dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_8" android:src="@drawable/post_hot_home_image" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/image_back" android:padding="@dimen/dimen_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_12" android:layout_marginTop="@dimen/dimen_30" android:src="@drawable/icon_back_white"/>
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@+id/refreshLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:srlEnableFooterFollowWhenLoadFinished="true" app:srlEnableScrollContentWhenLoaded="true">
+        <com.one.tomato.thirdpart.recyclerview.PullToRefreshHeader android:layout_width="match_parent" android:layout_height="wrap_content" app:srlClassicsSpinnerStyle="0"/>
+        <android.support.p005v7.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

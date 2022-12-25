@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_guard_time_label" android:layout_toRightOf="@+id/tv_guard_title"/>
+    <TextView android:textSize="12sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_guard_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:drawablePadding="3dp" android:layout_below="@+id/iv_label" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_guard_money_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_below="@+id/tv_guard_title" android:layout_centerHorizontal="true">
+        <TextView android:textSize="13sp" android:textColor="@color/fq_colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:text="@string/fq_tomato_money_str"/>
+        <TextView android:textSize="13sp" android:textColor="@color/fq_colorWhite" android:id="@+id/tv_guard_money" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_arrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fq_ic_guard_triangle" android:layout_below="@+id/ll_guard_money_bg" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

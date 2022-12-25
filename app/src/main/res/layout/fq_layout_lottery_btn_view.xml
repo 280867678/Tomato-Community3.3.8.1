@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_lottery_btn_bg" android:background="@drawable/fq_shape_lottery_btn_bg" android:paddingLeft="16dp" android:paddingTop="4.5dp" android:paddingRight="20dp" android:paddingBottom="4.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp">
+        <ImageView android:id="@+id/iv_small_ticket" android:layout_width="28dp" android:layout_height="28dp" android:layout_marginRight="11dp" android:src="@drawable/fq_ic_lottery_ticket"/>
+        <TextView android:textSize="11sp" android:textColor="@color/fq_text_white_color" android:id="@+id/tv_ticket_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_ticket" android:visibility="invisible" android:layout_width="42dp" android:layout_height="39dp" android:layout_marginLeft="10dp" android:src="@drawable/fq_ic_lottery_ticket"/>
+</RelativeLayout>

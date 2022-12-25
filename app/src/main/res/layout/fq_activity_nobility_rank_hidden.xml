@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/fq_include_activity_title_bar"/>
+    <include layout="@layout/fq_include_divider_view"/>
+    <android.support.p002v4.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/fq_ic_nobility_stealth_in_list"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="#ff101010" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginBottom="3dp" android:text="@string/fq_nobility_privilege_hidden_in_rank_list"/>
+                    <TextView android:textSize="13sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="34dp" android:text="@string/fq_text_hide_while_entering_tip"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="14sp" android:textColor="@color/fq_colorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fq_text_enable_hide" android:layout_centerVertical="true"/>
+                <CheckBox android:id="@+id/cb_box" android:background="@drawable/selector_checkbox_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/fq_colorWhite" android:paddingLeft="15dp" android:paddingTop="20dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="10dp">
+                <TextView android:textSize="12sp" android:textColor="#ffaeaeae" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="开启榜单隐身后他人视角"/>
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:src="@drawable/fq_ic_noble_stealth_others_view" android:scaleType="fitStart"/>
+                <TextView android:textSize="12sp" android:textColor="#ffaeaeae" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="开启榜单隐身后本人视角"/>
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:src="@drawable/fq_ic_noble_stealth_my_view" android:scaleType="fitStart"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.p002v4.widget.NestedScrollView>
+</LinearLayout>
